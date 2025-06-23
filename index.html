@@ -187,7 +187,12 @@
 
       prevBtn.disabled = currentIndex === 0;
       nextBtn.disabled = currentIndex === cards.length - 1;
+
+      // 🧠 Save progress
+      localStorage.setItem("flashcardIndex", currentIndex);
+      localStorage.setItem("flashcardFile", fileSelector.value);
     };
+
 
     // 🧭 Navigation
     prevBtn.addEventListener('click', () => {
@@ -231,7 +236,40 @@
 
 
     // 🟢 Load the first file by default
-    loadJSON(jsonFiles[0].file);
+    const savedFile = localStorage.getItem("flashcardFile");
+const savedIndex = parseInt(localStorage.getItem("flashcardIndex") || "0");
+
+const startFile = jsonFiles.find(j => j.file === savedFile)?.file || jsonFiles[0].file;
+fileSelector.value = startFile;
+loadJSON(startFile);
+
+// Then in loadJSON:
+const loadJSON = (file) => {
+  fetch(file)
+    .then(res => res.json())
+    .then(data => {
+      cards = data;
+
+      const savedFile = localStorage.getItem("flashcardFile");
+      const savedIndex = parseInt(localStorage.getItem("flashcardIndex") || "0");
+
+      if (file === savedFile && savedIndex < data.length) {
+        currentIndex = savedIndex;
+      } else {
+        currentIndex = 0;
+      }
+
+      flashcard.classList.remove('flipped');
+      renderCard();
+    })
+    .catch(err => {
+      console.error("Error loading file:", file, err);
+      front.textContent = "Failed to load.";
+      back.textContent = "";
+      counter.textContent = "";
+    });
+};
+
 
   </script>
 </body>
