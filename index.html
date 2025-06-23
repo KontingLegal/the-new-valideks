@@ -130,13 +130,11 @@
   <div class="card-counter" id="counter">Card 0 of 0</div>
 
   <script>
-    // 🗂️ List your JSON files here
     const jsonFiles = [
       { file: "c1.json", label: "Competency 1" },
       { file: "c2.json", label: "Competency 2" },
       { file: "c3.json", label: "Unlock more content >_*" }
     ];
- // Add more as needed
 
     const flashcard = document.getElementById('flashcard');
     const inner = document.getElementById('card-inner');
@@ -150,7 +148,7 @@
     let cards = [];
     let currentIndex = 0;
 
-    // 🔁 Populate dropdown
+    // Populate dropdown
     jsonFiles.forEach(entry => {
       const option = document.createElement('option');
       option.value = entry.file;
@@ -158,14 +156,31 @@
       fileSelector.appendChild(option);
     });
 
-
-    // 🔄 Load JSON and display first card
+    // Load JSON and display first card
     const loadJSON = (file) => {
+      if (file === "c3.json") {
+        front.innerHTML = `<img src="gcash.png" alt="Unlock" style="max-width: 100%; max-height: 100%;">`;
+        back.innerHTML = "";
+        counter.textContent = "Unlock more content >_* or speed up progress";
+        flashcard.classList.remove('flipped');
+        cards = [];
+        return;
+      }
+
       fetch(file)
         .then(res => res.json())
         .then(data => {
           cards = data;
-          currentIndex = 0;
+
+          const savedFile = localStorage.getItem("flashcardFile");
+          const savedIndex = parseInt(localStorage.getItem("flashcardIndex") || "0");
+
+          if (file === savedFile && savedIndex < data.length) {
+            currentIndex = savedIndex;
+          } else {
+            currentIndex = 0;
+          }
+
           flashcard.classList.remove('flipped');
           renderCard();
         })
@@ -177,7 +192,6 @@
         });
     };
 
-    // 🃏 Display one card
     const renderCard = () => {
       if (cards.length === 0) return;
       const current = cards[currentIndex];
@@ -188,13 +202,10 @@
       prevBtn.disabled = currentIndex === 0;
       nextBtn.disabled = currentIndex === cards.length - 1;
 
-      // 🧠 Save progress
       localStorage.setItem("flashcardIndex", currentIndex);
       localStorage.setItem("flashcardFile", fileSelector.value);
     };
 
-
-    // 🧭 Navigation
     prevBtn.addEventListener('click', () => {
       if (currentIndex > 0) {
         currentIndex--;
@@ -211,66 +222,21 @@
       }
     });
 
-    // 🔄 Flip card
     flashcard.addEventListener('click', () => {
       flashcard.classList.toggle('flipped');
     });
 
-    // 🔁 When dropdown changes
     fileSelector.addEventListener('change', (e) => {
-      const selectedFile = e.target.value;
-
-      if (selectedFile === "c3.json") {
-        // Show image instead of flashcards
-        front.innerHTML = `<img src="gcash.png" alt="Unlock more content >_* " style="max-width: 100%; max-height: 100%;">`;
-        back.innerHTML = "";
-        counter.textContent = "Unlock more content >_* or speed up progress";
-        flashcard.classList.remove('flipped');
-        cards = [];
-        return;
-      }
-
-  // Otherwise, load flashcards
-  loadJSON(selectedFile);
-});
-
-
-    // 🟢 Load the first file by default
-    const savedFile = localStorage.getItem("flashcardFile");
-const savedIndex = parseInt(localStorage.getItem("flashcardIndex") || "0");
-
-const startFile = jsonFiles.find(j => j.file === savedFile)?.file || jsonFiles[0].file;
-fileSelector.value = startFile;
-loadJSON(startFile);
-
-// Then in loadJSON:
-const loadJSON = (file) => {
-  fetch(file)
-    .then(res => res.json())
-    .then(data => {
-      cards = data;
-
-      const savedFile = localStorage.getItem("flashcardFile");
-      const savedIndex = parseInt(localStorage.getItem("flashcardIndex") || "0");
-
-      if (file === savedFile && savedIndex < data.length) {
-        currentIndex = savedIndex;
-      } else {
-        currentIndex = 0;
-      }
-
-      flashcard.classList.remove('flipped');
-      renderCard();
-    })
-    .catch(err => {
-      console.error("Error loading file:", file, err);
-      front.textContent = "Failed to load.";
-      back.textContent = "";
-      counter.textContent = "";
+      loadJSON(e.target.value);
     });
-};
 
+    // Load saved progress on first load
+    const savedFile = localStorage.getItem("flashcardFile");
+    const savedIndex = parseInt(localStorage.getItem("flashcardIndex") || "0");
 
+    const startFile = jsonFiles.find(j => j.file === savedFile)?.file || jsonFiles[0].file;
+    fileSelector.value = startFile;
+    loadJSON(startFile);
   </script>
 </body>
 </html>
