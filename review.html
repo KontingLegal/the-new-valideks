@@ -5,155 +5,150 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Flashcards Viewer</title>
   <style>
-    :root {
-      --bg-light: #f0f2f5;
-      --bg-dark: #1c1c1c;
-      --text-light: #333;
-      --text-dark: #eee;
-      --card-light: white;
-      --card-dark: #2b2b2b;
-    }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 2rem;
+    background: #f0f2f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 2rem;
-      background: var(--bg-light);
-      color: var(--text-light);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      transition: background 0.3s, color 0.3s;
-    }
-    #progress {
-      margin-top: 2rem;
-    }
+  body.dark {
+    background-color: #121212;
+    color: #eee;
+  }
 
-    body.dark {
-      background: var(--bg-dark);
-      color: var(--text-dark);
-    }
+  h1 {
+    margin-bottom: 1rem;
+  }
 
-    h1 {
-      margin-bottom: 1rem;
-    }
+  .controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
 
-    .controls {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
-      margin-bottom: 1rem;
-    }
+  .nav-buttons {
+    display: flex;
+    gap: 1rem;
+  }
 
-    .nav-buttons {
-      display: flex;
-      gap: 1rem;
-    }
+  select, button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
 
-    select, button {
-      padding: 0.5rem 1rem;
-      font-size: 1rem;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
+  select {
+    background: white;
+    border: 1px solid #ccc;
+  }
 
-    select {
-      background: white;
-      border: 1px solid #ccc;
-    }
+  button {
+    background: #333;
+    color: white;
+  }
 
-    button {
-      background: #333;
-      color: white;
-    }
+  button:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+  }
 
-    button:disabled {
-      background: #aaa;
-      cursor: not-allowed;
-    }
+  .card {
+    background: white;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
 
-    .card {
-      background: var(--card-light);
-      width: 300px;
-      height: 200px;
-      perspective: 1000px;
-      cursor: pointer;
-      margin-top: 1rem;
-      transition: background 0.3s;
-    }
+  .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
 
-    body.dark .card {
-      background: var(--card-dark);
-    }
+  .flipped .card-inner {
+    transform: rotateY(180deg);
+  }
 
-    .card-inner {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      transition: transform 0.6s;
-      transform-style: preserve-3d;
-    }
+  .card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 
-    .flipped .card-inner {
-      transform: rotateY(180deg);
-    }
+  .card-front {
+    background-color: #fefefe;
+  }
 
-    .card-front, .card-back {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      padding: 1rem;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
+  .card-back {
+    background-color: #d4f0d2;
+    transform: rotateY(180deg);
+  }
 
-    .card-front {
-      background-color: #fefefe;
-    }
+  .card-counter {
+    margin-top: 2rem; /* ⬅️ Adjusted to go lower */
+    font-size: 0.9rem;
+    color: #555;
+  }
 
-    .card-back {
-      background-color: #d4f0d2;
-      transform: rotateY(180deg);
-    }
+  /* 🌙 Dark mode for flashcard */
+  body.dark .card {
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+  }
 
-    .card-counter {
-      margin-top: 1rem;
-      font-size: 0.9rem;
-      color: #555;
-    }
+  body.dark .card-front {
+    background-color: #2a2a2a;
+    color: #eee;
+    border-color: #555;
+  }
 
-    .dark-toggle {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-    }
+  body.dark .card-back {
+    background-color: #334d33;
+    color: #eee;
+    border-color: #555;
+  }
   </style>
-</head>
-<body>
-  <button class="dark-toggle" onclick="toggleDarkMode()">🌓</button>
-  <h1>Flashcards</h1>
 
-  <div class="controls">
-    <select id="fileSelector"></select>
-    <div class="nav-buttons">
-      <button id="prev">Previous</button>
-      <button id="next">Next</button>
-    </div>
-  </div>
+  </head>
+  <body>
+    <button class="dark-toggle" onclick="toggleDarkMode()">🌓</button>
+    <h1>Flashcards</h1>
 
-  <div class="card" id="flashcard">
-    <div class="card-inner" id="card-inner">
-      <div class="card-front" id="card-front">Loading...</div>
-      <div class="card-back" id="card-back">Loading...</div>
+    <div class="controls">
+      <select id="fileSelector"></select>
+      <div class="nav-buttons">
+        <button id="prev">Previous</button>
+        <button id="next">Next</button>
+      </div>
     </div>
-  </div>
+
+    <div class="card" id="flashcard">
+      <div class="card-inner" id="card-inner">
+        <div class="card-front" id="card-front">Loading...</div>
+        <div class="card-back" id="card-back">Loading...</div>
+      </div>
+    </div>
 
   <div class="card-counter" id="counter">Card 0 of 0</div>
 
