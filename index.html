@@ -213,8 +213,22 @@
 
     // 🔁 When dropdown changes
     fileSelector.addEventListener('change', (e) => {
-      loadJSON(e.target.value);
-    });
+      const selectedFile = e.target.value;
+
+      if (selectedFile === "c3.json") {
+        // Show image instead of flashcards
+        front.innerHTML = `<img src="gcash.png" alt="Unlock more content >_* " style="max-width: 100%; max-height: 100%;">`;
+        back.innerHTML = "";
+        counter.textContent = "Fire Drill Reference";
+        flashcard.classList.remove('flipped');
+        cards = [];
+        return;
+      }
+
+  // Otherwise, load flashcards
+  loadJSON(selectedFile);
+});
+
 
     // 🟢 Load the first file by default
     loadJSON(jsonFiles[0].file);
