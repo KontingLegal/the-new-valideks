@@ -3,43 +3,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Flashcards by JSON Sections</title>
+  <title>Flashcards Viewer</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 2rem;
       background: #f0f2f5;
       color: #333;
-    }
-    h1, h2 {
-      text-align: center;
-    }
-    .section {
-      margin: 2rem 0;
-    }
-    .section-title {
-      background-color: #222;
-      color: white;
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
-      max-width: 200px;
-      margin: auto;
-      font-size: 1.2rem;
-    }
-    .flashcards {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-      margin-top: 1rem;
+      flex-direction: column;
+      align-items: center;
     }
-    .card {
-      background: white;
-      width: 250px;
-      height: 150px;
-      perspective: 1000px;
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    .controls {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .nav-buttons {
+      display: flex;
+      gap: 1rem;
+    }
+
+    select, button {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
       cursor: pointer;
     }
+
+    select {
+      background: white;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background: #333;
+      color: white;
+    }
+
+    button:disabled {
+      background: #aaa;
+      cursor: not-allowed;
+    }
+
+    .card {
+      background: white;
+      width: 300px;
+      height: 200px;
+      perspective: 1000px;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+
     .card-inner {
       position: relative;
       width: 100%;
@@ -47,9 +71,11 @@
       transition: transform 0.6s;
       transform-style: preserve-3d;
     }
-    .card.flipped .card-inner {
+
+    .flipped .card-inner {
       transform: rotateY(180deg);
     }
+
     .card-front, .card-back {
       position: absolute;
       width: 100%;
@@ -59,79 +85,133 @@
       border-radius: 8px;
       padding: 1rem;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
     }
+
     .card-front {
       background-color: #fefefe;
     }
+
     .card-back {
       background-color: #d4f0d2;
       transform: rotateY(180deg);
     }
+
+    .card-counter {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
   </style>
 </head>
 <body>
-  <h1>Flashcards by Section</h1>
-  <div id="sections">Loading...</div>
+  <h1>Flashcards</h1>
+
+  <div class="controls">
+    <select id="fileSelector">
+      <!-- Options will be inserted dynamically -->
+    </select>
+    <div class="nav-buttons">
+      <button id="prev">Previous</button>
+      <button id="next">Next</button>
+    </div>
+  </div>
+
+  <div class="card" id="flashcard">
+    <div class="card-inner" id="card-inner">
+      <div class="card-front" id="card-front">Loading...</div>
+      <div class="card-back" id="card-back">Loading...</div>
+    </div>
+  </div>
+
+  <div class="card-counter" id="counter">Card 0 of 0</div>
 
   <script>
-    // List of section files you want to load
-    const sectionFiles = ["c1.json", "c2.json", "c3.json"]; // Add more as needed
+    // 🗂️ List your JSON files here
+    const jsonFiles = ["c1.json", "c2.json", "c3.json"]; // Add more as needed
 
-    const loadSection = async (file, sectionName) => {
-      try {
-        const res = await fetch(file);
-        if (!res.ok) throw new Error(`${file} not found`);
-        const data = await res.json();
+    const flashcard = document.getElementById('flashcard');
+    const inner = document.getElementById('card-inner');
+    const front = document.getElementById('card-front');
+    const back = document.getElementById('card-back');
+    const prevBtn = document.getElementById('prev');
+    const nextBtn = document.getElementById('next');
+    const counter = document.getElementById('counter');
+    const fileSelector = document.getElementById('fileSelector');
 
-        const sectionDiv = document.createElement('div');
-        sectionDiv.className = 'section';
+    let cards = [];
+    let currentIndex = 0;
 
-        const title = document.createElement('div');
-        title.className = 'section-title';
-        title.textContent = sectionName.toUpperCase();
+    // 🔁 Populate dropdown
+    jsonFiles.forEach(file => {
+      const option = document.createElement('option');
+      option.value = file;
+      option.textContent = file.toUpperCase();
+      fileSelector.appendChild(option);
+    });
 
-        const flashcardWrap = document.createElement('div');
-        flashcardWrap.className = 'flashcards';
-
-        data.forEach((qa, i) => {
-          const card = document.createElement('div');
-          card.className = 'card';
-
-          const inner = document.createElement('div');
-          inner.className = 'card-inner';
-
-          const front = document.createElement('div');
-          front.className = 'card-front';
-          front.textContent = qa.question;
-
-          const back = document.createElement('div');
-          back.className = 'card-back';
-          back.textContent = qa.answer;
-
-          inner.appendChild(front);
-          inner.appendChild(back);
-          card.appendChild(inner);
-
-          card.addEventListener('click', () => {
-            card.classList.toggle('flipped');
-          });
-
-          flashcardWrap.appendChild(card);
+    // 🔄 Load JSON and display first card
+    const loadJSON = (file) => {
+      fetch(file)
+        .then(res => res.json())
+        .then(data => {
+          cards = data;
+          currentIndex = 0;
+          flashcard.classList.remove('flipped');
+          renderCard();
+        })
+        .catch(err => {
+          console.error("Error loading file:", file, err);
+          front.textContent = "Failed to load.";
+          back.textContent = "";
+          counter.textContent = "";
         });
-
-        sectionDiv.appendChild(title);
-        sectionDiv.appendChild(flashcardWrap);
-        document.getElementById('sections').appendChild(sectionDiv);
-      } catch (err) {
-        console.error(err);
-      }
     };
 
-    document.getElementById('sections').innerHTML = '';
-    sectionFiles.forEach(file => {
-      const name = file.split('.')[0]; // e.g., "c1"
-      loadSection(file, name);
+    // 🃏 Display one card
+    const renderCard = () => {
+      if (cards.length === 0) return;
+      const current = cards[currentIndex];
+      front.textContent = current.question;
+      back.textContent = current.answer;
+      counter.textContent = `Card ${currentIndex + 1} of ${cards.length}`;
+
+      prevBtn.disabled = currentIndex === 0;
+      nextBtn.disabled = currentIndex === cards.length - 1;
+    };
+
+    // 🧭 Navigation
+    prevBtn.addEventListener('click', () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+        flashcard.classList.remove('flipped');
+        renderCard();
+      }
     });
+
+    nextBtn.addEventListener('click', () => {
+      if (currentIndex < cards.length - 1) {
+        currentIndex++;
+        flashcard.classList.remove('flipped');
+        renderCard();
+      }
+    });
+
+    // 🔄 Flip card
+    flashcard.addEventListener('click', () => {
+      flashcard.classList.toggle('flipped');
+    });
+
+    // 🔁 When dropdown changes
+    fileSelector.addEventListener('change', (e) => {
+      loadJSON(e.target.value);
+    });
+
+    // 🟢 Load the first file by default
+    loadJSON(jsonFiles[0]);
   </script>
 </body>
 </html>
