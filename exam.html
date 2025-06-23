@@ -7,221 +7,223 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: #f0f2f5;
-      color: #333;
       margin: 2rem;
+      background-color: #f0f2f5;
+      color: #333;
       display: flex;
       flex-direction: column;
       align-items: center;
     }
-    .dark-mode {
-      background: #1e1e1e;
-      color: #ddd;
+
+    body.dark {
+      background-color: #121212;
+      color: #eee;
     }
-    h1 {
-      margin-bottom: 1rem;
-    }
-    .setup, .question-box, .result-box {
-      margin-bottom: 2rem;
-      max-width: 600px;
-      text-align: center;
-    }
-    select, input[type="number"], button {
+
+    button, select, input[type="number"] {
       padding: 0.5rem 1rem;
       font-size: 1rem;
+      border: none;
       border-radius: 5px;
-      border: 1px solid #ccc;
+      cursor: pointer;
       margin: 0.5rem;
     }
-    button {
-      background-color: #333;
-      color: white;
-      cursor: pointer;
-    }
-    button:disabled {
-      background: #aaa;
-      cursor: not-allowed;
-    }
-    .dark-mode button {
-      background-color: #555;
-    }
-    .choices {
-      margin-top: 1rem;
-      text-align: left;
-    }
-    .choices button {
+
+    .choice-btn {
       display: block;
-      margin: 0.5rem 0;
       width: 100%;
-      background-color: #fff;
-      color: #333;
+      text-align: left;
+      margin: 0.5rem 0;
+      background-color: #ffffff;
+      color: #000;
+      border: 1px solid #ccc;
     }
-    .dark-mode .choices button {
+
+    .dark .choice-btn {
       background-color: #333;
       color: #fff;
+      border: 1px solid #888;
     }
-    .highlight {
-      background-color: #cce5ff;
+
+    .choice-btn.selected {
+      background-color: #d0ebff !important;
     }
-    .correct {
-      background-color: #d4edda !important;
+
+    .question-box {
+      max-width: 600px;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      border-radius: 8px;
     }
-    .incorrect {
-      background-color: #f8d7da !important;
+
+    .dark .question-box {
+      background-color: #1e1e1e;
+      border-color: #444;
     }
+
+    .hidden { display: none; }
   </style>
 </head>
 <body>
   <h1>Exam Mode</h1>
 
-  <div class="setup">
-    <label>Competency: 
-      <select id="compSelect">
-        <option value="c1.json">Competency 1</option>
-        <option value="c2.json">Competency 2</option>
-      </select>
-    </label><br>
-    <label>Mode:
-      <select id="modeSelect">
-        <option value="tos">MARINA TOS</option>
-        <option value="custom">Choose number</option>
-      </select>
-    </label><br>
-    <label id="customCountContainer" style="display:none;">
-      Number of Questions: <input type="number" id="questionCount" min="1" max="100">
-    </label><br>
-    <button id="startExam">Start Exam</button>
-    <button id="toggleDark">Toggle Dark Mode</button>
+  <label>
+    <input type="checkbox" id="darkModeToggle"> Dark Mode
+  </label>
+
+  <div>
+    <label for="fileSelect">Select Competency:</label>
+    <select id="fileSelect">
+      <option value="c1.json">Competency 1</option>
+      <option value="c2.json">Competency 2</option>
+    </select>
   </div>
 
-  <div class="question-box" style="display:none">
-    <div id="questionText"></div>
-    <div class="choices" id="choices"></div>
-    <button id="submitAnswer">Submit</button>
+  <div>
+    <label for="examMode">Mode:</label>
+    <select id="examMode">
+      <option value="marina">MARINA TOS</option>
+      <option value="custom">Custom</option>
+    </select>
+    <input type="number" id="questionCount" placeholder="Number of Questions" min="1" class="hidden" />
   </div>
 
-  <div class="result-box" style="display:none">
+  <button id="startBtn">Start Exam</button>
+
+  <div id="examArea" class="hidden">
+    <div class="question-box">
+      <div id="questionText">Question goes here...</div>
+      <div id="choices"></div>
+      <div id="progress">Question 1 of 1</div>
+      <button id="submitBtn">Submit</button>
+    </div>
+  </div>
+
+  <div id="result" class="hidden">
     <h2>Exam Completed</h2>
-    <p id="scoreDisplay"></p>
-    <div id="reviewAnswers"></div>
+    <p id="score"></p>
+    <div id="review"></div>
   </div>
 
   <script>
-    const compSelect = document.getElementById("compSelect");
-    const modeSelect = document.getElementById("modeSelect");
-    const countInput = document.getElementById("questionCount");
-    const customCountContainer = document.getElementById("customCountContainer");
-    const startBtn = document.getElementById("startExam");
-    const toggleDark = document.getElementById("toggleDark");
-    const questionBox = document.querySelector(".question-box");
-    const resultBox = document.querySelector(".result-box");
+    const fileSelect = document.getElementById("fileSelect");
+    const examMode = document.getElementById("examMode");
+    const questionCountInput = document.getElementById("questionCount");
+    const startBtn = document.getElementById("startBtn");
+    const examArea = document.getElementById("examArea");
     const questionText = document.getElementById("questionText");
     const choicesDiv = document.getElementById("choices");
-    const submitBtn = document.getElementById("submitAnswer");
-    const scoreDisplay = document.getElementById("scoreDisplay");
-    const reviewAnswers = document.getElementById("reviewAnswers");
+    const submitBtn = document.getElementById("submitBtn");
+    const result = document.getElementById("result");
+    const scoreText = document.getElementById("score");
+    const review = document.getElementById("review");
+    const progress = document.getElementById("progress");
 
-    let questions = [];
-    let currentQuestion = 0;
-    let score = 0;
-    let userAnswers = [];
+    const darkModeToggle = document.getElementById("darkModeToggle");
+    darkModeToggle.addEventListener("change", () => {
+      document.body.classList.toggle("dark", darkModeToggle.checked);
+      localStorage.setItem("darkMode", darkModeToggle.checked);
+    });
+    if (localStorage.getItem("darkMode") === "true") {
+      darkModeToggle.checked = true;
+      document.body.classList.add("dark");
+    }
 
-    modeSelect.addEventListener("change", () => {
-      customCountContainer.style.display = modeSelect.value === "custom" ? "inline-block" : "none";
+    examMode.addEventListener("change", () => {
+      questionCountInput.classList.toggle("hidden", examMode.value !== "custom");
     });
 
-    toggleDark.onclick = () => {
-      document.body.classList.toggle("dark-mode");
-    };
+    let allData = [];
+    let questions = [];
+    let current = 0;
+    let userAnswers = [];
 
-    startBtn.onclick = () => {
-      const comp = compSelect.value;
-      fetch(comp)
+    startBtn.addEventListener("click", () => {
+      fetch(fileSelect.value)
         .then(res => res.json())
         .then(data => {
-          let count = 0;
-          if (modeSelect.value === "tos") {
-            count = comp === "c1.json" ? 35 : 20;
+          allData = data;
+          let count = allData.length;
+
+          if (examMode.value === "marina") {
+            count = fileSelect.value === "c1.json" ? 35 : 20;
           } else {
-            const requested = parseInt(countInput.value);
-            count = Math.min(requested, data.length);
+            count = Math.min(parseInt(questionCountInput.value), allData.length);
           }
-          questions = shuffleArray(data).slice(0, count);
-          questions = questions.map(q => ({
-            ...q,
-            allChoices: shuffleArray([q.answer, ...getRandomWrongAnswers(data, q.answer, 3)])
-          }));
-          currentQuestion = 0;
-          score = 0;
-          userAnswers = [];
-          document.querySelector(".setup").style.display = "none";
-          questionBox.style.display = "block";
-          resultBox.style.display = "none";
+
+          questions = shuffleArray([...allData]).slice(0, count);
+          current = 0;
+          userAnswers = new Array(count);
+          result.classList.add("hidden");
+          examArea.classList.remove("hidden");
+          startBtn.classList.add("hidden");
+          fileSelect.disabled = true;
           renderQuestion();
         });
-    };
+    });
 
     function renderQuestion() {
-      const q = questions[currentQuestion];
-      questionText.textContent = `Q${currentQuestion + 1}: ${q.question}`;
+      const q = questions[current];
+      questionText.textContent = q.question;
+      progress.textContent = `Question ${current + 1} of ${questions.length}`;
       choicesDiv.innerHTML = "";
-      q.allChoices.forEach(choice => {
+
+      const allChoices = shuffleArray([q.answer, ...getRandomAnswers(q.answer, 3)]);
+      allChoices.forEach(choice => {
         const btn = document.createElement("button");
         btn.textContent = choice;
+        btn.className = "choice-btn";
+        if (userAnswers[current] === choice) {
+          btn.classList.add("selected");
+        }
         btn.onclick = () => {
-          document.querySelectorAll("#choices button").forEach(b => b.classList.remove("highlight"));
-          btn.classList.add("highlight");
-          userAnswers[currentQuestion] = choice;
+          userAnswers[current] = choice;
+          document.querySelectorAll(".choice-btn").forEach(b => b.classList.remove("selected"));
+          btn.classList.add("selected");
         };
         choicesDiv.appendChild(btn);
       });
     }
 
     submitBtn.onclick = () => {
-      const userAnswer = userAnswers[currentQuestion];
-      if (!userAnswer) return alert("Please select an answer.");
+      if (!userAnswers[current]) return alert("Please select an answer.");
 
-      const correct = questions[currentQuestion].answer;
-      const buttons = document.querySelectorAll("#choices button");
-      buttons.forEach(btn => {
-        if (btn.textContent === correct) btn.classList.add("correct");
-        if (btn.textContent === userAnswer && userAnswer !== correct) btn.classList.add("incorrect");
-        btn.disabled = true;
-      });
-
-      if (userAnswer === correct) score++;
-
-      setTimeout(() => {
-        currentQuestion++;
-        if (currentQuestion < questions.length) {
-          renderQuestion();
-        } else {
-          endExam();
-        }
-      }, 1200);
+      current++;
+      if (current >= questions.length) {
+        showResults();
+      } else {
+        renderQuestion();
+      }
     };
 
-    function endExam() {
-      questionBox.style.display = "none";
-      resultBox.style.display = "block";
-      const percent = ((score / questions.length) * 100).toFixed(2);
-      scoreDisplay.textContent = `Score: ${score}/${questions.length} (${percent}%)`;
-      reviewAnswers.innerHTML = questions.map((q, i) => `
-        <div>
-          <strong>Q${i+1}:</strong> ${q.question}<br>
-          <strong>Your Answer:</strong> ${userAnswers[i]}<br>
-          <strong>Correct Answer:</strong> ${q.answer}<hr>
-        </div>
-      `).join("");
+    function showResults() {
+      examArea.classList.add("hidden");
+      result.classList.remove("hidden");
+      let correct = 0;
+      review.innerHTML = "";
+
+      questions.forEach((q, i) => {
+        const div = document.createElement("div");
+        const isCorrect = userAnswers[i] === q.answer;
+        if (isCorrect) correct++;
+        div.innerHTML = `<strong>Q${i + 1}:</strong> ${q.question}<br>
+                         <strong>Your Answer:</strong> ${userAnswers[i]}<br>
+                         <strong>Correct:</strong> ${q.answer}<hr>`;
+        review.appendChild(div);
+      });
+
+      const percentage = ((correct / questions.length) * 100).toFixed(2);
+      scoreText.textContent = `Score: ${correct}/${questions.length} (${percentage}%)`;
     }
 
     function shuffleArray(arr) {
       return arr.sort(() => Math.random() - 0.5);
     }
 
-    function getRandomWrongAnswers(data, correct, count) {
-      const wrongs = data.map(q => q.answer).filter(a => a !== correct);
-      return shuffleArray(wrongs).slice(0, count);
+    function getRandomAnswers(correctAnswer, count) {
+      const pool = allData.map(d => d.answer).filter(a => a !== correctAnswer);
+      return shuffleArray(pool).slice(0, count);
     }
   </script>
 </body>
