@@ -1,0 +1,746 @@
+[
+    {
+        "question": "A buoy bears 178 degrees at 300C yards(2,700 meters). What is the course to make good to leave the buoy 100 yards (90 meters) to port beam?",
+        "answer": ") 180 degrees True"
+    },
+    {
+        "question": "A landmark is 36.5 meters high and the light has a nominal range of 18 n.m. Your height of eye is 12.75 meters. If the visibility is 11.2 n.m. when the light becomes visible, approximately how far off the light you will be?",
+        "answer": "19.0 nm"
+    },
+    {
+        "question": "Avessei engaged in trawling will show identification lights of",
+        "answer": "a green light over a white light"
+    },
+    {
+        "question": "A towing vessel pushing a barge ahead and rigidly connected in a composite unit shall show the lights of _.",
+        "answer": "a power-driven vessel, not towing"
+    },
+    {
+        "question": "Acommon compass rose as found on a nautical chart shows true north and magnetic north. What kind of markings will you notice on the inner circle and the graduations of the circle?",
+        "answer": "Correspondence between the thirty two points of rose."
+    },
+    {
+        "question": "Acommon compass rose as found on a nautical chart shows true north and magnetic north. How many traditional winds are listed on a modern compass course?",
+        "answer": "Eight"
+    },
+    {
+        "question": "Avessel trawling will display a",
+        "answer": "| green light over a white | ft mht"
+    },
+    {
+        "question": "An icebreaker assisting a vessel through an ice fteld would display a visual signal consisting of the code letter | (India) to signify that",
+        "answer": "| am altering my course to port"
+    },
+    {
+        "question": "Which of the following statements best describes that a vessel is engaged in Fishing?",
+        "answer": "She is using fishing apparatus which restricts her maneuverability"
+    },
+    {
+        "question": "What do you call the areas where ships must avoid due to dangers like shoals, rocks and wrecks?",
+        "answer": "No go areas"
+    },
+    {
+        "question": "What will happen to the power of radar beam distance from the scanner increases?",
+        "answer": "decrease rapidly"
+    },
+    {
+        "question": "You are underway and hear a vessel continuously sounding her fogw.«.whistle. This indicates the other vessel .",
+        "answer": "is in distress"
+    },
+    {
+        "question": "What should the third barge of the tow sound off when tug is towing three manned barges in line in fog?",
+        "answer": "-| one prolonged and three short blasts"
+    },
+    {
+        "question": "What should a towing vessel display at day time when her length of tow astern exceeds 200 meters?",
+        "answer": "She should display black diamond."
+    },
+    {
+        "question": "What is your opinion on a \"special circumstances \" under Rule 2; Responsibitity?",
+        "answer": "It is a situation where more than two vessels are crossing."
+    },
+    {
+        "question": "Asymbol described as tint, 3 mm wide used in Traffic Separation Scheme (TSS) and between TSS and inshore traffic zone is called .",
+        "answer": "separation lines"
+    },
+    {
+        "question": "What is TRUE regarding the purpose of ship routeing?",
+        "answer": "Improve the safety of navigation where density of traffic is great."
+    },
+    {
+        "question": "What is the significance of sidelights and sternlight for a pitot vessel engaged in pilotage duty?",
+        "answer": "It signifies that the vessel is underway"
+    },
+    {
+        "question": "What is the main purpose of watch keeping onboard?",
+        "answer": "To ensure the safety of life and property"
+    },
+    {
+        "question": "What is ecliptic?",
+        "answer": "It is the path the sun appears to take among the stars"
+    },
+    {
+        "question": "The shoreline on charts generally represents the mean",
+        "answer": "| high water line"
+    },
+    {
+        "question": "An icebreaker assisting a vessel through an ice field would display a visual signal consisting of the code letter S (Sierra) to signify that .",
+        "answer": "| am operating astern propulsion."
+    },
+    {
+        "question": "It is an example of a vessel restricted in her ability to maneuver",
+        "answer": "vessel engage in dredging surveying or underwater operations"
+    },
+    {
+        "question": "Vessel when engaged in trawling, when net has come fast upon an obstruction may exhibit",
+        "answer": "two red lights in a vertical line"
+    },
+    {
+        "question": "For a stand-on vessel to take action to avoid collision she shall, if possible, NOT .",
+        "answer": "turn to port for a vessel on her port side"
+    },
+    {
+        "question": "You are heading due east (090°) and observe a vessel's red sidelights. on your port beam. The vessel may be heading",
+        "answer": "southwest (225°)"
+    },
+    {
+        "question": "At 1045H, your GPS fixes your position at Lat 21deg01 01.75N and Long 172 deg 48.40 W. You are steering a course of 086 deg psc at a speed of 6.0 knots. At 2400H, you fix your position at lat 21 deg 04.2 deg N and Long 172 deg 38.85 W. What were your set and drift?",
+        "answer": "360° T x 0.4 knots"
+    },
+    {
+        "question": "How does the major advantage of the rhumb line tract compare to the great track for long-distance navigation in terms of maintaining of a consistent heading throughout the journey?",
+        "answer": "_| the rhumb line track provides a more consistent heading than the great circle track due to its straight-line pattern."
+    },
+    {
+        "question": "How would",
+        "answer": "it requires 4 theoretical position lines"
+    },
+    {
+        "question": "If you are heading south and you observe that the chart predicts an easterly current, how can you adjust your course without taking the wind into consideration?",
+        "answer": "Head your vessel slightly to the right"
+    },
+    {
+        "question": "General information on enroute weather and climate is found in",
+        "answer": "the Sailing Directions and the Coast Pilot"
+    },
+    {
+        "question": "While underway in a fog, you hear a whistle signal consisting of one prolonged blasts followed immediately by twwo shourt blast. What does this indicate?",
+        "answer": "a power driven vessel underway and towing"
+    },
+    {
+        "question": "While onboard a towing vessel, what should you display at daytime when the lengthsnus of tow of your astern exceed 200 hundred meters?",
+        "answer": "You should display black diamond"
+    },
+    {
+        "question": "Which one of the two power driven vessel has to keep out of the way if collision is imminent?",
+        "answer": "The one which has the other on her starboard sid"
+    },
+    {
+        "question": "You are planning a voyage from New York to Norway via the English Channel. Which publication contains information on the dangers to navigation in the English Channel?",
+        "answer": "Sailing Directions (Enroute)"
+    },
+    {
+        "question": "Which of the following vessel should display a red light over a white light and a flare up light?",
+        "answer": "vessel engage in fishing at anchor"
+    },
+    {
+        "question": "Which of the following vessel is not engage in fishing under rule 3?",
+        "answer": "Fishing vessel engage in trolling."
+    },
+    {
+        "question": "Which is not an hour of rest as set out by the MCA under the STCW Code?",
+        "answer": "16 hours of rest with in a 24 hours working perio"
+    },
+    {
+        "question": "A vessel not under command making way at night would show .",
+        "answer": "two all-round red lights in a vertical line"
+    },
+    {
+        "question": "Avessel is overtaking when she can see which light(s) of a vessel ahead?",
+        "answer": "Only the stern light of the vessel"
+    },
+    {
+        "question": "Your power driven vessel is meeting another vessel head- on. To comply with the steering and sailing rules, you should",
+        "answer": "exchange one short blast"
+    },
+    {
+        "question": "You are overtaking a power- driven vessel in a narrow channel and wish to leavewus her on your starboard side. You may .",
+        "answer": "attempt to contact her on the radiotelephone to arrange for the passage"
+    },
+    {
+        "question": "You are overtaking a power- driven vessel in a narrow channel and wish to leave her on your starboard side. You may .",
+        "answer": "attempt to contact her on the radiotelephone to arrange for the passage"
+    },
+    {
+        "question": "Avessel showing a rigid replica of the International Code flag Ais engaged in_.",
+        "answer": "diving operations"
+    },
+    {
+        "question": "A vessel proceeding along a narrow channel shall_.",
+        "answer": "keep as near as safe and practicable to the limit of the channel on her starboard side"
+    },
+    {
+        "question": "Passing signats shall be sounded on inland waters by",
+        "answer": "a power-driven vessel when crossing less than"
+    },
+    {
+        "question": "Which signal must a power- driven vessel give, in addition to one prolonged blast, when backing out of a berth with another vessel in sight 0.56 nm away?",
+        "answer": "3 short blasts"
+    },
+    {
+        "question": "If required to cross a Traffic Separation Scheme, how would you do it?",
+        "answer": "As condition permits cross the TSS at right angle"
+    },
+    {
+        "question": "How often should a power driven vessel sends a fog signals ina foggy weather?",
+        "answer": "At an interval of not more than 2 minutes."
+    },
+    {
+        "question": "How often should a power driven vessel sends a fog signals in a foggy weather?",
+        "answer": "At an interval of not more than 2 minutes."
+    },
+    {
+        "question": "How would you increase the effectiveness of the fookout?",
+        "answer": "Briefed what to expect and when ships and lights should be detected."
+    },
+    {
+        "question": "What is the worst things that will happen if your bridgew.s teams. communication is in effective?",
+        "answer": "Inadequate team performance raises the possibilty of an incident."
+    },
+    {
+        "question": "Where can you find the record of engine order and speed when entering or leaving port?",
+        "answer": "| Bell book"
+    },
+    {
+        "question": "What does the helm command “Nothing to the left\" means?",
+        "answer": "Steer right of the ordered course"
+    },
+    {
+        "question": "After sailing for several minutes ( making 10 knots through the water) and in constant monitoring of your radar screen, you noticed that a target has remained in the same position relative to yours, what could be the possible conclusion of the scenario?",
+        "answer": "Same course and speed"
+    },
+    {
+        "question": "During coastal navigation, the accuracy of the GPS positions ca be verified by what alternative method?",
+        "answer": "n | by celestial observation"
+    },
+    {
+        "question": "How do Vessel Traffic Services serve their main purpose in practical maritime navigation?",
+        "answer": "by monitoring vessel traffic and providing information to enhance navigation safety"
+    },
+    {
+        "question": "How to increase the effectiveness of the lookout?",
+        "answer": "+ | The tookout to be briefed about what to expect from him/her when ships, lights and sound signal are sighted and heard."
+    },
+    {
+        "question": "How would the bridge be manned if the vessel is in or near restricte visibility conditions?",
+        "answer": "There is always to be a |, | look-out and 1 | helmsman on the bridge in addition to Master and OOW."
+    },
+    {
+        "question": "In a crossing situation between two power-driven vessels, which vessel is required to take action to keep out of the way and avoid crossing ahead of the other vessel?",
+        "answer": "The vessel on the starboard side of the other vessel"
+    },
+    {
+        "question": "Under Rule 3 (i ) a vessel is underway when:",
+        "answer": "she is dragging her anchor"
+    },
+    {
+        "question": "What is the ability to get things done right?",
+        "answer": "| Efficiency |"
+    },
+    {
+        "question": "What is the basis for a manager's objective selection?",
+        "answer": "| Effectiveness |"
+    },
+    {
+        "question": "What is the duty of your assign look-out?",
+        "answer": "He is looking for navigational dangers."
+    },
+    {
+        "question": "What is the most prominent risk to maritime safety that stood out?",
+        "answer": "Human factor related risk."
+    },
+    {
+        "question": "What is the most significant function in the achievement of goals?",
+        "answer": "Coordination"
+    },
+    {
+        "question": "What is the primary reason for ships to navigates; across traffic lanes by maintaining a course as close to right angles to the direction of traffic as possible?",
+        "answer": "quite difficult hence the use of the term apparently forward of the beam"
+    },
+    {
+        "question": "What is your alternative action in an event of emergency requiring abandonment of the normal plan?",
+        "answer": "Contingency Plan"
+    },
+    {
+        "question": "What would you gain if you use the advantage of ships routeing?",
+        "answer": "it minimizes the chances of loss."
+    },
+    {
+        "question": "Which statement is NOT correct when you are navigating ina narrow channel?",
+        "answer": "Keep on starboard side of any vessel you meet"
+    },
+    {
+        "question": "Why there is a need to use ship's routeing?",
+        "answer": "To provide detailed navigation information on dangers to shipping"
+    },
+    {
+        "question": "Under Rule 3: Which of the following vessel is considered underway?",
+        "answer": "A purse seiner hauling her nets"
+    },
+    {
+        "question": "What is the daytime signal of a vessel at anchor?",
+        "answer": "Anchor ball"
+    },
+    {
+        "question": "Atmospheric pressure indicated by a barometer may be subjected to several errors. Which of the following is NOT an error affecting barometer reading?",
+        "answer": "Speed error |"
+    },
+    {
+        "question": "At 2245H, your GPS fixes your position at Lat 01.75’ N and Long 172° 48,40' W. You are steering: a course of 086° psc at a speed o 6.0 knots. At 2400H, you fix your position at Lat 21° 04.2' N and Long 172° 38.85' W. What were your set and drift?",
+        "answer": "360°T x 0.4 knots"
+    },
+    {
+        "question": "At 1300H, you fix your position and change course to 315°T.At 1325H, you again fix your position, and it is 0.9 mite southwest of your DR position. Find the drift:",
+        "answer": "2.1 knots"
+    },
+    {
+        "question": "An icebreaker may use the code letter K to remind ships of their obligation to listen continuously or their radio. This signal may be made by any of the following EXCEPT .",
+        "answer": "radiotelephone 1"
+    },
+    {
+        "question": "At 1200H, you fix your position and change course to 315°T.At 1225H, you again fix your position, and it is 0.9 mile southwest of your DR position. Find the drift:",
+        "answer": "2.1 knots"
+    },
+    {
+        "question": "As per COLREGS, at day time which of the following vessel should display a basket signal?",
+        "answer": "Vessel less than 65 feet engage in fishing"
+    },
+    {
+        "question": "As an OOW, you heard a continuous sounding of a fog- signal apparatus. What does this indicate?",
+        "answer": "the vessel is in distress"
+    },
+    {
+        "question": "Base on what you know, what is your opinion of dew point?",
+        "answer": "It is the temperature to which unsaturated air must be cooled at constant pressure and constant water vapour | content."
+    },
+    {
+        "question": "You are in sight of a power-driven vessel that sounds two short blasts of the whistle. This signal means that",
+        "answer": "the vessel is altering course to port"
+    },
+    {
+        "question": "Asailing vessel must keep course and speed when .",
+        "answer": "| being overtaken |"
+    },
+    {
+        "question": "Arigid replica of the international Code flag A may be shown by a vessel.",
+        "answer": "engaged in diving operations"
+    },
+    {
+        "question": "A light signal consisting of three flashes means",
+        "answer": "| am operating astern propulsion"
+    },
+    {
+        "question": "A power-driven vessel not under command at night must show her sidelights when_.",
+        "answer": "| making headway |"
+    },
+    {
+        "question": "You have made your vessel up to a tow and are moving from a pier out into the main channel. Your engines are turning ahead. What whistle signal should you sound?",
+        "answer": "One prolonged blast"
+    },
+    {
+        "question": "What is the required whistle signa for a power-driven vessel leaving a dock or berth?",
+        "answer": "| ore prolonged blast |"
+    },
+    {
+        "question": "What is prescribed in Annex I!! of the Rules of the Road?",
+        "answer": "Technical details of Sound Signal Appliances"
+    },
+    {
+        "question": "What a navigational feature is defined as route of undefined width, often marked by a centerline, for convenience of ships in transit?",
+        "answer": "Recommended route"
+    },
+    {
+        "question": "Which of the following bridge equipment is NOT mainly used fo! navigation?",
+        "answer": "Voyage Data Recorder"
+    },
+    {
+        "question": "A power-driven vessel making way through the water sounds a fog signal of_.",
+        "answer": "one prolonged blast at intervals of not more than two minutes"
+    },
+    {
+        "question": "In a narrow channel, a power- driven vessel desiring to overtake another power-driven vessel on the otheravs vessel s starboard side will sound a whistle signal of",
+        "answer": "one short blast"
+    },
+    {
+        "question": "How would the bridge be manned if the vessel is in or near restrictec visibility conditions?",
+        "answer": ": | There is always to be a | | look-out and helmsman on the bridge in addition to /Master and OOW."
+    },
+    {
+        "question": "What is prescribed in Annex I! of the Rules of the Road?",
+        "answer": "Technical details of Sound Signal Appliances"
+    },
+    {
+        "question": "In a narrow channel, a power- driven vessel desiring to overtake another power-driven vessel on the otheravs vessel s starboard side will sound a whistie signal of",
+        "answer": "one short blast"
+    },
+    {
+        "question": "You are steaming in a westerly direction along the Gulf Coast. You see ahead of you a lighted buoy showing a red isophase light. Which action should you take?",
+        "answer": "Alter course to port and leave the buoy to starboard."
+    },
+    {
+        "question": "What is the requirement for a proper lookout as required by the Collision Regulation?",
+        "answer": "to be kept at all times in fog"
+    },
+    {
+        "question": "How would you execute your approach when you are to cross a traffic lane?",
+        "answer": "You should cross at right angle."
+    },
+    {
+        "question": "What is the required frequency of operational checks and tests on navigation equipment as required by ISM?",
+        "answer": "Within twelve hours of arrival or departure ports"
+    },
+    {
+        "question": "As per Rule 3 (i} of the Collision Regulation, what conclusion can you draw on a given situation that the vessel is said to be underway’",
+        "answer": "when she is riding at her anchor"
+    },
+    {
+        "question": "How can you determine a vessel overtaking abaft your beam?",
+        "answer": "When she is coming up more than 22.5 degrees abaft your beam."
+    },
+    {
+        "question": "What is the best possible option o a mariner with regards to the determination of risk of collision when vessels are not in sight of one another?",
+        "answer": "F ) Systematic observation of detected targets on the radar"
+    },
+    {
+        "question": "When vessel A approaches vesse B abaft her beam, how would you: determine if vessel Ais overtaking?",
+        "answer": "Vessel Ais deemed to || be overtaking when coming up with vessel B from a direction more than 22.5 degrees abaft her beam."
+    },
+    {
+        "question": "Which of the following statement is correct when you are approaching a narrow channel?",
+        "answer": "avoid crossing the channel if it impedes another vessel navigating in the channel"
+    },
+    {
+        "question": "Which of the following size of power-driven vessel is not required to show the light and shape signals for aground vessels stated in paragraph (d) or Rule 30?",
+        "answer": "_| 7 meter vessel"
+    },
+    {
+        "question": "Which of the following situations is describing a vessel not under command?",
+        "answer": "A vessel through some | exceptional circumstances unable to maneuver"
+    },
+    {
+        "question": "Solid green arrows on the main body of a pilot chart indicate",
+        "answer": "prevailing ocean current directions"
+    },
+    {
+        "question": "Which is a TRUE statement, when a sailing vessel meet a fishing vessel engage in fishing in a narrow channel?",
+        "answer": "The fishing vessel should not impede the passage of a sailing vessel."
+    },
+    {
+        "question": "Which factor is listed in the Rules as one which must be taken into account when determining safe speed?",
+        "answer": "The maneuverability of the vessel"
+    },
+    {
+        "question": "Where should you keep your vessel on a two-way route?",
+        "answer": "You should stay on the starboard side of the route."
+    },
+    {
+        "question": "You are enroute from Puerto Rico to New York. A hurricane makes up and is approaching. If the wind veersaus Steadily, this indicates that your vessel is. .",
+        "answer": "in the dangerous semicircle"
+    },
+    {
+        "question": "Where should you keep the outer limit when you are using a narrow channel?",
+        "answer": "You must keep the outer limit of the channel on starboard side."
+    },
+    {
+        "question": "When you are navigating in or near a traffic separation scheme, what COLREG regulation you should comply to minimize risk of collision with another ship?",
+        "answer": "You should observe Rule 10 of the 1972 Collision Regulation."
+    },
+    {
+        "question": "When is an overtaking vessel deem completed?",
+        "answer": "When the overtaken vessel is 2 points abaft the beam."
+    },
+    {
+        "question": "You are enroute to Jacksonville, FL, from San Juan, P.R. There is 4 fresh Nly wind blowing. As you cross the axis of the Gulf Stream you would expect fo encounter",
+        "answer": "steeper waves, closer '| together"
+    },
+    {
+        "question": "What should you sound off if your vessel is backing out of a stip ina harbor on a restricted visibility?",
+        "answer": "one prolonged blast only"
+    },
+    {
+        "question": "What should you do if on your radar you determine a risk of collision with a vessel 2 miles off your port bow exist when in fog?",
+        "answer": "Take proper and avoiding action as soon as possible"
+    },
+    {
+        "question": "What should Vessel A do if it overtaking Vessel B on open waters and won't change its course while passing?",
+        "answer": "will not sound any whistle signals"
+    },
+    {
+        "question": "The Sailing Directions (Enroute) contain information on",
+        "answer": "| coastal anchorages"
+    },
+    {
+        "question": "Your power driven vessel is NOT making way, but is not in any way disabled. Another power driven vessel is approaching you on you starboard beam. Which statemen is TRUE?",
+        "answer": "Your vessel is the give-way vessel ina , | crossing situation."
+    },
+    {
+        "question": "You see a vessel's green sideligh bearing due east from you. The vessel might be heading...",
+        "answer": "| southwest (225°)"
+    },
+    {
+        "question": "You are standing the wheel watch on entering port and the Master gives you a rudder command which conflicts with a rudder command from the Pilot. What should you do?",
+        "answer": "| | Obey the Master."
+    },
+    {
+        "question": "You are planning a voyage from San Francisco to Japan. Which publication contains informations on the ocean routes?",
+        "answer": "Sailing Directions (Planning Guide)"
+    },
+    {
+        "question": "You are on a power driven vessel when you suddenly run into a fog bank. What action would you take?",
+        "answer": "Commence sounding the fog signal, engines on standby, call for lookout, call Master"
+    },
+    {
+        "question": "You are making headway in fog and hear a fog signal of two. protonged blasts on your starboard quarter. You should-----",
+        "answer": "hold your course and speed"
+    },
+    {
+        "question": "You are in sight of another vessel in a crossing situation, and the other vessel sounds one short blast. You are going to hold course and speed. You should",
+        "answer": "sound no whistle signal"
+    },
+    {
+        "question": "The safest and most prudent procedure to follow while navigating in the vicinity of a tropical cyclone is to",
+        "answer": "take positive steps to avoid it if possible"
+    },
+    {
+        "question": "You are from an open sea, how would you approach a traffic separation scheme?",
+        "answer": "Do so at a small angle as possible as nearly as practicable."
+    },
+    {
+        "question": "While underway you saw a ship displaying 3 all round red light in < vertical position at night time",
+        "answer": "a vessel constrained in 1 | her draft"
+    },
+    {
+        "question": "After sailing for several minutes (making 10 knots through the water) and in constant monitoring of your radar screen, you noticed that a target has remained in the same position relative to yours, what could be the possible conclusion of the scenario?",
+        "answer": "Same course and speed"
+    },
+    {
+        "question": "Which statement is TRUE concerning narrow channels?",
+        "answer": "You should avoid anchoring in a narrow channel."
+    },
+    {
+        "question": "You are navigating in a narrow channel and must remain in the channel for safe operation. Another vessel is crossing the channel ahead of you from your starboard and you doubt whether your vessel will pass safely. Whic! statement is TRUE?",
+        "answer": "You must sound the danger signal. h"
+    },
+    {
+        "question": "A power driven vessel overtaking another in a narrow channel, and wishing to pass on the other vessel s port side, would sounds. a whistle signal of .",
+        "answer": "two short blasts"
+    },
+    {
+        "question": "When you are overtaking another power driven vessel and desire to pass on her left or port hand, you should sound - .",
+        "answer": "two short blasts"
+    },
+    {
+        "question": "What is the main purpose of ship’ routeing?",
+        "answer": "Ss | organize and improve shipping movement"
+    },
+    {
+        "question": "How would you signal your intention to overtake a vessel in ¢ narrow channel and pass along the vessel's port side?",
+        "answer": "Sound two prolonged ’ | blasts followed by two short blasts on your whistle"
+    },
+    {
+        "question": "A vessel may use any sound or light signals to attract the attentior of another vessel as long as",
+        "answer": "The signal cannot be ‘| mistaken for a signal authorized by the"
+    },
+    {
+        "question": "A25-meter vessel trawling will show the dayshape(s) consisting of.",
+        "answer": "two cones apexes together"
+    },
+    {
+        "question": "Avessel 30 meters in length and aground would display a day- shape consisting of .",
+        "answer": "three black balls ina vertical line"
+    },
+    {
+        "question": "While you are navigating ina narrow channel. which statement in NOT correct?",
+        "answer": "Keep on starboard side of any vessel you meet"
+    },
+    {
+        "question": "Which international MSC 192(79) Performance Standards for Rada Equipment",
+        "answer": "- | IMO resolution MSC ' | 192(79)- Performance Standards for Radar Equipment"
+    },
+    {
+        "question": "What is the minimum display are diameter in the performance requirements for all ships/ crafts greater than 10,000 gross tonnage?",
+        "answer": "4 | 340 x 340 nm"
+    },
+    {
+        "question": "What is the ability of a radar set t clearly distinguish two targets, on the same range and sligthtly different bearings, as two separat targets on the PPI?",
+        "answer": "9 | bearing discrimination e"
+    },
+    {
+        "question": "What should you expect, if the lo. indicates faster speed over the grounds due to currents, give tha ARPA has automatic speed input from the log?",
+        "answer": "J | The range on initial target acquisition will ; | be less than normal"
+    },
+    {
+        "question": "In catm and clutter free condition: what is the minimum detection range for X-band radar if the target is a 2-meter tall small vessel of length 10 meters with n radar reflector?",
+        "answer": "3, | 3.4nm ®)"
+    },
+    {
+        "question": "Avessel engaged in fishing durin the day would show",
+        "answer": ") | two cones, apexes | , bnnanbkaw"
+    },
+    {
+        "question": "How would you show understanding of relative humidity?",
+        "answer": "It is the ratio of the existing absolute humidity to its saturation value at the same temperature."
+    },
+    {
+        "question": "How would you show understanding of humidity?",
+        "answer": "It is the water vapour of the air expressed in mass per unit volume."
+    },
+    {
+        "question": "How would you say that a ship is a “vessel turning\" as define by COLREG regulation?",
+        "answer": "A vessel making a large alteratio"
+    },
+    {
+        "question": "What lights must be shown on a barge being towedwins astern at night?",
+        "answer": "Sidelights and a stern light"
+    },
+    {
+        "question": "How would you call a chart that has extensive corrections made and again printed?",
+        "answer": "| New edition |"
+    },
+    {
+        "question": "How could a civilian GPS user improves accuracy level of his position?",
+        "answer": "by using differential GPS"
+    },
+    {
+        "question": "Which vessel is to keep out of the way of the others?",
+        "answer": "| | A vessel engaged in trawling"
+    },
+    {
+        "question": "A head-on or end-on situation shall be deemed to exist at night when a vessel sees the other vessei ahead, and",
+        "answer": "both sidelights are visible"
+    },
+    {
+        "question": "How can it help you to avoid the center of the storm using your radar?",
+        "answer": "The Radar can display on the screen areas moderate or heavy rain continuously for at least 50 nautical miles in broad sector."
+    },
+    {
+        "question": "Before a ship is expected to be in sight of a coastline, how would a navigator ensure that the chart fo the area is safe for navigation?",
+        "answer": "The chart for the area . have been corrected as to the latest notice to mariners receive onboard."
+    },
+    {
+        "question": "What action should a ship's officer take when applying through knowledge of the principles to be observed in keeping a navigational watch?",
+        "answer": "Maintain a proper lookout for other vessels and navigational hazards"
+    },
+    {
+        "question": "What is the performance set by {International Maritime Organization for the radar bearing accuracy?",
+        "answer": "The system accuracy of bearings should be within 1%"
+    },
+    {
+        "question": "Your vessel must remain ina narrow channel for safety of navigation. Another vessel is crossing the channel from your starboard side. After careful observation you are in doubt of the situation that is developing. What will you do?",
+        "answer": "Reduce speed to indicate giving way"
+    },
+    {
+        "question": "If you were coming up on another power-driven vessel from dead astern and desired to overtake on the other vessel s starboard side, which whistle signal would you sound?",
+        "answer": "One short blast"
+    },
+    {
+        "question": "Asingle vessel being towed alongside shall show",
+        "answer": "sidelights and a stern tight"
+    },
+    {
+        "question": "A traffic separation zone is that part of a traffic separation scheme which :",
+        "answer": "separates traffic proceeding in one direction from traffic proceeding in the opposite direction"
+    },
+    {
+        "question": "Your power driven vessel is meeting another vessel head-on. To comply with the rules, you should exchange .",
+        "answer": "one short blast, alter course to starboard, and pass port to port"
+    },
+    {
+        "question": "Your vessel is proceeding down a channel, and can safely navigate only within the channel. Another vessel is crossing your bow from port to starboard, and you are in doubt as to her intentions. Which statement is TRUE?",
+        "answer": "The sounding of the danger signal is mandatory."
+    },
+    {
+        "question": "In calm and clutter free conditions, what is the minimum detection range for S-band radar if the target is a 4-meter tall small vessel with radar reflector meeting IMO Performance Standards?",
+        "answer": "3.7 nm"
+    },
+    {
+        "question": "In calm and clutter free conditions, on the operational requirement for the radar system, what seems. likely is the minimum detection range for S-band if the target a 3.5 meter tall navigation buoy with corner reflector?",
+        "answer": "3.6 nm"
+    },
+    {
+        "question": "Avessel at anchor shall display, between sunrise and sunset, on the forward part of the vessel where it can best be seen",
+        "answer": "one black ball"
+    },
+    {
+        "question": "Achart that is used generally for a long ocean passage?",
+        "answer": "| Small scale chart"
+    },
+    {
+        "question": "Asystem of reservoirs and connecting tubes in a gyro compass is called a .",
+        "answer": "| mercury ballistic"
+    },
+    {
+        "question": "An icebreaker assisting a vessel through an ice field would display a visual signal. consisting of the code letter M (Mike) to signify that",
+        "answer": "My vessel is stopped and making no way through the water."
+    },
+    {
+        "question": "Any alteration of the course and or speed to avoid collision shall if the circumstances admit, be large enough to be readily apparent to another vessel. In what COL-REG regulation can you find this rule of action to avoid collision?",
+        "answer": "| Rule 8 (b)"
+    },
+    {
+        "question": "Arrange the order of the following sextants: |. Form parallel telescope and sextant frame arrangement. [I]. Make horizon glass perpendicular to sextant frame Ill. Form a parallel arrangement of the index mirror and horizon glass to the sextant frame when index arms is in zero. IV. Place the index mirror perpendicular to sextant frame",
+        "answer": ""
+    },
+    {
+        "question": "Which international MSC 192(79}- Performance Standards for Radar Equipment",
+        "answer": "IMO resolution MSC 192(79)- Performance Standards for Radar Equipment"
+    },
+    {
+        "question": "What is the minimum display area diameter in the performance requirements for all ships/ crafts greater than 10,000 gross. tonnage?",
+        "answer": "340 x 340 nm"
+    },
+    {
+        "question": "What is the ability of a radar set to clearly distinguish two targets, on the same ranae and sliothtiy.",
+        "answer": "| bearing discrimination"
+    },
+    {
+        "question": "Avessel displaying three red lights in a vertical line is",
+        "answer": "| constrained by her draft"
+    },
+    {
+        "question": "Avessel being towed astern where the length of the tow exceeds 200 meters will exhibit_.",
+        "answer": "a diamond shape where it can best be seen"
+    },
+    {
+        "question": "Two vessels in a crossing situation have reached agreement by radiotelephone as to the intentions of the other. In this situation, whistle signals are .",
+        "answer": "not required, but may be sounded"
+    },
+    {
+        "question": "You are crossing the course of another vessel which is to your starboard. You have reached an agreement by radiotelephone to pass astern of the other vessel. You MUST",
+        "answer": "None of the above"
+    },
+    {
+        "question": "You are operating a vessel through a narrow channel and your vessel must stay within the channelaas to be navigated safely. Another vessel is crossing your course from starboard to port, and you are in doubt as to her intentions. You .",
+        "answer": "must sound the danger signal"
+    },
+    {
+        "question": "Avessel engaged in trawling will show identification lights of",
+        "answer": "a green light over a white light"
+    },
+    {
+        "question": "The stand-on vessel in a crossing situation sounds one short blast of the whistle. This means that the vessel",
+        "answer": "intends to leave the other on her port side"
+    },
+    {
+        "question": "Under the Inland Navigation Rules, what is the meaning of the two short blasts signal used when meeting another vessel?",
+        "answer": "| intend to leave you on my starboard side."
+    },
+    {
+        "question": "When power-driven vessels. are crossing, a signal of one short blast by either vessel means .",
+        "answer": "! intend to leave you on my port side"
+    },
+    {
+        "question": "In a narrow channel, you are underway on power driven vessel A and desire to overtake power driven vessel B . After you sound two short blasts on your whistle, vessel B sounds five short and rapid blasts on the whistle. You should .",
+        "answer": "hold your relative position, and then sound another signal after the situation has stabilized"
+    }
+]

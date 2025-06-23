@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flashcards by JSON Sections</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 2rem;
+      background: #f0f2f5;
+      color: #333;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .section {
+      margin: 2rem 0;
+    }
+    .section-title {
+      background-color: #222;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      max-width: 200px;
+      margin: auto;
+      font-size: 1.2rem;
+    }
+    .flashcards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .card {
+      background: white;
+      width: 250px;
+      height: 150px;
+      perspective: 1000px;
+      cursor: pointer;
+    }
+    .card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+    .card.flipped .card-inner {
+      transform: rotateY(180deg);
+    }
+    .card-front, .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .card-front {
+      background-color: #fefefe;
+    }
+    .card-back {
+      background-color: #d4f0d2;
+      transform: rotateY(180deg);
+    }
+  </style>
+</head>
+<body>
+  <h1>Flashcards by Section</h1>
+  <div id="sections">Loading...</div>
+
+  <script>
+    // List of section files you want to load
+    const sectionFiles = ["c1.json", "c2.json", "c3.json"]; // Add more as needed
+
+    const loadSection = async (file, sectionName) => {
+      try {
+        const res = await fetch(file);
+        if (!res.ok) throw new Error(`${file} not found`);
+        const data = await res.json();
+
+        const sectionDiv = document.createElement('div');
+        sectionDiv.className = 'section';
+
+        const title = document.createElement('div');
+        title.className = 'section-title';
+        title.textContent = sectionName.toUpperCase();
+
+        const flashcardWrap = document.createElement('div');
+        flashcardWrap.className = 'flashcards';
+
+        data.forEach((qa, i) => {
+          const card = document.createElement('div');
+          card.className = 'card';
+
+          const inner = document.createElement('div');
+          inner.className = 'card-inner';
+
+          const front = document.createElement('div');
+          front.className = 'card-front';
+          front.textContent = qa.question;
+
+          const back = document.createElement('div');
+          back.className = 'card-back';
+          back.textContent = qa.answer;
+
+          inner.appendChild(front);
+          inner.appendChild(back);
+          card.appendChild(inner);
+
+          card.addEventListener('click', () => {
+            card.classList.toggle('flipped');
+          });
+
+          flashcardWrap.appendChild(card);
+        });
+
+        sectionDiv.appendChild(title);
+        sectionDiv.appendChild(flashcardWrap);
+        document.getElementById('sections').appendChild(sectionDiv);
+      } catch (err) {
+        console.error(err);
+      }
+    };
+
+    document.getElementById('sections').innerHTML = '';
+    sectionFiles.forEach(file => {
+      const name = file.split('.')[0]; // e.g., "c1"
+      loadSection(file, name);
+    });
+  </script>
+</body>
+</html>
