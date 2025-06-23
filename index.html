@@ -2,241 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Flashcards Viewer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Main Menu</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      margin: 2rem;
       background: #f0f2f5;
-      color: #333;
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
     }
 
     h1 {
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
     }
 
-    .controls {
+    .menu {
       display: flex;
       flex-direction: column;
-      align-items: center;
       gap: 1rem;
-      margin-bottom: 1rem;
-    }
-
-    .nav-buttons {
-      display: flex;
-      gap: 1rem;
-    }
-
-    select, button {
-      padding: 0.5rem 1rem;
-      font-size: 1rem;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    select {
-      background: white;
-      border: 1px solid #ccc;
     }
 
     button {
-      background: #333;
-      color: white;
-    }
-
-    button:disabled {
-      background: #aaa;
-      cursor: not-allowed;
-    }
-
-    .card {
-      background: white;
-      width: 300px;
-      height: 200px;
-      perspective: 1000px;
-      cursor: pointer;
-      margin-top: 1rem;
-    }
-
-    .card-inner {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      transition: transform 0.6s;
-      transform-style: preserve-3d;
-    }
-
-    .flipped .card-inner {
-      transform: rotateY(180deg);
-    }
-
-    .card-front, .card-back {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border: 1px solid #ccc;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      border: none;
       border-radius: 8px;
-      padding: 1rem;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
+      cursor: pointer;
+      background-color: #333;
+      color: white;
+      transition: background 0.3s;
     }
 
-    .card-front {
-      background-color: #fefefe;
-    }
-
-    .card-back {
-      background-color: #d4f0d2;
-      transform: rotateY(180deg);
-    }
-
-    .card-counter {
-      margin-top: 1rem;
-      font-size: 0.9rem;
-      color: #555;
+    button:hover {
+      background-color: #555;
     }
   </style>
 </head>
 <body>
-  <h1>Flashcards</h1>
-
-  <div class="controls">
-    <select id="fileSelector">
-      <!-- Options will be inserted dynamically -->
-    </select>
-    <div class="nav-buttons">
-      <button id="prev">Previous</button>
-      <button id="next">Next</button>
-    </div>
+  <h1>Welcome to Flashcards</h1>
+  <div class="menu">
+    <button onclick="location.href='review.html'">Review Mode</button>
+    <button onclick="location.href='exam.html'">Exam Mode</button>
+    <button onclick="location.href='unlock.html'">Unlock More Content</button>
   </div>
-
-  <div class="card" id="flashcard">
-    <div class="card-inner" id="card-inner">
-      <div class="card-front" id="card-front">Loading...</div>
-      <div class="card-back" id="card-back">Loading...</div>
-    </div>
-  </div>
-
-  <div class="card-counter" id="counter">Card 0 of 0</div>
-
-  <script>
-    const jsonFiles = [
-      { file: "c1.json", label: "Competency 1" },
-      { file: "c2.json", label: "Competency 2" },
-      { file: "c3.json", label: "Unlock more content >_*" }
-    ];
-
-    const flashcard = document.getElementById('flashcard');
-    const inner = document.getElementById('card-inner');
-    const front = document.getElementById('card-front');
-    const back = document.getElementById('card-back');
-    const prevBtn = document.getElementById('prev');
-    const nextBtn = document.getElementById('next');
-    const counter = document.getElementById('counter');
-    const fileSelector = document.getElementById('fileSelector');
-
-    let cards = [];
-    let currentIndex = 0;
-
-    // Populate dropdown
-    jsonFiles.forEach(entry => {
-      const option = document.createElement('option');
-      option.value = entry.file;
-      option.textContent = entry.label;
-      fileSelector.appendChild(option);
-    });
-
-    // Load JSON and display first card
-    const loadJSON = (file) => {
-      if (file === "c3.json") {
-        front.innerHTML = `<img src="gcash.png" alt="Unlock" style="max-width: 100%; max-height: 100%;">`;
-        back.innerHTML = "";
-        counter.textContent = "Unlock more content >_* or speed up progress";
-        flashcard.classList.remove('flipped');
-        cards = [];
-        return;
-      }
-
-      fetch(file)
-        .then(res => res.json())
-        .then(data => {
-          cards = data;
-
-          const savedFile = localStorage.getItem("flashcardFile");
-          const savedIndex = parseInt(localStorage.getItem("flashcardIndex") || "0");
-
-          if (file === savedFile && savedIndex < data.length) {
-            currentIndex = savedIndex;
-          } else {
-            currentIndex = 0;
-          }
-
-          flashcard.classList.remove('flipped');
-          renderCard();
-        })
-        .catch(err => {
-          console.error("Error loading file:", file, err);
-          front.textContent = "Failed to load.";
-          back.textContent = "";
-          counter.textContent = "";
-        });
-    };
-
-    const renderCard = () => {
-      if (cards.length === 0) return;
-      const current = cards[currentIndex];
-      front.textContent = current.question;
-      back.textContent = current.answer;
-      counter.textContent = `Card ${currentIndex + 1} of ${cards.length}`;
-
-      prevBtn.disabled = currentIndex === 0;
-      nextBtn.disabled = currentIndex === cards.length - 1;
-
-      localStorage.setItem("flashcardIndex", currentIndex);
-      localStorage.setItem("flashcardFile", fileSelector.value);
-    };
-
-    prevBtn.addEventListener('click', () => {
-      if (currentIndex > 0) {
-        currentIndex--;
-        flashcard.classList.remove('flipped');
-        renderCard();
-      }
-    });
-
-    nextBtn.addEventListener('click', () => {
-      if (currentIndex < cards.length - 1) {
-        currentIndex++;
-        flashcard.classList.remove('flipped');
-        renderCard();
-      }
-    });
-
-    flashcard.addEventListener('click', () => {
-      flashcard.classList.toggle('flipped');
-    });
-
-    fileSelector.addEventListener('change', (e) => {
-      loadJSON(e.target.value);
-    });
-
-    // Load saved progress on first load
-    const savedFile = localStorage.getItem("flashcardFile");
-    const savedIndex = parseInt(localStorage.getItem("flashcardIndex") || "0");
-
-    const startFile = jsonFiles.find(j => j.file === savedFile)?.file || jsonFiles[0].file;
-    fileSelector.value = startFile;
-    loadJSON(startFile);
-  </script>
 </body>
 </html>
