@@ -1,519 +1,10 @@
 [
     {
-        "question": "How would you show your understanding of an echo sounder having a Pythagoras error?",
-        "answer": "The error is found    when two transducers are used one for transmission and the other for reception."
+        "question": "A tide is called diurnal when _____?",
+        "answer": "Only one high and one low water occur during a lunar day"
     },
     {
-        "question": "A vertically-striped buoy may be",
-        "answer": "   lighted with a white    hoa as"
-    },
-
-    {
-        "question": "After sailing for several minutes (making 10 knots through the water) and in constant monitoring of your radar screen, you noticed that a contact has remained in the same position relative to yours, what could be the possible conclusion of the scenario?",
-        "answer": "the contact is on the same course and speed as your vessel"
-    },
-    {
-        "question": "When using buoy as an aid to navigation which of the followingus should be considered?",
-        "answer": "The buoy may not in its the charted position"
-    },
-    {
-        "question": "When using a buoy as an aid to navigation, which of the following should always be considered?",
-        "answer": "The buoy is nearly always well anchored and can be considered to be in its charted position."
-    },
-    {
-        "question": "Aswift current occurring in a narrow passage connecting two large bodies of water which is produced by the continuously changing difference in height of tide at the two ends of the passaqe is called a .",
-        "answer": "hydraulic current"
-    },
-    {
-        "question": "Where will you find the correction to apply to your barometer reading in order to allow for the effect of dirnal variation?",
-        "answer": "The amount which is 1    given each hour of the day in the customary climactic atlases"
-    },
-    {
-        "question": "What is the safest prudent procedure to follow while navigating in the vicinity of a tropical cyclone?",
-        "answer": "Take a possible steps to avoid it if possible."
-    },
-    {
-        "question": "If the barometer reading shows high pressure in the area, what kind of weather is expected?",
-        "answer": "Sunny and dry"
-    },
-    {
-        "question": "Asail plan including the vessel s itinerary name number and persons aboard should be filed with .",
-        "answer": "a responsible person"
-    },
-    {
-        "question": "If your barometer reading shows low pressure system in the area, what kind of weather is expected’",
-        "answer": "a    Stormy and wet   "
-    },
-    {
-        "question": "What is the top mark (if any) of th Starboard hand lateral marks used in [ALA Region B?",
-        "answer": "    Single red cone, point upward"
-    },
-    {
-        "question": "What is the top mark (if any) of th Port hand lateral marks used in IALA Region B?",
-        "answer": " Single green cylinder (can)."
-    },
-    {
-        "question": "Asingle line of position combined with a dead-reckoningsus position results in a(n)",
-        "answer": "   estimated position   "
-    },
-    {
-        "question": "What is the topmark (if any) of the Starboard hand laterai marks used in IALA Region A?",
-        "answer": "'    Single green cone, point upward"
-    },
-    {
-        "question": "What will be the movement of a deep draft vessel navigating in a narrow channel or canal like Panama Canal?",
-        "answer": "She will drag more water than when underway in deep water"
-    },
-    {
-        "question": "The direction of tidal current in the open ocean is .",
-        "answer": "   rotary   "
-    },
-    {
-        "question": "Aline of position from a celestial observation is a segment of a",
-        "answer": "   circle of equal altitude   "
-    },
-    {
-        "question": "If you received a weather forecasts wherein the word fracto is used as a prefix to stratus or cumulus clouds, what kind of weather is accompanying this?",
-        "answer": "Rainy weather with strong winds."
-    },
-    {
-        "question": "In weather forecasting, certain types of clouds are associated with certain types of weather. If you observe with a “mackerel sky\", what is the belief does it represents?",
-        "answer": "Precursor of bad weather"
-    },
-    {
-        "question": "The force that will cause the axis of a spinning.",
-        "answer": "   Precession   "
-    },
-    {
-        "question": "Arunning fix is a position obtaine by 9",
-        "answer": "{ taking multiple lines of    a, ey se"
-    },
-    {
-        "question": "What do you call the phenomeno! linked with the use of applied force on a gyro compass?",
-        "answer": "1    Precession   "
-    },
-    {
-        "question": "What do isogonic lines indicate?",
-        "answer": "   Points of equal    variation"
-    },
-    {
-        "question": "What planef/ star with the parallax angle vary the most within a year?",
-        "answer": "   Polaris"
-    },
-    {
-        "question": "What causes the variation that affects the magnetic compass of a ship's directive force?",
-        "answer": "Magnetism within the vessel"
-    },
-    {
-        "question": "What is running fix?",
-        "answer": "Intersection of multiple lines of position from different points of one object at different times"
-    },
-    {
-        "question": "What is the frequency of the low frequency pulse used on the echo. sounder?",
-        "answer": "   24 kHz"
-    },
-    {
-        "question": "At 1045H, your GPS fixes your position at Lat 2ideg01 01.75N and Long 172 deg 48.40 W. You are steering a course of 086 deg psc at a speed of 6.0 knots. At 2400H, you fix your position at iat 21 deg 04.2 deg N and Long 172 deg 38.85 W. What were your set and drift?",
-        "answer": "360° T x 0.4 knots"
-    },
-    {
-        "question": "What do you cail the altitude measured with sextant corrected for dip and index error?",
-        "answer": "   Apparent altitude"
-    },
-    {
-        "question": "In the design of satellite communication systems, which multiple access technique is commonly used for the NAVSTAR, GPS sateilite constellation to enable uses to access the satellites simultaneously?",
-        "answer": "Code Division Multiple Access (CDMA)"
-    },
-    {
-        "question": "After measuring the altitude of a star with a sextant and applying the necessary corrections, what is your next step to determine the ship's position using celestial navigation?",
-        "answer": "Use the corrected altitude to plota position line on a celestial plotting sheet."
-    },
-    {
-        "question": "If the scale on a chartis given as 4:5,000,000 what does this mean?",
-        "answer": "1 inch is equal to 5,000,000 inches of the earth's surface."
-    },
-    {
-        "question": "In Great Britain, the Nautical Almanac has been published annually and each page contains data that are tabulated for how many days?",
-        "answer": "3 days"
-    },
-    {
-        "question": "Acommon compass rose as found on a nautical chart shows true north and magnetic north. What kind of markings will you notice on the inner circle and the graduations of the circle?",
-        "answer": "Correspondence between thirty two points rose."
-    },
-    {
-        "question": "Consider a place approaching a channel! when the height of HW is 3.8 meters. The vessels draught is 2.5 meters. What is the under keel clearance over a rock of drying height 0.9 meters?",
-        "answer": "Under Keel Clearance - 0.4 meters at High Water."
-    },
-    {
-        "question": "The direction a vessel is pointed at any given time is the:",
-        "answer": "heading"
-    },
-    {
-        "question": "If you are in the Northern Hemisphere as a general rule (Buys Ballot's Law), how could you determine the center of low pressure?",
-        "answer": "Faces the surface of the wind the center of low is toward your right."
-    },
-    {
-        "question": "An electronic depth finder operates on the principle that",
-        "answer": "sound waves travel at a constant speed"
-    },
-    {
-        "question": "If you are in the Southern Hemisphere as general rule (Buy’ Ballot Law), how would you determine the center of low pressure?",
-        "answer": "Faces the surface of >    the wind the center of low is toward your left"
-    },
-    {
-        "question": "If you are in the Northern Hemisphere as a general rute (Buy's Ballot Law), how would yOUsus determine the center of lov pressure?",
-        "answer": "Faces the surface of the center of low in ,    your right."
-    },
-    {
-        "question": "The lines of force directed from south to north and north to south within the magnet?",
-        "answer": "external field"
-    },
-    {
-        "question": "The most probable position of the object of a search at any given time is the .",
-        "answer": "datum position"
-    },
-    {
-        "question": "Where does the lines of force directed from south to north and from north to south within the magnet?",
-        "answer": "external field"
-    },
-    {
-        "question": "What do you call the function of the horizontal component of the compass what gives the compass needle the ability to point north?",
-        "answer": "directive force"
-    },
-    {
-        "question": "How would you ensure that accurate positioning is done during chart correction?",
-        "answer": "By way of tracing if available as a useful tool for positioning a correction quickly."
-    },
-    {
-        "question": "An automatic identification syster {AIS) transponder transmits and receives information broadcasts on:",
-        "answer": ") VHF maritime band"
-    },
-    {
-        "question": "What is the color of the West cardinal marks used in IALA Region A and Region B?",
-        "answer": "Yellow with a single broad horizontal black band."
-    },
-    {
-        "question": "What is the color of the South cardinal marks used in IALA Region A and Region B?",
-        "answer": "Yellow above black"
-    },
-    {
-        "question": "Speaking of Global Positioning System, how accurate is a GPS horizontal accuracy?",
-        "answer": "With in a range of 100 meters"
-    },
-    {
-        "question": "Advection fog a common occurrence on the Great LakeSaus forms when .",
-        "answer": "relatively warm air flows over cooler water"
-    },
-    {
-        "question": "Speaking of Global Positioning System, how accurate is a DGPS horizontai accuracy?",
-        "answer": "With in a range of 10 meters"
-    },
-    {
-        "question": "Which routeing measure is described that constitute a boundary of opposing streams of traffic by appropriate means?",
-        "answer": "Traffic separation scheme."
-    },
-    {
-        "question": "Which routeing measure is described as areas within defined limits that constitute a boundary caused by natural obstacles, including those forming separator zones?",
-        "answer": "Traffic lane )"
-    },
-    {
-        "question": "A yellow buoy may mark a(n)",
-        "answer": "   anchorage area"
-    },
-    {
-        "question": "Se",
-        "answer": "a   "
-    },
-    {
-        "question": "When you are in Polar Region, which of the following weather condition is NOT expected?",
-        "answer": "To experience extensive snowfall"
-    },
-    {
-        "question": "What would you conclude if you saw nimbostratus clouds develop in the close area of your ship at sea?",
-        "answer": "There will be rain and visibility will deteriorate."
-    },
-    {
-        "question": "How would you show your understanding of an echo sounde! having a Pythagoras error?",
-        "answer": "The error is found    when two transducers are used one for transmission and the other for reception."
-    },
-    {
-        "question": "How would you perform correction to old charts?",
-        "answer": "     Check that the edition is currently in the Cumulative Notice to Mariners against the chart number and the number of uncorrected notices. Start by correcting the latest correction first and proceed backwards until all the notices are corrected."
-    },
-    {
-        "question": "How could you determine the existence of the conditions that allow thunderstorms to be developed?",
-        "answer": "A plentiful supply of moisture and steep lapse rate through a large vertical extent and a trigger action."
-    },
-    {
-        "question": "Determine the relative humidity if the air temperature is 70°F and the wet bulb temperature is 60°F?",
-        "answer": "   0.57   "
-    },
-    {
-        "question": "w fnany semi-diurnal tides occur in a 24 hours and 53 mi",
-        "answer": "fo"
-    },
-    {
-        "question": "How can you identify aids to navigation marking the intracoastal waterway?",
-        "answer": "By yellow stripes, squares or triangles marked on them"
-    },
-    {
-        "question": "Abuoy bears 178 degrees at 3006 yards(2,700 meters). What is the course to make good fo leavemnus the buoy 100 yards (90 meters) to port beam?",
-        "answer": ") 180 degrees True"
-    },
-    {
-        "question": "Alandmark is 36.5 meters high and the light has a nominal range of 18 n.m.. Your height of eye is 12.75 meters. If the visibility is 11.2 n.m. when the light becomes visible, approximately how far off the light you will be?",
-        "answer": "19.0 nm"
-    },
-    {
-        "question": "At 1200H, you fix your position and change course to 315°T.At 1225H, you again fix your position, and it is 0.9 mile southwest of your DR position. Find the drift:",
-        "answer": "2.1 knots"
-    },
-    {
-        "question": "At 1300H, you fix your position and change course to 315°T. At 1325H, you again fix your position, and it is 0.9 mile southwest of your DR position. Find the drift:",
-        "answer": "2.1 knots"
-    },
-    {
-        "question": "What does a Global Positioning System receiver measure?",
-        "answer": "The time betweeen transmission and reception of a signal from a satellite."
-    },
-    {
-        "question": "How is a buoy marking a wreck be identified?",
-        "answer": "   With white light F(2) and a topmark of 2 black spheres."
-    },
-    {
-        "question": "The GPS implements two major corrections to its time signals for relativistic effects:",
-        "answer": "one for relative velocity of satellite and receiver"
-    },
-    {
-        "question": "Index error of a sextant is primarily caused by",
-        "answer": "the horizon glass not -    temimm maraniial 6m dha"
-    },
-    {
-        "question": "Vertical circle with passes throug! the east and west paint of the horizon.",
-        "answer": "   prime vertical circle"
-    },
-    {
-        "question": "The shoreline on charts generally represents the mean",
-        "answer": "   high water line"
-    },
-    {
-        "question": "As per Rule 3 (i} of the Collision Regulation, what conclusion can you draw on a given situation that the vessel is said to be underway",
-        "answer": "when she is riding at , her anchor"
-    },
-    {
-        "question": "When your vessel is underway at sea, how would you classify the period of roll?",
-        "answer": "the time difference between zero to full inclination on one side"
-    },
-    {
-        "question": "The opposite of the elevated pole is the .",
-        "answer": "   depressed pole"
-    },
-    {
-        "question": "Apparent altitude is sextant altitudeéaus corrected for",
-        "answer": "inaccuracies in the reading and reference laval"
-    },
-    {
-        "question": "The tabulation data in the Nautice Almanac is for:",
-        "answer": "   3 days"
-    },
-    {
-        "question": "Who distributes official charts for ECDIS?",
-        "answer": "Distributed on authority of government authorized hydrographic offices"
-    },
-    {
-        "question": "Who will survey the ECDIS installation?",
-        "answer": "   Flag state"
-    },
-    {
-        "question": "What is your idea of a Cold Sector?",
-        "answer": "it is the area of depression occupied by cold air at the surface and comprises the whole depression after the occluding process has been completed"
-    },
-    {
-        "question": "What is the term used to describe the time necessary for a lighting duration aid to perform a full cycle of light changes sown in the light list?",
-        "answer": "lighting cycle duration"
-    },
-    {
-        "question": "You are on watch at night in clear visibility and the vessel has just been anchored. The first thing the you should do after the anchor hac heen Ist na ic tn",
-        "answer": "Ct take bearings to obtain ships position"
-    },
-    {
-        "question": "What will cause the ARPA to emit a visual alarm, audible alarm or both?",
-        "answer": "a target being initially selected within a guard zone"
-    },
-    {
-        "question": "How does the noise of thunder produce when you saw a lightning flash?",
-        "answer": "The effect of the instantaneous heating and sudden expansion    of air near the lightning flash produces the noise."
-    },
-    {
-        "question": "Other than the Sun and Moon, which of the following celestial body..us is the brightest object in the sky?",
-        "answer": "Venus"
-    },
-    {
-        "question": "You are meeting another power driven vessel head-on and sound one short blast as a passing signal. The other vessel answers with two short blasts. What shoute be your next action?",
-        "answer": "Sound the danger , signal."
-    },
-    {
-        "question": "What are the names of places taken on charts or from Sailing Directions called?",
-        "answer": "   Topographical Names   "
-    },
-    {
-        "question": "How would you call a chart that has extensive corrections made and again printed?",
-        "answer": "   New edition   "
-    },
-    {
-        "question": "Can you tell which of the following facts do not appear in pilot charts",
-        "answer": ",    Tidal Currents   "
-    },
-    {
-        "question": "How could you determine that mixed (time and clear) icing is most likely ta be encountered?",
-        "answer": "in nimbostratus cloud at a temperature of - 10°C."
-    },
-    {
-        "question": "In the Philippines, what indicate a buoy that should be teft to port when entering from seaward?",
-        "answer": "   Odd number   "
-    },
-    {
-        "question": "How would you characterize the tropopause in mid-latitudes",
-        "answer": "Lower in winter with a higher temeperature"
-    },
-    {
-        "question": "What conclusions in plain language is usually the purpose o marine weather?",
-        "answer": "f    For forecast   "
-    },
-    {
-        "question": "The most reliable form of navigational system in the high seas, is .",
-        "answer": "   Celestial Navigation   "
-    },
-    {
-        "question": "What is a double star?",
-        "answer": "Comprises two stars that appear close together"
-    },
-    {
-        "question": "As per regulation, which of the following vessel is define restricted in her ability to",
-        "answer": "Unable to keep out of the way of another vessel due to the"
-    },
-    {
-        "question": "Consider a place approaching a channel when the height of HW is 3.8 meters. The vessels draught i 2.5 meters. What is the under kee clearance over a rock of drying height 0.9 meters?",
-        "answer": "Under Keel Clearance - _   0.4 meters at High       Water."
-    },
-    {
-        "question": "Which of the following is INCORRECT about the coarse acquisition code of Global Positioning signals?",
-        "answer": "It is transmitted 90 degrees out of phase from the precision code."
-    },
-    {
-        "question": "How would you show your understanding of an echo sounde having a Pythagoras error?",
-        "answer": "The error is found '    when two transducers are used one for transmission and the other for reception."
-    },
-    {
-        "question": "What are the information required to calculate course and speed made good?",
-        "answer": "   Current set and drift"
-    },
-    {
-        "question": "How would you apply on the rudder \"Hard Starboard\"?",
-        "answer": "Put the rudder full starboard"
-    },
-    {
-        "question": "Which of the four adjustable error in the sextant is the principle cause of index error?",
-        "answer": "3    Index mirror and horizon glass not being parallel"
-    },
-    {
-        "question": "What is provided in the highest level of commercial navigational accuracy?",
-        "answer": "DGPS within a coverage area"
-    },
-    {
-        "question": "What is the latitude of a place where the sun is exactly at the zenith Of the observer at Local Apparent Noon (LAN) Of June 21?",
-        "answer": "23 deg. 27 min. North"
-    },
-    {
-        "question": "In confined waters WHICH of the following equipment becomes more reliable in obtaining vessel's position?",
-        "answer": "Radar X band and visual method"
-    },
-    {
-        "question": "Which of the following statement is TRUE about fixing a position or a given situation, At 0000 you fix your position and plot a new DR track line. At 0200 you again fix your position and it is 0.5 mile east of your reckoned position.",
-        "answer": "The drift is 0.25 knot       per hour."
-    },
-    {
-        "question": "At 0000 you fix your position and plot. a new DR track line. At 0200 you again fix your position and it is 0.5 mile east of your DR. Which statement is TRUE?",
-        "answer": "The drift is 0.25 knot."
-    },
-    {
-        "question": "What would you show your understanding af an echo sounde having a Multipath Echoes error?",
-        "answer": "The echo may be '    reflected a number of times between the keel and the seabed, thereby giving multiple depth marks on the record depth."
-    },
-    {
-        "question": "A landmark is 36.5 meters high and the light has a nominal range of 18 n.m. Your height of eye is 12.75 meters. If the visibility is 11.2 n.m. when the light becomes visible, approximately how far off the light you will be?",
-        "answer": "19.0 nm"
-    },
-    {
-        "question": "At 1200H, you fix your position and change course to 315°T. At 1225H, you again fix your position, and it is 0.9 mile southwest of your DR position. Find the drift:",
-        "answer": "2.1 knots"
-    },
-    {
-        "question": "How can you identify aids to navigation markingsus the intracoastal waterway?",
-        "answer": "By yellow stripes, squares or triangles marked on them"
-    },
-    {
-        "question": "Chart legends printed in capital letters show that the associated landmark is .",
-        "answer": "conspicuous"
-    },
-    {
-        "question": "What is the variation of a compas: if the True heading is 086° and the Magnetic heading is 098°?",
-        "answer": "  e"
-    },
-    {
-        "question": "Referring to the Light List, a light has a nominal range of 14 miles and 26 feet high. lf the visibility is 14 nautical miles and your height of eye is 20.0 feet, at what approximate distance will you sight the light?",
-        "answer": "11.1 nautical miles"
-    },
-    {
-        "question": "What will be the reading that is equivalent to one complete turn of the graduated scale micrometer drum of a sextant?",
-        "answer": "_  1 degree"
-    },
-    {
-        "question": "what is the unit of measurement it finding the mean distance between the earth and the sun?",
-        "answer": " 1 astronomical unit"
-    },
-    {
-        "question": "Consider a place approaching a channel when the height of HW is 2.8 meters. The vessels draught is 2.5 meters. What is the under keel clearance over a rack of drying height 0.9 meters?",
-        "answer": "  UKC = 0.4 meters at HW"
-    },
-    {
-        "question": "Your vessel's heading is 330°pge and 345°psc with a 2°E gyro error. If there is a variation of 13°W, what is the deviation of this heading?",
-        "answer": "eo"
-    },
-    {
-        "question": "When the body is on the rational horizon, what is its zenith distance?",
-        "answer": "   090 degrees   "
-    },
-    {
-        "question": "What is the variation of a compass if the True heading is 086° and the Magnetic heading is 098°?",
-        "answer": "  rew"
-    },
-    {
-        "question": "What is the variation of a compass if the True heading is 312° and thes: Magnetic heading is 298°?",
-        "answer": "‘   44°E"
-    },
-    {
-        "question": "A buoy bears 178 degrees at 3000 yards(2,700 meters). What is the course to make good to leave the buoy 100 yards (90 meters) to port beam?",
-        "answer": "   180 degrees True"
-    },
-    {
-        "question": "Aship is steaming a course of 090 degrees (T) at a speed of 14 knots. At 1874H, you observed a lighthouse bearing 053 degrees (T) and 1940H. the same lighthouse bears 031 degrees (T). What will be the time when the lighthouse is a beam of your vessel?",
-        "answer": "1926H"
-    },
-    {
-        "question": "At 1045H, your GPS fixes your position at Lat 24deg01 01.75N and Long 172 deg 48.40 W. You are steering a course of 086 deg psc at a speed of 6.0 knots. At 2400H, you fix your position at lat 21 deg 04.2 deg N and Long 172 deg 38.85 W. What were your set and drift?",
-        "answer": "360° T x 0.4 knots"
-    },
-    {
-        "question": "Your vessel's heading is 330° pgc and 345 psc with 2”E gyro error. If there is a variaton of 10°W, what is the deviation on this heading?",
-        "answer": "3° W"
-    },
-    {
-        "question": "Atide is called diurnal when",
-        "answer": "   only one high and one    Bomens tctmmbrem mmmarim ddiretwere"
-    },
-    {
-        "question": "Ona chart, cardinal marks of the compass indicates the position of a danger and the direction of the safe side. How would you determine a EAST cardinal mark?",
+        "question": "On a chart, cardinal marks of the compass indicates the position of a danger and the direction of the safe side. How would you determine a EAST cardinal mark?",
         "answer": "It is painted black with yellow bands."
     },
     {
@@ -525,8 +16,8 @@
         "answer": "It is an accurate position fix taken from conspicous landmarks"
     },
     {
-        "question": "A tropical storm is a tropical cyclone that generates«.s winds o",
-        "answer": "between 34 and 63 f knots"
+        "question": "A tropical storm is a tropical cyclone that generates winds of",
+        "answer": "between 34 and 63 knots"
     },
     {
         "question": "Describe what is a COLD WAVE?",
@@ -534,15 +25,219 @@
     },
     {
         "question": "As you enter a U.S Channel from seaward, how do the numbers on the buoys changes?",
-        "answer": "It increase with the can buoys being odd numbered"
+        "answer": "It increase with the can buoys being odd numbered."
     },
     {
-        "question": "On your ARPA, there are two. guard zone, How would you classify the function of the inner guard zone?",
+        "question": "On your ARPA, there are two guard zone. How would you classify the function of the inner guard zone?",
         "answer": "It give warning of small targets that are initially detected that are closer than the outer zone."
+    },
+    {
+        "question": "An electronic depth finder operates on the principle that ______.",
+        "answer": "sound waves travel at a constant speed through water."
     },
     {
         "question": "What is the used of a sling psychrometer?",
         "answer": "instrument used to measure relative humidity"
+    },
+    {
+        "question": "The direction a vessel is pointed at any given time is the:",
+        "answer": "Heading"
+    },
+    {
+        "question": "If you are in the Northern Hemisphere as a general rule (Buys Ballot's Law), how could you determine the center of low pressure?",
+        "answer": "Faces the surface of the wind the center of low is toward your right."
+    },
+    {
+        "question": "An electronic depth finder operates on the principle that ______.",
+        "answer": "sound waves travel at a constant speed through water"
+    },
+    {
+        "question": "If you are in the Southern Hemisphere as general rule (Buy's Ballot Law), how would you determine the center of low pressure?",
+        "answer": "Faces the surface of the wind the center of low is toward your left."
+    },
+    {
+        "question": "The lines of force directed from south to north and north to south within the magnet?",
+        "answer": "external field"
+    },
+    {
+        "question": "The most probable position of the object of a search at any given time is the______.",
+        "answer": "datum position"
+    },
+    {
+        "question": "What do you call the function of the horizontal component of the compass what gives the compass needle the ability to point north?",
+        "answer": "directive force"
+    },
+    {
+        "question": "How would you ensure that accurate positioning is done during chart correction?",
+        "answer": "By way of tracing if available as a useful tool for positioning a correction quickly."
+    },
+    {
+        "question": "A sail plan including the vessel s itinerary name number and persons aboard should be filed with______.",
+        "answer": "a responsible person"
+    },
+    {
+        "question": "If your barometer reading shows a low pressure system in the area, what kind of weather is expected?",
+        "answer": "Stormy and wet"
+    },
+    {
+        "question": "What is the top mark (if any) of the Starboard hand lateral marks used in lALA Region B?",
+        "answer": "Single red cone, point upward"
+    },
+    {
+        "question": "What is the top mark (if any) of the Port hand lateral marks used in IALA RegionB?",
+        "answer": "Single green cylinder (can)."
+    },
+    {
+        "question": "A single line of position combined with a dead-reckoningAras position results in a(n)_____",
+        "answer": "Estimated position"
+    },
+    {
+        "question": "What is the topmark (if any) of the Starboard hand lateral marks used in IALA Region A?",
+        "answer": "Single green cone, point upward"
+    },
+    {
+        "question": "What will be the movement of a deep draft vessel navigating in a narrow channel or canal like Panama Canal?",
+        "answer": "She will drag more water than when underway in deep water."
+    },
+    {
+        "question": "The direction of tidal current in the open ocean is ______",
+        "answer": "rotary"
+    },
+    {
+        "question": "A line of position from a celestial observation is a segment of a ______.",
+        "answer": "circle of equal altitude"
+    },
+    {
+        "question": "If you received a weather forecasts wherein the word fracto is used as a prefix to stratus or cumulus clouds, what kind of weather is accompanying this?",
+        "answer": "Rainy weather with strong winds."
+    },
+    {
+        "question": "In weather forecasting, certain types of clouds are associated with certain types of weather. If you observe with a \"mackerel sky\", what is the belief does it represents?",
+        "answer": "Precursor of bad weather"
+    },
+    {
+        "question": "The force that will cause the axis of a spinning.",
+        "answer": "Precession"
+    },
+    {
+        "question": "A running fix is a position obtained by _______?",
+        "answer": "taking multiple lines of position from one object at different times and advancing them to a common time."
+    },
+    {
+        "question": "What do you call the phenomenon linked with the use of applied force on a gyro compass?",
+        "answer": "Precession"
+    },
+    {
+        "question": "What do isogonic lines indicate?",
+        "answer": "Points of equal variation"
+    },
+    {
+        "question": "Isogonic lines are lines on a chart indicating:",
+        "answer": "Points of equal variation"
+    },
+    {
+        "question": "A sextant having an index error that is on the arc has a _____.",
+        "answer": "negative correction"
+    },
+    {
+        "question": "Which of the following Differential Global Positioning System does not reduce?",
+        "answer": "Multi-path errors"
+    },
+    {
+        "question": "What is the ratio Of the intensity Of magnetization produced in a substance to the magnetic force to Which the material is subjected?",
+        "answer": "Magnetic susceptibility."
+    },
+    {
+        "question": "What is the tendency of magnetic lines of induction to concentrate on material of high permeability?",
+        "answer": "magnetic sheilding"
+    },
+    {
+        "question": "An automatic identification system (AIS) transponder transmits and receives information broadcasts on:",
+        "answer": "VHF maritime band"
+    },
+    {
+        "question": "What is the color of the West cardinal marks used in lALA Region A and Region B?",
+        "answer": "Yellow with a single broad horizontal black band."
+    },
+    {
+        "question": "What is the color of the South cardinal marks used in lALA Region A and Region B?",
+        "answer": "Yellow above black"
+    },
+    {
+        "question": "Speaking of Global Positioning System, how accurate is a GPS horizontal accuracy?",
+        "answer": "With in a range of 100 meters"
+    },
+    {
+        "question": "Advection fog a common occurrence on the Great Lakes forms when______.",
+        "answer": "relatively warm air flows over cooler water"
+    },
+    {
+        "question": "Speaking of Global Positioning System, how accurate is a DGPS horizontal accuracy?",
+        "answer": "With in a range of 10 meters"
+    },
+    {
+        "question": "Which routeing measure is described that constitute a boundary of opposing streams of traffic by appropriate means?",
+        "answer": "Traffic separation scheme."
+    },
+    {
+        "question": "Which routeing measure is described as areas within defined limits that constitute a boundary caused by natural obstacles, including those forming separation zone?",
+        "answer": "Traffic lane"
+    },
+    {
+        "question": "A yellow buoy may mark a(n)",
+        "answer": "anchorage area"
+    },
+    {
+        "question": "When you are in Polar Region, which of the following weather condition is NOT expected?",
+        "answer": "To experience extensive snowfall"
+    },
+    {
+        "question": "What would you conclude if you saw nimbostratus clouds develop in the close area of your ship at sea?",
+        "answer": "There will be rain and visibility will deteriorate."
+    },
+    {
+        "question": "How would you show your understanding of an echo sounder having a Pythagoras error?",
+        "answer": "The error is found when two transducers are used one for transmission and the other for reception."
+    },
+    {
+        "question": "A vertically-striped buoy may be",
+        "answer": "lighted with a white light"
+    },
+    {
+        "question": "How would you show your understanding of an echo sounder having a Pythagoras error?",
+        "answer": "The error is found when two transducers are used one for transmission and the other for reception."
+    },
+    {
+        "question": "A vertically-striped buoy may be",
+        "answer": "lighted with a white light"
+    },
+    {
+        "question": "After sailing for several minutes (making 10 knots through the water) and in constant monitoring of your radar screen, you noticed that a contact has remained in the same position relative to yours, what could be the possible conclusion of the scenario?",
+        "answer": "the contact is on the same course and speed as your vessel"
+    },
+    {
+        "question": "When using buoy as an aid to navigation which of the followingArLas should be considered?",
+        "answer": "The buoy may not in its the charted position"
+    },
+    {
+        "question": "When using a buoy as an aid to navigation, which of the following should always be considered?",
+        "answer": "The buoy is nearly always well anchored and can be considered to be in its charted position."
+    },
+    {
+        "question": "A swift current occurring in a narrow passage connecting two large bodies of water which is produced by the continuously changing difference in height of tide at the two ends of the passage is called a",
+        "answer": "hydraulic current"
+    },
+    {
+        "question": "Where will you find the correction to apply to your barometer reading in order to allow for the effect of dirnal variation?",
+        "answer": "The amount which is given each hour of the day in the customary climactic atlases"
+    },
+    {
+        "question": "What is the safest prudent procedure to follow while navigating in the vicinity of a tropical cyclone?",
+        "answer": "Take a possible steps to avoid it if possible."
+    },
+    {
+        "question": "If the barometer reading shows high pressure in the area, what kind of weather is expected?",
+        "answer": "Sunny and dry"
     },
     {
         "question": "Which statement about a gnomonic chart is CORRECT?",
@@ -550,103 +245,75 @@
     },
     {
         "question": "Which one is the most reliable way of calculating the position among the listed method?",
-        "answer": ""
+        "answer": "Fix"
     },
     {
         "question": "Which of the following vessel is not engage in fishing under rule 3?",
         "answer": "Fishing vessel engage in trolling."
     },
     {
-        "question": "Which of the following is INCORRECT about differential GPS?",
+        "question": "Which of the following isINCORRECT about differential GPS?",
         "answer": "It reduces geometric dilution of position."
     },
     {
-        "question": "Which of the following a Differential Globa! Pasitioning Systemeus does not reduce?",
-        "answer": "   Muiti-path errors.   "
+        "question": "Which of the following a Differential Global Positioning SystemAAs does not reduce?",
+        "answer": "Multi-path errors."
     },
     {
         "question": "At 0000 you fix your position and plot a new DR track line. At 0200 you again fix your position and it is 0.5 mile east of your DR. Which statement is TRUE?",
         "answer": "The drift is 0.25 knot."
     },
     {
-        "question": "If there are smal! cumulus clouds in the morning in summer, what kind of cloud cover would you expect and is the reasonable to forecast later in the day?",
+        "question": "If there are small cumulus clouds in the morning in summer, what kind of cloud cover would you expect and is the reasonable to forecast later in the day?",
         "answer": "CB cloud."
     },
     {
         "question": "If you are in the Northern Hemisphere as a general rule (Buy's Ballot Law), how would you determine the center of high pressure?",
-        "answer": "Faces the surfaces of    the wind the center of high pressure is in your left."
+        "answer": "Faces the surfaces of the wind the center of high pressure is in your left."
     },
     {
-        "question": "What is the most prominent risk to Maritime safety that stood out?",
-        "answer": "-   Human factor related risk."
+        "question": "What is the most prominent risk to maritime safety that stood out?",
+        "answer": "Human factor related risk."
     },
     {
         "question": "What approach would you use in keeping up-to-date Sailing Directions?",
-        "answer": "   will ascertain if the book under consideration is the last one issued for the area covered."
+        "answer": "I will ascertain if the book under consideration is the last one issued for the area covered."
     },
     {
-        "question": "If you were operating in fog and hear a whistle signal consisting of a three blast namely one short, one prolonged and one short blast, what is the condition of that vessel?",
-        "answer": "The vessel is at anchor."
+        "question": "A vertically-striped buoy may be",
+        "answer": "lighted with a white light"
     },
     {
-        "question": "In Radar practice what is the techniques to be routinely used fo track keeping in all weather congition?",
-        "answer": "Parallel index :"
+        "question": "In Radar practice what is the techniques to be routinely used for track keeping in all weather condition?",
+        "answer": "Parallel Index"
     },
     {
         "question": "What celestial body may sometimes be observed in daylight?",
-        "answer": ""
+        "answer": "Venus"
     },
     {
-        "question": "What factors are used to determinésus climate?",
+        "question": "What factors are used to determine climate?",
         "answer": "Precipitation"
     },
     {
-        "question": "IN REGION A of the IALA Buoyage System, when entering from seaward, the starboard side of a channel would be marked by a .",
+        "question": "IN REGION A of the IALA Buoyage System, when entering from seaward, the starboard side of a channel would be marked by a _____.",
         "answer": "green conical buoy"
     },
     {
-        "question": "What is the light color (when fitted) of the Port hand tateral marks used in IALA Region A?",
+        "question": "What is the light color (when fitted) of the Port hand lateral marks used in IALA Region A?",
         "answer": "Red"
     },
     {
-        "question": "What is the light rhythm (when fitted) of the EAST Cardinal marks used in [ALA Region A and region B?",
+        "question": "What is the light rhythm (when fitted) of the EAST Cardinal marks used in IALA Region A and region B?",
         "answer": "VQ(3) every 5 seconds or Q(3) every 10 seconds."
     },
     {
         "question": "What is the line drawn on a chart through places having the same value of magnetic dip?",
-        "answer": "ota"
+        "answer": "Isoclinal"
     },
     {
         "question": "What is the operating principle of Echo Sounder?",
         "answer": "Measures the depth of the water by measuring the time for a pulse of energy to travel to the sea bed and back."
-    },
-    {
-        "question": "As per regulation, which of the following vessel is define restricted in her ability to maneuver?",
-        "answer": "Unable to keep out of the way of another vessel due to the nature of her work."
-    },
-    {
-        "question": "If you are an officer on watch when should you plot a dead reckoning position?",
-        "answer": "At every speed change"
-    },
-    {
-        "question": "The index error is determined by adjusting the .",
-        "answer": "   micrometer drum   "
-    },
-    {
-        "question": "You are underway on course 160°T at 10 knots. The current is 210°T at 0.9 knots. Whats is the course made good?",
-        "answer": "164°T"
-    },
-    {
-        "question": "How would you execute your approach when you are to Cross ¢ traffic fane?",
-        "answer": "You should cross at right angle."
-    },
-    {
-        "question": "In the NAVSTAR GPS main carrie frequencies L1 for positioning purpose used is centered on what frequency?",
-        "answer": ": 1575.42 Mhz"
-    },
-    {
-        "question": "How many satellites does each orbital in the GPS constellation have?",
-        "answer": "Fou"
     },
     {
         "question": "Which chart is a planar perspective projection, viewed from the point on the globe opposite the point of tangency?",
@@ -669,20 +336,20 @@
         "answer": "Your vessel is in the dangerous semicircle"
     },
     {
-        "question": "What is the deviation of a compass if the Compass headingen.s is 312° and the Magnetic heading is 298° 7",
+        "question": "What is the deviation of a compass if the Compass heading TAs is 312° and the Magnetic heading is 298° ?",
         "answer": "14°W"
     },
     {
-        "question": "Asailing chart could have a scale of .",
-        "answer": "   1:700,000   "
+        "question": "A sailing chart could have a scale of",
+        "answer": "1:700,000"
     },
     {
-        "question": "What is the TOPMARK of the Eas cardinal marks used in IALA Region A and Region B?",
-        "answer": "t) 2 black cones, one above the other, base to base."
+        "question": "What is the TOPMARK of the East cardinal marks used in lALA Region A and Region B?",
+        "answer": "2 black cones, one above the other, base to base."
     },
     {
-        "question": "What is the variation of a compas: if the True heading is 215° and the Magnetic heading is 223° ?",
-        "answer": "8°w   "
+        "question": "What is the variation of a compass if the True heading is 215° and the Magnetic heading is 223° ?",
+        "answer": "8°W"
     },
     {
         "question": "How many knots must a ship maintained in order for the speed adjustment of the master gyrocompass more effective?",
@@ -693,291 +360,179 @@
         "answer": "20 nautical miles"
     },
     {
-        "question": "Achart with a scale of 1:80,000 would fall into the category of a",
-        "answer": "   coastal chart   "
+        "question": "A chart with a scale of 1:80,000 would fall into the category of a",
+        "answer": "coastal chart"
     },
     {
-        "question": "A buoy bears 178 degrees at 300 yards(2,700 meters). What is the course to make good to leave the buoy 100 yards (90 meters) to port beam?",
-        "answer": ") 180 degrees True"
+        "question": "A buoy bears 178 degrees at 3000 yards(2,700 meters). What is the course to make good to leave the buoy 100 yards (90 meters) to port beam?",
+        "answer": "180 degrees True"
     },
     {
-        "question": "A landmark is 36.5 meters high and the light has a nominal range of 18n.m. Your height of eye is 12.75 meters. If the visibility is 11.2 n.m. when the light becomes visible, approximately how far off the light you will be?",
+        "question": "A landmark is 36.5 meters high and the light has a nominal range of 18 n.m. Your height of eye is 12.75 meters. If the visibility is 11.2 n.m. when the light becomes visible, approximately how far off the light you will be?",
         "answer": "19.0 nm"
     },
     {
-        "question": "When using the depth finder in the open ocean, what phenomena is most likely provide a continuous trace that isn't from the actual bottom?",
-        "answer": "It generates echoes from depth scattering layer."
+        "question": "At 1200H, you fix your position and change course to 315°T. At 1225H, you again fix your position, and it is 0.9 mile southwest of your DR position. Find the drift:",
+        "answer": "2.1 knots"
     },
     {
-        "question": "How would you classify a 3D fix that consider altitude require in theoretical position lines when using GPS?",
-        "answer": "It requires 4 theoretical position lines"
+        "question": "How can you identify aids to navigation markingALas the intracoastal waterway?",
+        "answer": "By yellow stripes, squares or triangles marked on them"
     },
     {
-        "question": "How does the New Moon rise in low latitudes?",
-        "answer": "it will always rise at    about sunset."
+        "question": "Chart legends printed in capital letters show that the associated landmark is ______.",
+        "answer": "conspicuous"
     },
     {
-        "question": "In the Philippines, what indicate a buoy that should be left to port when entering from seaward?",
-        "answer": "   Odd number   "
+        "question": "What is the variation of a compass if the True heading is 086° and the Magnetic heading is 098°?",
+        "answer": "12°W"
     },
     {
-        "question": "What conclusion can you draw as the safest procedure to follow while navigating in the vicinity of tropical cyclone?",
-        "answer": "Take avoiding action as early as possible"
+        "question": "Referring to the Light List, a light has a nominal range of 14 miles and 26 feet high. If the visibility is 14 nautical miles and your height of eye is 20.0 feet, at what approximate distance will you sight the light?",
+        "answer": "11.1 nautical miles"
     },
     {
-        "question": "What is the meaning of the coded form MO2/MO5 in the weather report for LOWL at 0706502",
-        "answer": "The actual temperature is -2°and the dew point temperature is -5°C."
+        "question": "What will be the reading that is equivalent to one complete turn of the graduated scale micrometer drum of a sextant?",
+        "answer": "1 degree"
     },
     {
-        "question": "Can you tell which of the following facts do not appear in pilot charts?",
-        "answer": "   Tidal Currents   "
+        "question": "What is the unit of measurement in finding the mean distance between the earth and the sun?",
+        "answer": "1 astronomical unit"
     },
     {
-        "question": "our ship is on course 150° at a speed of 17 knots, if the apparent wind... is from 040 ° of the starboard bow at a speed of 15. knots. What would be the direction of true wind and speed?",
-        "answer": "True wind from 270° and speed about 11 knots."
+        "question": "What is present on the satellites of GPS to contribute the accurate time information?",
+        "answer": "Multiple atomic clocks"
     },
     {
-        "question": "What is the light rhythm (when fitted) of the SOUTH Cardinal marks used in [ALA Region A and region B?",
-        "answer": "VQ(6) + Long flash every 10 seconds or Q(6) + Long flash every 15 seconds"
+        "question": "What will cause the ARPA to emit a visual alarm, audible alarm or both?",
+        "answer": "a target being initially selected within a guard zone"
     },
     {
-        "question": "No matter how sophisticated navigational aids and safety devices, no matter how automation, computerization and mathematically plan the voyage o! the vessel, the element of human fatlibitity will aways exist and will remain prime cause of collision in navigable water\". What does this equation emphasize?",
-        "answer": "The importance of human factor."
+        "question": "How does the noise of thunder produce when you saw a lightning flash?",
+        "answer": "The effect of the instantaneous heating and sudden expansion of air near the lightning flash produces the noise."
     },
     {
-        "question": "How would an excessive noise from the Steering Gear be developed?",
-        "answer": "Excessive noise and vibrations from the steering gear is due to air bubbles in the oil pumps and pipings are subjected to air hammer leading to vibration."
-    },
-    {
-        "question": "How would you describe the process of changing of state from liquid to a gas?",
-        "answer": "Evaporation in which latent heat is absorbed."
-    },
-    {
-        "question": "Acommon compass rose as found on a nautical chart shows true north and magnetic north. How many traditional winds are listed on s modern compass rose’",
-        "answer": "Eight"
-    },
-    {
-        "question": "How would you perform correctior to old charts?",
-        "answer": "     Check that the edition is currently in the Cumulative Notice to Mariners against the chart number and the number of uncorrected notices. Start by correcting the latest correction first and proceed backwards until all the notices are corrected."
-    },
-    {
-        "question": "5 ee",
-        "answer": "CT"
-    },
-    {
-        "question": "How could a civilian GPS user improves accuracy level of his position?",
-        "answer": "by using differential GPS"
-    },
-    {
-        "question": "Error in an instrument due to inaccurate pivoting of a moving part, as the index arm of a marine sextant.",
-        "answer": "Centering error"
-    },
-    {
-        "question": "Condensation in which latent heatis released.",
-        "answer": "By way of tracing if available as a useful tool for positioning a correction quickly."
-    },
-    {
-        "question": "At what altitude would you categorize the location of the middle clouds?",
-        "answer": "Between 6,500 ft - 20,000 ft"
-    },
-    {
-        "question": "At 2245H, your GPS fixes your position at Lat 01.75\" N and Long 172° 48,40' W. You are steering a course of 086° psc at a speed of 6.0 knots. At 2400H, you fix your position at Lat 21° 04.2' N and Long 172° 38.85' W. What were your set and drift?",
-        "answer": "360°T x 0.4 knots"
-    },
-    {
-        "question": "According to Rule 3 which of the fotlowing vessels is considered underway?",
-        "answer": "A purse seiner hauling her net."
-    },
-    {
-        "question": "A common compass rose as found on a nautical chart shows true north and magnetic north. What will you notice on the inner circle and the graduations of the circle?",
-        "answer": "correspondence between the thirty-two points rose"
-    },
-    {
-        "question": "Acommon compass rose as found on a nautical chart shows true north and magnetic north, What kind of markings will you notice on the inner circle and the graduations of the circle?",
-        "answer": "Correspondence between the thirty two points of rose."
-    },
-    {
-        "question": "What would result if the moon anc sun align with the Earth?",
-        "answer": "   Tides are stronger"
-    },
-    {
-        "question": "When a new chart is received onboard, how would you correct 2 new chart?",
-        "answer": "Highlight the chart in '    the correction log; Enter the chart folio and sequence number; Correct the chart for any pending corrections; Correct the Admiralty Chart catalogue if affected; Correct the old edition of the chart."
-    },
-    {
-        "question": "In general, the most effective period for observing stars and planets occurs during the darker limit of.",
-        "answer": "civil twilight"
-    },
-    {
-        "question": "How would you perform correction to ald charts?",
-        "answer": "     Check that the edition is currently in the Cumulative Notice to Mariners against the chart number and the number of uncorrected notices. Start by correcting the latest correction first and proceed backward until all the notices are corrected."
-    },
-    {
-        "question": "How would you obtain the ship position by taking into account winds, tides, currents and estimated speed?",
-        "answer": "Dead-reckoning position"
-    },
-    {
-        "question": "How would you fulfill the condition for sailing in coastalaus navigation?",
-        "answer": "Develop a detailed passage plan to include weather forecasts, navigation strategies and coordinate watchkeeping schedule and responsibilities during the passage."
-    },
-    {
-        "question": "How would you define alternating light?",
-        "answer": "Arhythmic light showing light of alternating colors."
-    },
-    {
-        "question": "How would you categorize the courses and the bearings which are laid down on the chart",
-        "answer": "All the courses and all the bearings which are laid down down on the chart are true."
-    },
-    {
-        "question": "How should you consider the best meteorological factors in planning an ocean passage?",
-        "answer": "Achoice of route that has a much advantage as possible from currents which are favourable.A choice of route that must be balanced between consideration of safety and time."
-    },
-    {
-        "question": "How do gyrocompass repeaters replicable the direction reading of the masteru: gyrocompass?",
-        "answer": "Accurate electronic servo mechanism."
-    },
-    {
-        "question": "How could a civilian GPS user improves accuracy level of his",
-        "answer": "by using differential ape"
-    },
-    {
-        "question": "How does the major advantage of the rhumb line tract compare to the great track for long-distance navigation in terms of maintaining of a consistent heading throughout the journey?",
-        "answer": "   the rhumb line track provides a more consistent heading than the great circle track due to its straight-line pattern.   "
-    },
-    {
-        "question": "How would you plot a fix with elevation?",
-        "answer": "it requires 4 theoretical position lines"
-    },
-    {
-        "question": "If you are heading south and you observe that the chart predicts an easterly current, how can you adjust your course without taking the wind inte consideration?",
-        "answer": "Head your vessel slightly to the right"
-    },
-    {
-        "question": "What does Global Positioning System receiver measure?",
-        "answer": "the time between transmission and reception of signal from a satellite"
-    },
-    {
-        "question": "Which statement, concerning offshore supply vessel operations correctly defines the length of a voyage?",
-        "answer": "The total distance from the port of departure to    the port of arrival, not including stops at offshore points"
-    },
-    {
-        "question": "You are on watch at night in clear visibility and the vessel has just beena«us anchored. The first thing that you should do after the anchor has been jet go is ta",
-        "answer": "take bearings to obtain ships position"
-    },
-    {
-        "question": "You are on watch and the pilot ha just anchored the vessel. The nex thing that you should do after the anchor has been tet go is to",
-        "answer": "3 t plot the vessels position on the chart"
-    },
-    {
-        "question": "What does a low HDOP ( Horizontal Dilution of Precision) number such as 2 indicates?",
-        "answer": "   Good fix   "
-    },
-    {
-        "question": "What is a barometer?",
-        "answer": "An instrument of measuring atmospheric pressure"
-    },
-    {
-        "question": "Cardinal marks can be used to show the following except:",
-        "answer": "indicate a feature such as recreation zones, speed limits, mooring areas or cables"
-    },
-    {
-        "question": "Consider a place approaching a channel when the height of HW is 2.8 meters. The vessels draught i 2.5 meters. What is the under kee clearance over a rock of drying height 0.9 meters?",
-        "answer": "s   UKC = 0.4 meters at   ) HW"
-    },
-    {
-        "question": "GPS L2 signal operates at which frequency?",
-        "answer": "   1.2276 GHz"
-    },
-    {
-        "question": "Which of the following conditions must be satisfied for a lunar eclipse to occur?",
-        "answer": "The Moon must be at the ones of the nodes"
-    },
-    {
-        "question": "What instrument fitted with a prism is set on a compass. repeater for observing the bearing of the Sun?",
-        "answer": "Azimuth circle"
-    },
-    {
-        "question": "How is a buoy marking a wreck bt identified?",
-        "answer": "_    With white light F(2)    and a topmark of 2 black spheres."
-    },
-    {
-        "question": "Which of the following statements described on how does the coron of the sun and moon form?",
-        "answer": "When the sun or moon is seen through , altostratus clouds its outline is indistinct and It appears surrounded by a glow of light."
-    },
-    {
-        "question": "What is the light rhythm (when fitted) of the SOUTH Cardinai marks used in IALA Region A and region B?",
-        "answer": "VQ(6) + Long flash every 10 seconds or Q(6) + Long flash every 15 seconds"
-    },
-    {
-        "question": "Other than the Sun and Moon, which of the following celestial body is the brightest object in the sky?",
+        "question": "Other than the Sun and Moon, which of the following celestial body as is the brightest object in the sky?",
         "answer": "Venus"
     },
     {
-        "question": "In the NAVSTAR GPS main carrie frequencies L1 for positioning purpose used is centered on whai frequency?",
-        "answer": "ig    1575.42 Mhz"
+        "question": "You are meeting another power driven vessel head-on and sound one short blast as a passing signal. The other vessel answers with two short blasts. What should be your next action?",
+        "answer": "Sound the danger signal."
     },
     {
-        "question": "You are on course 357° T and take a relative bearing of a lighthouse of 180°. What is the true bearing of the lighthouse?",
-        "answer": "="
+        "question": "What are the names of places taken on charts or from Sailing",
+        "answer": "Topographical Names"
     },
     {
-        "question": "How should you consider the bes meteorological factors in planning an ocean passage?",
-        "answer": "Achoice of route that       has a much advantage as possible from currents which are favourable."
+        "question": "How would you call a chart that has extensive corrections made and again printed?",
+        "answer": "New edition"
     },
     {
-        "question": "How could you determine the existence of the conditionsaus thal allow thunderstorms to be developed?",
-        "answer": "A plentiful supply of _   moisture and steep    lapse rate through a large vertical extent and a trigger action."
+        "question": "Can you tell which of the following facts do not appear in pilot charts?",
+        "answer": "Tidal Currents"
     },
     {
-        "question": "Which is your best indicator of change in weather that may be expected at the passage of line squall?",
-        "answer": "A sudden rise in barometric pressure"
+        "question": "How could you determine that mixed (time and clear) icing is most likely to be encountered?",
+        "answer": "In nimbostratus cloud at a temperature of -10°C."
     },
     {
-        "question": "If you are an officer on watch when should you piot a dead",
-        "answer": "   At every speed change"
+        "question": "In the Philippines, what indicate a buoy that should be left to port when entering from seaward?",
+        "answer": "Odd number"
     },
     {
-        "question": "What refers to the International Multi-Constellation Satellite System?",
+        "question": "How would you characterize the tropopause in mid-latitudes",
+        "answer": "Lower in winter with a higher temperature"
+    },
+    {
+        "question": "What conclusions in plain language is usually the purpose of marine weather?",
+        "answer": "For forecast"
+    },
+    {
+        "question": "The most reliable form of navigational system in the high seas, is",
+        "answer": "Celestial Navigation"
+    },
+    {
+        "question": "What is a double star?",
+        "answer": "Comprises two stars that appear close together"
+    },
+    {
+        "question": "As per regulation, which of the following vessel is define restricted in her ability to maneuver?",
+        "answer": "Unable to keep out of the way of another vessel due to the nature of her work."
+    },
+    {
+        "question": "If you are an officer on watch when should you plot a dead reckoning position?",
+        "answer": "At every speed change"
+    },
+    {
+        "question": "The index error is determined by adjusting the______.",
+        "answer": "micrometer drum"
+    },
+    {
+        "question": "You are underway on course 160°T at 10 knots. The current is 210°T at 0.9 knots. Whataras is the course made good?",
+        "answer": "164°T"
+    },
+    {
+        "question": "How would you execute your approach when you are to Cross a traffic lane?",
+        "answer": "You should cross at right angle."
+    },
+    {
+        "question": "In the NAVSTAR GPS main carrier frequencies L1 for positioning purpose used is centered on what frequency?",
+        "answer": "1575.42 Mhz"
+    },
+    {
+        "question": "How many satellites does each orbital in the GPS constellation have?",
+        "answer": "Four"
+    },
+    {
+        "question": "What refers to the International Multi-Constellation Satellite",
         "answer": "GNSS"
     },
     {
-        "question": "Where will you find the correction to apply to your barometer readin: in order ta allow for the effect of diurnal variation?",
-        "answer": "The amount which is J    given each hour of the day in the customary climactic atlases"
+        "question": "Where will you find the correction to apply to your barometer reading in order to allow for the effect of diurnal variation?",
+        "answer": "The amount which is given each hour of the day in the customary climactic atlases"
     },
     {
-        "question": "- CE",
-        "answer": "Sy"
+        "question": "Which theoretical minimum number of measurements from satellites does a GPS receiver need in order to provide an exact three-dimensional position?",
+        "answer": "Four"
     },
     {
-        "question": "What do you call the phenomenor linked with the use of applied force on a gyro compass?",
-        "answer": "’    Precession"
-    },
-    {
-        "question": "Which theoretical minimum number of measurements from satellites does a GPS receiver Needins in order to provide an exact three-dimensional position?",
-        "answer": "="
+        "question": "Determine the relative humidity if the air temperature is 70°F and the wet bulb temperature is 60°F?",
+        "answer": "0.57"
     },
     {
         "question": "If the relative humidity of the air temperature is 90°F and the wet bulb temperature is 81°F?",
-        "answer": "   0.67"
+        "answer": "0.67"
     },
     {
-        "question": "The dry buib thermometer is 80°F and the wet bulb temperatures: i: 74°F, what is the relative humidity?",
+        "question": "The dry bulb thermometer is 80°F and the wet bulb temperature isn 74°F, what is the relative humidity?",
         "answer": "0.7"
     },
     {
-        "question": "w many semi-diurnat tides occur in a 24 hours and 53 minutes cycie",
-        "answer": "Po"
+        "question": "How many semi-diurnal tides occur in a 24 hours and 53 minutes cycle?",
+        "answer": "2"
     },
     {
-        "question": "It is a space-based navigation system providing global 24 hours a day, all weather access to precise position, velocity and time information to a properly equippec user. Its operating altitude in 3 orbital planes is at 19,000 kms. altitude.",
-        "answer": "Global Navigation Satellite System _  (GLONASS) {"
+        "question": "It is a space-based navigation system providing global 24 hours a day, all weather access to precise position, velocity and time information to a properly equipped user. Its operating altitude in 3 orbital planes is at 19,000 kms. altitude.",
+        "answer": "Global Navigation Satellite System (GLONASS)"
+    },
+    {
+        "question": "How would you compare the precision of the vessel's position during a coastal passage?",
+        "answer": "It is an accurate position fix taken from conspicuous landmarks"
+    },
+    {
+        "question": "The direction a vessel is pointed at any given time is the:",
+        "answer": "heading"
+    },
+    {
+        "question": "The lines of force directed from south to north and north to south within the magnet?",
+        "answer": "external field"
     },
     {
         "question": "You determine your vessel's position by taking a range and bearing to a buoy. What is the term you used for your plotted position?",
         "answer": "Estimated position"
     },
     {
-        "question": "The accuracy for civilian GPS users can be significantly«nus improve by using:",
+        "question": "The accuracy for civilian GPS users can be significantly improve by using:",
         "answer": "Differential GPS"
     },
     {
@@ -989,8 +544,8 @@
         "answer": "Compass Card"
     },
     {
-        "question": "It is known as the angular distance between the zenith and < point on the celestial sphere through the arc of the vehicle circle observable for bodies above the horizon.",
-        "answer": "Coaltitude   "
+        "question": "It is known as the angular distance between the zenith and a point on the celestial sphere through the arc of the vehicle circle observable for bodies above the horizon.",
+        "answer": "Coaltitude"
     },
     {
         "question": "Which cloud commonly produces a halo about the Sun or Moon?",
@@ -1002,34 +557,630 @@
     },
     {
         "question": "Which statement concerning GPS is TRUE?",
-        "answer": "1 it may be suspended without warning"
+        "answer": "It may be suspended without warning"
     },
     {
-        "question": "Arunning fix is a position obtainex by ?",
-        "answer": "j taking multiple lines of    ee? ee op ee ae ee"
+        "question": "What is the meaning of the coded form M02/M05 in the weather report for LOWL at 070650Z",
+        "answer": "The actual temperature is -2° and the dew point temperature is -5°C."
     },
     {
-        "question": "What do isogonic lineSanus indicate?",
-        "answer": "Points of equal variation"
+        "question": "What is the light rhythm (when fitted) of the SOUTH Cardinal marks used in IALA Region A and region B?",
+        "answer": "VQ(6) + Long flash every 10 seconds or Q(6) + Long flash every 15 seconds"
     },
     {
-        "question": "lsogonic lines are lines on a chart indicating:",
-        "answer": "Points of equal variation"
+        "question": "No matter how sophisticated navigational aids and safety devices, no matter how",
+        "answer": "The importance of human factor."
     },
     {
-        "question": "Asextant having an index error that is on the arc has a",
-        "answer": "   negative correction   "
+        "question": "Index error of a sextant is primarily caused by _____.",
+        "answer": "the horizon glass not being parallel to the index mirror"
     },
     {
-        "question": "Which of the following Differential Global Positioning System does not reduce?",
-        "answer": "Multi-path errors"
+        "question": "How would an excessive noise from the Steering Gear be developed?",
+        "answer": "Excessive noise and vibrations from the steering gear is due to air bubbles in the oil pumps and pipings are subjected to air hammer leading to vibration."
     },
     {
-        "question": "What is the ratio Of the intensity Of magnetization produced in a substance to the magnetic force t Which the material is subjected?",
-        "answer": "Magnetic 5 susceptibility."
+        "question": "How would you describe the process of changing of state from liquid to a gas?",
+        "answer": "Evaporation in which latent heat is absorbed."
     },
     {
-        "question": "What is the tendency of magnetic lines of induction to concentrate on material of high permeability?",
-        "answer": "Magnetic shielding."
+        "question": "A common compass rose as found on a nautical chart shows true north and magnetic north. How many traditional winds are listed on  modern compass rose?",
+        "answer": "Eight"
+    },
+    {
+        "question": "How would you perform correction to old charts?",
+        "answer": "Check that the edition is currently in the Cumulative Notice to Mariners against the chart number and the number of uncorrected notices. Start by correcting the latest correction first and proceed backwards until all the notices ar corrected."
+    },
+    {
+        "question": "How could you determine the existence of the conditions that allow thunderstorms to be developed?",
+        "answer": "A plentiful supply of moisture and steep lapse rate through a large vertical extent and a trigger action."
+    },
+    {
+        "question": "Determine the relative humidity if the air temperature is 70°F and the wet bulb temperature is 60°F?",
+        "answer": "0.57"
+    },
+    {
+        "question": "How many semi-diurnal tides occur in a 24 hours and 53 minutes cycle?",
+        "answer": "2"
+    },
+    {
+        "question": "How can you identify aids to navigation marking the intracoastal waterway?",
+        "answer": "By yellow stripes, squares or triangles marked on them"
+    },
+    {
+        "question": "A buoy bears 178 degrees at 3000 yards(2,700 meters). What is the course to make good to leave the buoy 100 yards (90 meters) to port beam?",
+        "answer": "180 degrees True"
+    },
+    {
+        "question": "A landmark is 36.5 meters high and the light has a nominal range of 18 n.m.. Your height of eye is 12.75 meters. If the visibility is 11.2 n.m. when the light becomes visible, approximately how far off the light you will be?",
+        "answer": "19.0 nm"
+    },
+    {
+        "question": "At 1200H, you fix your position and change course to 315°T.At 1225H, you again fix your position, and it is 0.9 mile southwest of your DR position. Find the drift:",
+        "answer": "2.1 knots"
+    },
+    {
+        "question": "At 1300H, you fix your position and change course to 315°T. At 1325H, you again fix your position, and it is 0.9 mile southwest of your DR position. Find the drift:",
+        "answer": "2.1 knots"
+    },
+    {
+        "question": "What does a Global Positioning System receiver measure?",
+        "answer": "The time betweeen transmission and reception of a signal from a satellite."
+    },
+    {
+        "question": "How is a buoy marking a wreck be identified?",
+        "answer": "With white light F(2) and a topmark of 2 black spheres."
+    },
+    {
+        "question": "In the horizon system of coordinates what is equivalent to the meridian angle of the celestial equator system?",
+        "answer": "Azimuth angle"
+    },
+    {
+        "question": "In general, the most effective period for observing stars and planets occurs during the darker limit of _____.",
+        "answer": "civil twilight"
+    },
+    {
+        "question": "How would you perform correction to old charts?",
+        "answer": "Check that the edition is currently in the Cumulative Notice to Mariners against the chart number and the number of uncorrected notices. Start by correcting the latest correction first and proceed backward until all the notices are corrected."
+    },
+    {
+        "question": "How would you obtain the ship position by taking into account winds, tides, currents and estimated speed?",
+        "answer": "Dead-reckoning position"
+    },
+    {
+        "question": "How would you fulfill the condition for sailing in coastal navigation?",
+        "answer": "Develop a detailed passage plan to include weather forecasts, navigation strategies and coordinate watchkeeping schedule and responsibilities during the passage."
+    },
+    {
+        "question": "How would you define alternating light?",
+        "answer": "A rhythmic light showing light of alternating colors."
+    },
+    {
+        "question": "How would you categorize the courses and the bearings which are laid down on the chart",
+        "answer": "All the courses and all the bearings which are laid down down on the chart are true."
+    },
+    {
+        "question": "How should you consider the best meteorological factors in planning an ocean passage?",
+        "answer": "A choice of route that has a much advantage as possible from currents which are favourable.A choice of route that must be balanced between consideration of safety and time."
+    },
+    {
+        "question": "How do gyrocompass repeaters replicable the direction reading of the master gyrocompass?",
+        "answer": "Accurate electronic servo mechanism."
+    },
+    {
+        "question": "How could a civilian GPS user improves accuracy level of his position?",
+        "answer": "by using differential GPS"
+    },
+    {
+        "question": "Error in an instrument due to inaccurate pivoting of a moving part, as the index arm of a marine sextant.",
+        "answer": "Centering error"
+    },
+    {
+        "question": "Determine the approximate geographic visibility of an object, with a height above the water of 26.0 meters, for an observer with a height of eye of 18.25 meters?",
+        "answer": "20 nautical miles"
+    },
+    {
+        "question": "Condensation in which latent heatis released.",
+        "answer": "By way of tracing if available as a useful tool for positioning a correction quickly."
+    },
+    {
+        "question": "At what altitude would you categorize the location of the middle clouds?",
+        "answer": "Between 6,500 ft - 20,000 ft"
+    },
+    {
+        "question": "At 2245H, your GPS fixes your position at Lat 01.75' N and Long 172° 48,40' W. You are steering a course of 086° psc at a speed of 6.0 knots. At 2400H, you fix your position at Lat 21° 04.2' N and Long 172° 38.85' W. What were your set and drift?",
+        "answer": "360°T x 0.4 knots"
+    },
+    {
+        "question": "According to Rule 3 which of the following vessels is considered underway?",
+        "answer": "A purse seiner hauling her net."
+    },
+    {
+        "question": "A common compass rose as found on a nautical chart shows true north and magnetic north. What will you notice on the inner circle and the graduations of the circle?",
+        "answer": "Correspondence between the thirty-two points rose"
+    },
+    {
+        "question": "What would result if the moon and sun align with the Earth?",
+        "answer": "Tides are stronger"
+    },
+    {
+        "question": "When a new chart is received onboard, how would you correct a new chart?",
+        "answer": "Highlight the chart in the correction log; Enter the chart folio and sequence number; Correct the chart for any pending corrections; Correct the Admiralty Chart catalogue if affected; Correct the old edition of the chart."
+    },
+    {
+        "question": "GPS L2 signal operates at which frequency?",
+        "answer": "1.2276 GHz"
+    },
+    {
+        "question": "Which of the following conditions must be satisfied for a lunar eclipse to occur?",
+        "answer": "The Moon must be at the ones of the nodes"
+    },
+    {
+        "question": "What instrument fitted with a prism is set on a compass repeater for observing the bearing of the Sun?",
+        "answer": "Azimuth circle"
+    },
+    {
+        "question": "How is a buoy marking a wreck be identified?",
+        "answer": "With white light F(2) and a topmark of 2 black spheres."
+    },
+    {
+        "question": "Which of the following statements described on how does the corona of the sun and moon form?",
+        "answer": "When the sun or moon is seen through altostratus clouds its outline is indistinct and It appears surrounded by a glow of light."
+    },
+    {
+        "question": "What is the light rhythm (when fitted) of the SOUTH Cardinal marks used in IALA Region A and region B?",
+        "answer": "VQ(6) + Long flash every 10 seconds or Q(6) + Long flash every 15 seconds"
+    },
+    {
+        "question": "Other than the Sun and Moon, which of the following celestial body is the brightest object in the sky?",
+        "answer": "Venus"
+    },
+    {
+        "question": "In the NAVSTAR GPS main carrier frequencies L1 for positioning purpose used is centered on what frequency?",
+        "answer": "1575.42 Mhz"
+    },
+    {
+        "question": "You are on course 357° T and take a relative bearing of a lighthouse of 180°. What is the true bearing of the lighthouse?",
+        "answer": "177° T"
+    },
+    {
+        "question": "How should you consider the best meteorological factors in planning an ocean passage?",
+        "answer": "A choice of route that has a much advantage as possible from currents which are favourable."
+    },
+    {
+        "question": "How could you determine the existence of the conditionALs that allow thunderstorms to be developed?",
+        "answer": "A plentiful supply of moisture and steep lapse rate through a large vertical extent and a trigger action."
+    },
+    {
+        "question": "Which is your best indicator of change in weather that may be expected at the passage of line squall?",
+        "answer": "A sudden rise in barometric pressure"
+    },
+    {
+        "question": "If you are an officer on watch when should you plot a dead reckoning position?",
+        "answer": "At every speed change"
+    },
+    {
+        "question": "How would you perform correction to old charts?",
+        "answer": "Check that the edtition is currently in the Cumulative Notice to Mariners against the chart number and the number of uncorrected notices. Start by correcting the latest correction first and proceed backwards until all the notices are corrected."
+    },
+    {
+        "question": "When using the depth finder in the open ocean, what phenomena is most likely provide a continuous trace that isn't from the actual bottom?",
+        "answer": "It generates echoes from depth scattering layer."
+    },
+    {
+        "question": "As you enter a U.S Channel from seaward, how do the numbers on the buoys changes?",
+        "answer": "It increases with the can buoys being odd numbered"
+    },
+    {
+        "question": "How would you classify a 3D fix that consider altitude require in theoretical position lines when using GPS?",
+        "answer": "It requires 4 theoretical position lines"
+    },
+    {
+        "question": "How does the New Moon rise in low latitudes?",
+        "answer": "It will always rise at about sunset."
+    },
+    {
+        "question": "In the Philippines, what indicate a buoy that should be left to port when entering from seaward?",
+        "answer": "Odd number"
+    },
+    {
+        "question": "What conclusion can you draw as the safest procedure to follow while navigating in the vicinity of tropical cyclone?",
+        "answer": "Take avoiding action as early as possible"
+    },
+    {
+        "question": "What is the meaning of the coded form M02/M05 in the weather report for LOWL at 070650Z",
+        "answer": "The actual temperature is -2° and the dew point temperature is -5°C."
+    },
+    {
+        "question": "What does a Global Positioning System receiver measure?",
+        "answer": "The time between transmission and reception of a signal from a satellite."
+    },
+    {
+        "question": "Can you tell which of the following facts do not appear in pilot charts?",
+        "answer": "Tidal Currents"
+    },
+    {
+        "question": "our ship is on course 150° at a speed of 17 knots, if the apparent windaas is from 040 ° of the starboard bow at a speed of 15 knots. What would be the direction of true wind and speed?",
+        "answer": "True wind from 270° and speed about 11 knots."
+    },
+    {
+        "question": "What are the names of places taken on charts or from Sailing Directions called?",
+        "answer": "Topographical Names"
+    },
+    {
+        "question": "What would you conclude if you saw nimbostratus clouds develop in the close area of your ship at sea?",
+        "answer": "There will be rain and visibility will deteriorate."
+    },
+    {
+        "question": "When you are in Polar Region, which of the following weather condition is NOT expected?",
+        "answer": "To experience extensive snowfall"
+    },
+    {
+        "question": "The GPS implements two major corrections to its time signals for relativistic effects:",
+        "answer": "one for relative velocity of satellite and receiver"
+    },
+    {
+        "question": "Index error of a sextant is primarily caused by",
+        "answer": "the horizon glass not being parallel to the index mirror"
+    },
+    {
+        "question": "Vertical circle with passes through the east and west point of the horizon.",
+        "answer": "prime vertical circle"
+    },
+    {
+        "question": "The shoreline on charts generally represents the mean",
+        "answer": "high water line"
+    },
+    {
+        "question": "As per Rule 3 (i) of the Collision Regulation, what conclusion can you draw on a given situation that the vessel is said to be underway?",
+        "answer": "when she is riding at her anchor"
+    },
+    {
+        "question": "When your vessel is underway at sea, how would you classify the period of roll?",
+        "answer": "the time difference between zero to full inclination on one side"
+    },
+    {
+        "question": "The opposite of the elevated pole is the",
+        "answer": "depressed pole"
+    },
+    {
+        "question": "Apparent altitude is sextant altitudes corrected for",
+        "answer": "inaccuracies in the reading and reference level"
+    },
+    {
+        "question": "The tabulation data in the Nautical Almanac is for:",
+        "answer": "3 days"
+    },
+    {
+        "question": "Who distributes official charts for ECDIS?",
+        "answer": "Distributed on authority of government authorized hydrographic offices"
+    },
+    {
+        "question": "Who will survey the ECDIS installation?",
+        "answer": "Flag state"
+    },
+    {
+        "question": "What is your idea of a Cold Sector?",
+        "answer": "it is the area of depression occupied by cold air at the surface and comprises the whole depression after the occluding process has been completed"
+    },
+    {
+        "question": "What is the term used to describe the time necessary for a lighting duration aid to perform a full cycle of light changes sown in the light list?",
+        "answer": "lighting cycle duration"
+    },
+    {
+        "question": "You are on watch at night in clear visibility and the vessel has just been anchored. The first thing that you should do after the anchor has been let go is to________",
+        "answer": "take bearings to obtain ships position"
+    },
+    {
+        "question": "You are on watch and the pilot has just anchored the vessel. The next thing that you should do after the anchor has been let go is to________",
+        "answer": "plot the vessels position on the chart"
+    },
+    {
+        "question": "The most probable position of the object of a search at any given time is the_____",
+        "answer": "datum position"
+    },
+    {
+        "question": "Under Rule 3 (i) a vessel is underway when:",
+        "answer": "she is dragging her anchor"
+    },
+    {
+        "question": "Which of the following should be considered after dropping an anchor in a mud and clay bottom during bad weather?",
+        "answer": "proceed to drop the second anchor and veer to a good scope"
+    },
+    {
+        "question": "Which of the following statement is NOT correct in relationaas to a marine Sextant?",
+        "answer": "shade glasses do not cause any error in sextant altitude reading"
+    },
+    {
+        "question": "Which of the following statements should NOT be included in the reasons why you need a knowledge of Meteorology?",
+        "answer": "The knowledge of Meteorology will ensure a fast and quick turn around trade route while navigating at sea."
+    },
+    {
+        "question": "A great circle will intersect the equator at how many degrees of longitude apart?",
+        "answer": "180 deg"
+    },
+    {
+        "question": "A great circle track provides the maximum saving in distance on",
+        "answer": "easterly courses in high latitudes"
+    },
+    {
+        "question": "A GPS satellite transmits a signal thru the second carrier on",
+        "answer": "1227.60 mHz"
+    },
+    {
+        "question": "How does the major advantage of the rhumb line tract compare to the great track for long-distance navigation in terms of maintaining of a consistent heading throughout the journey?",
+        "answer": "the rhumb line track provides a more consistent heading than the great circle track due to its"
+    },
+    {
+        "question": "How would you plot a fix with elevation?",
+        "answer": "it requires 4 theoretical position lines"
+    },
+    {
+        "question": "If you are heading south and you observe that the chart predicts an easterly current, how can you adjust your course without taking the wind into consideration?",
+        "answer": "Head your vessel slightly to the right"
+    },
+    {
+        "question": "What does Global Positioning System receiver measure?",
+        "answer": "the time between transmission and reception of signal from a satellite"
+    },
+    {
+        "question": "Which statement, concerning offshore supply vessel operations, correctly defines the length of a voyage?",
+        "answer": "The total distance from the port of departure to the port of arrival, not including stops at offshore points"
+    },
+    {
+        "question": "You are on watch at night in clear visibility and the vessel has just beenAras anchored. The first thing that you should do after the anchor has been let go is to______",
+        "answer": "take bearings to obtain ships position"
+    },
+    {
+        "question": "You are on watch and the pilot has just anchored the vessel. The next thing that you should do after the anchor has been let go is to",
+        "answer": "plot the vessels position on the chart"
+    },
+    {
+        "question": "What does a low HDOP (Horizontal Dilution of Precision) number such as 2 indicates?",
+        "answer": "Good fix"
+    },
+    {
+        "question": "What is a barometer?",
+        "answer": "An instrument of measuring atmospheric pressure"
+    },
+    {
+        "question": "Cardinal marks can be used to show the following except:",
+        "answer": "indicate a feature such as recreation zones, speed limits, mooring areas or cables"
+    },
+    {
+        "question": "Consider a place approaching a channel when the height of HW is 2.8 meters. The vessels draught is 2.5 meters. What is the under keel clearance over a rock of drying height 0.9 meters?",
+        "answer": "UKC = 0.4 meters at HW"
+    },
+    {
+        "question": "Your vessel's heading is 330°pgc and 345°psc with a 2°E gyro error. If there is a variation of 13°W, what is the deviation of this heading?",
+        "answer": "0°"
+    },
+    {
+        "question": "When the body is on the rational horizon, what is its zenith distance?",
+        "answer": "090 degrees"
+    },
+    {
+        "question": "What will be the reading that is equivalent to one complete turn of the graduated scale micrometer drum of a sextant?",
+        "answer": "1 degree"
+    },
+    {
+        "question": "What is the variation of a compass if the True heading is 086° and the Magnetic heading is 098°?",
+        "answer": "12°W"
+    },
+    {
+        "question": "What is the variation of a compass if the True heading is 312° and the Magnetic heading is 298°?",
+        "answer": "14°E"
+    },
+    {
+        "question": "A buoy bears 178 degrees at 3000 yards(2,700 meters). What is the course to make good to leave the buoy 100 yards (90 meters) to port beam?",
+        "answer": "180 degrees True"
+    },
+    {
+        "question": "How would you apply on the rudder \"Hard Starboard\"?",
+        "answer": "Put the rudder full starboard"
+    },
+    {
+        "question": "A ship is steaming a course of 090 degrees (T) at a speed of 14 knots. At 1814H, you observed a lighthouse bearing 053 degrees (T) and 1940H, the same lighthouse bears 031 degrees (T). What will be the time when the lighthouse is a beam of your vessel?",
+        "answer": "1926H"
+    },
+    {
+        "question": "A common compass rose as found on a nautical chart shows true north and magnetic north. What kind of markings will you notice on the inner circle and the graduations of the circle?",
+        "answer": "Correspondence between thirty two points rose."
+    },
+    {
+        "question": "You are steering a course of 086 deg psc at a speed of 6.0 knots. At 2400H, you fix your position at lat 21 deg 04.2 deg N and Long 172 deg 38.85 W. What were your set and drift?",
+        "answer": "360° T x 0.4 knots"
+    },
+    {
+        "question": "Your vessel's heading is 330° pgc and 345 psc with 2\"E gyro error. If there is a variaton of 10°W, what is the deviation on this heading?",
+        "answer": "3° W"
+    },
+    {
+        "question": "How would you estimate the bearing of the storm center's in the northern hemisphere?",
+        "answer": "By Buys Ballot's Law if you face the wind the center of the storm is approximately in your right."
+    },
+    {
+        "question": "The distance that a vessel travels from the time that the order to put engines full astern until the vessel is dead in the water is known as",
+        "answer": "head reach"
+    },
+    {
+        "question": "The owner or Master of a towing vessel shall ensure that each person that directs and controls the movement of the vessel can accurately fix the vessels position using all of the following EXCEPT",
+        "answer": "buoys alone"
+    },
+    {
+        "question": "What does an Alto Cumulus type of clouds at a sufficient low angle of elevation represent?",
+        "answer": "A sign of instability which may give rise to thunderstorms."
+    },
+    {
+        "question": "What is the line drawn on a chart through places of NO variation?",
+        "answer": "Agonic"
+    },
+    {
+        "question": "What is the variation of a compass if the True heading is 215° and the Magnetic heading is 210° ?",
+        "answer": "5° E"
+    },
+    {
+        "question": "What judgement can you make in the weather forecast with dropping barometer and low cloud ceiling",
+        "answer": "An increase of humidity and temperature"
+    },
+    {
+        "question": "Which is your best indicator of change in weather that may be expected at the passage of line squall?",
+        "answer": "A sudden rise in barometric pressure"
+    },
+    {
+        "question": "Your vessel's heading is 330° pgc and 345 psc with 2\"E gyro error. If there is a variaton of 60°W, what is the deviation on this heading?",
+        "answer": "7° W"
+    },
+    {
+        "question": "What is ecliptic?",
+        "answer": "It is the path the sun appears to take among the stars"
+    },
+    {
+        "question": "The shoreline on charts generally represents the mean",
+        "answer": "high water line"
+    },
+    {
+        "question": "How would you achieve a three-dimensional GPS fix?",
+        "answer": "it requires 4 theoretical position lines"
+    },
+    {
+        "question": "If you are heading south and you observe that the chart predicts an easterly current, how can you adjust your course without taking the wind into consideration?",
+        "answer": "Head your vessel slightly to the right"
+    },
+    {
+        "question": "What type of steering system is known for maintaining a ship's position or tracking a specific course without the need for manual control?",
+        "answer": "Autopilot"
+    },
+    {
+        "question": "What is the primary function of the Global Positioning System (GPS) on a ship?",
+        "answer": "To measure the ship's speed through water"
+    },
+    {
+        "question": "At night a channel is marked by a range light which bears 185 T. You steady up on a compass course of 180 T with the range in line dead ahead. What does this indicates?",
+        "answer": "Your compass has some easterly error"
+    },
+    {
+        "question": "You are proceeding down a channel at night. It is marked by a range light which bears 185T You steady up on a compass course of 180T with the range light in line dead ahead. What does this kind of situation indicate?",
+        "answer": "Your compass has some easterly error"
+    },
+    {
+        "question": "In order to get the actual depthAtAs of water, what do you add?",
+        "answer": "The ship's draft"
+    },
+    {
+        "question": "Using the radar your own ship is shown as the center of the screen and degrees always appear at the top of the screen. How would you define the bearing obtain?",
+        "answer": "relative bearing"
+    },
+    {
+        "question": "What does a low HDOP (Horizontal Dilution of Precision) number such as 2 indicates?",
+        "answer": "Good fix"
+    },
+    {
+        "question": "What would you show your understanding of an echo sounder having a Pythagoras error?",
+        "answer": "This error is found when two transducers are used, one for transmission and the other for reception"
+    },
+    {
+        "question": "A ship is steaming a course of 090degrees (T) at a speed of 14 knots. At 1814H, you observed a lighthouse bearing 053 degrees (T) and 1940H, the same lighthouse bears 031 degrees (T). What will be the time when the lighthouse is a beam of your vessel?",
+        "answer": "1926H"
+    },
+    {
+        "question": "What planet/ star with the parallax angle vary the most within a year?",
+        "answer": "Polaris"
+    },
+    {
+        "question": "What causes the variation that affects the magnetic compass of a ship's directive force?",
+        "answer": "Magnetism within the vessel"
+    },
+    {
+        "question": "What is running fix?",
+        "answer": "Intersection of multiple lines of position from different points of one object at different times"
+    },
+    {
+        "question": "What is the frequency of the low frequency pulse used on the echo sounder?",
+        "answer": "24 kHz"
+    },
+    {
+        "question": "At 1045H, your GPS fixes your position at Lat 21deg01 01.75N and Long 172 deg 48.40 W. You are steering a course of 086 deg psc at a speed of 6.0 knots. At 2400H, you fix your position at lat 21 deg 04.2 deg N and Long 172 deg 38.85 W. What were your set and drift?",
+        "answer": "360° T x 0.4 knots"
+    },
+    {
+        "question": "What do you call the altitude measured with sextant corrected for dip and index error?",
+        "answer": "Apparent altitude"
+    },
+    {
+        "question": "In the design of satellite communication systems, which multiple access technique is commonly used for the NAVSTAR GPS satellite constellation to enable uses to access the satellites simultaneously?",
+        "answer": "Code Division Multiple Access (CDMA)"
+    },
+    {
+        "question": "After measuring the altitude of a star with a sextant and applying the necessary corrections, what is your next step to determine the ship's position using celestial navigation?",
+        "answer": "Use the corrected altitude to plot a position line on a celestial plotting sheet."
+    },
+    {
+        "question": "If the scale on a chart is given as 1:5,000,000 what does this mean?",
+        "answer": "1 inch is equal to 5,000,000 inches of the earth's surface."
+    },
+    {
+        "question": "In Great Britain, the Nautical Almanac has been published annually and each page contains data that are tabulated for how many days?",
+        "answer": "3 days"
+    },
+    {
+        "question": "A common compass rose as found on a nautical chart shows true north and magnetic north. What kind of markings will you notice on the inner circle and the graduations of the circle?",
+        "answer": "Correspondence between thirty two points rose."
+    },
+    {
+        "question": "Consider a place approaching a channel when the height of HW is 3.8 meters. The vessels draught is 2.5 meters. What is the under keel clearance over a rock of drying height 0.9 meters?",
+        "answer": "Under Keel Clearance - 0.4 meters at High Water."
+    },
+    {
+        "question": "Which of the following is INCORRECT about the coarse acquisition code of Global Positioning signals?",
+        "answer": "It is transmitted 90 degrees out of phase from the precision code."
+    },
+    {
+        "question": "How would you show your understanding of an echo sounder having a Pythagoras error?",
+        "answer": "The error is found when two transducers are used one for"
+    },
+    {
+        "question": "What are the information required to calculate course and speed made good?",
+        "answer": "Current set and drift"
+    },
+    {
+        "question": "How would you apply on the rudder \"Hard Starboard\"?",
+        "answer": "Put the rudder full starboard"
+    },
+    {
+        "question": "Which of the four adjustable errors in the sextant is the principle cause of index error?",
+        "answer": "Index mirror and horizon glass not being parallel"
+    },
+    {
+        "question": "What is provided in the highest level of commercial navigational accuracy?",
+        "answer": "DGPS within a coverage area"
+    },
+    {
+        "question": "What is the latitude of a place where the sun is exactly at the zenith Of the observer at Local Apparent Noon (LAN) Of June 21?",
+        "answer": "23 deg. 27 min. North"
+    },
+    {
+        "question": "In confined waters WHICH of the following equipment becomes more reliable in obtaining vessel's position?",
+        "answer": "Radar X band and visual method"
+    },
+    {
+        "question": "Which of the following statement is TRUE about fixing a position on a given situation. At 0000 you fix your position and plot a new DR track line. At 0200 you again fix your position and it is 0.5 mile east of your reckoned position.",
+        "answer": "The drift is 0.25 knot per hour."
+    },
+    {
+        "question": "At 0000 you fix your position and plot a new DR track line. At 0200 you again fix your position and it is 0.5 mile east of your DR. Which statement is TRUE?",
+        "answer": "The drift is 0.25 knot."
+    },
+    {
+        "question": "What would you show your understanding of an echo sounder having a Multipath Echoes error?",
+        "answer": "The echo may be reflected a number of times between the keel and the seabed, thereby giving multiple depth marks on the record depth."
+    },
+    {
+        "question": "What is the light rhythm (when fitted) of the SOUTH Cardinal marks used in IALA Region A and region B?",
+        "answer": "VQ(6) + Long flash every 10 seconds or Q(6) + Long flash every 15 seconds"
+    },
+    {
+        "question": "What is the meaning of the coded form MO2/M05 in the weather report for LOWL at 070650Z.",
+        "answer": "The actual temperature is -2° and the dew point temperature is -5°C."
     }
 ]
