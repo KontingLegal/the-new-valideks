@@ -1,40 +1,231 @@
+<!-- review.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Flashcard Main Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flashcards Viewer</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
+      margin: 2rem;
+      background: #f0f2f5;
+      color: #333;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      height: 100vh;
-      background: #f5f5f5;
     }
+
     h1 {
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
     }
-    a.button {
-      text-decoration: none;
+
+    .controls {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .nav-buttons {
+      display: flex;
+      gap: 1rem;
+    }
+
+    select, button {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    select {
+      background: white;
+      border: 1px solid #ccc;
+    }
+
+    button {
       background: #333;
       color: white;
-      padding: 1rem 2rem;
-      margin: 0.5rem;
-      border-radius: 8px;
-      font-size: 1.2rem;
-      display: inline-block;
     }
-    a.button:hover {
-      background: #444;
+
+    button:disabled {
+      background: #aaa;
+      cursor: not-allowed;
+    }
+
+    .card {
+      background: white;
+      width: 300px;
+      height: 200px;
+      perspective: 1000px;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+
+    .card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+
+    .flipped .card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .card-front, .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .card-front {
+      background-color: #fefefe;
+    }
+
+    .card-back {
+      background-color: #d4f0d2;
+      transform: rotateY(180deg);
+    }
+
+    .card-counter {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #555;
     }
   </style>
 </head>
 <body>
-  <h1>Flashcards Main Menu</h1>
-  <a href="review.html" class="button">Review Mode</a>
-  <a href="exam.html" class="button">Exam Mode</a>
-  <a href="gcash.png" class="button">Unlock More Content</a>
+  <h1>Flashcards</h1>
+
+  <div class="controls">
+    <select id="fileSelector">
+      <!-- Options will be inserted dynamically -->
+    </select>
+    <div class="nav-buttons">
+      <button id="prev">Previous</button>
+      <button id="next">Next</button>
+    </div>
+  </div>
+
+  <div class="card" id="flashcard">
+    <div class="card-inner" id="card-inner">
+      <div class="card-front" id="card-front">Loading...</div>
+      <div class="card-back" id="card-back">Loading...</div>
+    </div>
+  </div>
+
+  <div class="card-counter" id="counter">Card 0 of 0</div>
+
+  <script>
+    const jsonFiles = [
+      { file: "c1.json", label: "Competency 1" },
+      { file: "c2.json", label: "Competency 2" },
+      { file: "c3.json", label: "Competency 3" }
+    ];
+
+    const flashcard = document.getElementById('flashcard');
+    const inner = document.getElementById('card-inner');
+    const front = document.getElementById('card-front');
+    const back = document.getElementById('card-back');
+    const prevBtn = document.getElementById('prev');
+    const nextBtn = document.getElementById('next');
+    const counter = document.getElementById('counter');
+    const fileSelector = document.getElementById('fileSelector');
+
+    let cards = [];
+    let currentIndex = 0;
+
+    jsonFiles.forEach(entry => {
+      const option = document.createElement('option');
+      option.value = entry.file;
+      option.textContent = entry.label;
+      fileSelector.appendChild(option);
+    });
+
+    const loadJSON = (file) => {
+      fetch(file)
+        .then(res => res.json())
+        .then(data => {
+          cards = data;
+
+          const savedFile = localStorage.getItem("flashcardFile");
+          const savedIndex = parseInt(localStorage.getItem("flashcardIndex") || "0");
+
+          if (file === savedFile && savedIndex < data.length) {
+            currentIndex = savedIndex;
+          } else {
+            currentIndex = 0;
+          }
+
+          flashcard.classList.remove('flipped');
+          renderCard();
+        })
+        .catch(err => {
+          console.error("Error loading file:", file, err);
+          front.textContent = "Failed to load.";
+          back.textContent = "";
+          counter.textContent = "";
+        });
+    };
+
+    const renderCard = () => {
+      if (cards.length === 0) return;
+      const current = cards[currentIndex];
+      front.textContent = current.question;
+      back.textContent = current.answer;
+      counter.textContent = `Card ${currentIndex + 1} of ${cards.length}`;
+
+      prevBtn.disabled = currentIndex === 0;
+      nextBtn.disabled = currentIndex === cards.length - 1;
+
+      localStorage.setItem("flashcardIndex", currentIndex);
+      localStorage.setItem("flashcardFile", fileSelector.value);
+    };
+
+    prevBtn.addEventListener('click', () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+        flashcard.classList.remove('flipped');
+        renderCard();
+      }
+    });
+
+    nextBtn.addEventListener('click', () => {
+      if (currentIndex < cards.length - 1) {
+        currentIndex++;
+        flashcard.classList.remove('flipped');
+        renderCard();
+      }
+    });
+
+    flashcard.addEventListener('click', () => {
+      flashcard.classList.toggle('flipped');
+    });
+
+    fileSelector.addEventListener('change', (e) => {
+      loadJSON(e.target.value);
+    });
+
+    const savedFile = localStorage.getItem("flashcardFile");
+    const savedIndex = parseInt(localStorage.getItem("flashcardIndex") || "0");
+    const startFile = jsonFiles.find(j => j.file === savedFile)?.file || jsonFiles[0].file;
+
+    fileSelector.value = startFile;
+    loadJSON(startFile);
+  </script>
 </body>
 </html>
