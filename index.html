@@ -131,7 +131,12 @@
 
   <script>
     // 🗂️ List your JSON files here
-    const jsonFiles = ["c1.json", "c2.json", "c3.json"]; // Add more as needed
+    const jsonFiles = [
+      { file: "c1.json", label: "Competency 1" },
+      { file: "c2.json", label: "Competency 2" },
+      { file: "c3.json", label: "Fire Drill Set" }
+    ];
+ // Add more as needed
 
     const flashcard = document.getElementById('flashcard');
     const inner = document.getElementById('card-inner');
