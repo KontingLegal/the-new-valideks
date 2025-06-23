@@ -151,12 +151,13 @@
     let currentIndex = 0;
 
     // 🔁 Populate dropdown
-    jsonFiles.forEach(file => {
+    jsonFiles.forEach(entry => {
       const option = document.createElement('option');
-      option.value = file;
-      option.textContent = file.toUpperCase();
+      option.value = entry.file;
+      option.textContent = entry.label;
       fileSelector.appendChild(option);
     });
+
 
     // 🔄 Load JSON and display first card
     const loadJSON = (file) => {
@@ -216,7 +217,8 @@
     });
 
     // 🟢 Load the first file by default
-    loadJSON(jsonFiles[0]);
+    loadJSON(jsonFiles[0].file);
+
   </script>
 </body>
 </html>
