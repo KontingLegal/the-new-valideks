@@ -2,152 +2,175 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Exam Mode</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      margin: 2rem;
       background: #f0f2f5;
       color: #333;
+      margin: 2rem;
       display: flex;
       flex-direction: column;
       align-items: center;
     }
-
+    .dark-mode {
+      background: #1e1e1e;
+      color: #ddd;
+    }
     h1 {
       margin-bottom: 1rem;
     }
-
-    .controls, #examBox, #resultBox {
+    .setup, .question-box, .result-box {
+      margin-bottom: 2rem;
       max-width: 600px;
-      width: 100%;
+      text-align: center;
     }
-
-    select, button {
-      padding: 0.6rem 1rem;
+    select, input[type="number"], button {
+      padding: 0.5rem 1rem;
       font-size: 1rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
       margin: 0.5rem;
-      border-radius: 6px;
-      border: none;
+    }
+    button {
+      background-color: #333;
+      color: white;
       cursor: pointer;
     }
-
-    #choices button {
-      display: block;
-      width: 100%;
-      text-align: left;
-      margin: 0.5rem 0;
-      padding: 0.75rem 1rem;
-      font-size: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      background-color: #f9f9f9;
-      color: #222;
-      transition: background-color 0.3s, color 0.3s;
+    button:disabled {
+      background: #aaa;
+      cursor: not-allowed;
     }
-
-    #choices button:hover:not(:disabled) {
-      background-color: #007bff;
-      color: white;
+    .dark-mode button {
+      background-color: #555;
     }
-
-    #startBtn, #submitBtn {
-      background-color: #007bff;
-      color: white;
-    }
-
-    #submitBtn {
+    .choices {
       margin-top: 1rem;
+      text-align: left;
     }
-
-    #resultBox {
-      display: none;
-      margin-top: 2rem;
-      padding: 1rem;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    .choices button {
+      display: block;
+      margin: 0.5rem 0;
+      width: 100%;
+      background-color: #fff;
+      color: #333;
+    }
+    .dark-mode .choices button {
+      background-color: #333;
+      color: #fff;
+    }
+    .highlight {
+      background-color: #cce5ff;
+    }
+    .correct {
+      background-color: #d4edda !important;
+    }
+    .incorrect {
+      background-color: #f8d7da !important;
     }
   </style>
 </head>
 <body>
   <h1>Exam Mode</h1>
 
-  <div class="controls">
-    <select id="examSelector">
-      <option value="c1.json">Competency 1</option>
-      <option value="c2.json">Competency 2</option>
-    </select>
-    <button id="startBtn">Start Exam</button>
+  <div class="setup">
+    <label>Competency: 
+      <select id="compSelect">
+        <option value="c1.json">Competency 1</option>
+        <option value="c2.json">Competency 2</option>
+      </select>
+    </label><br>
+    <label>Mode:
+      <select id="modeSelect">
+        <option value="tos">MARINA TOS</option>
+        <option value="custom">Choose number</option>
+      </select>
+    </label><br>
+    <label id="customCountContainer" style="display:none;">
+      Number of Questions: <input type="number" id="questionCount" min="1" max="100">
+    </label><br>
+    <button id="startExam">Start Exam</button>
+    <button id="toggleDark">Toggle Dark Mode</button>
   </div>
 
-  <div id="examBox" style="display:none;">
-    <h2 id="questionText"></h2>
-    <div id="choices"></div>
-    <button id="submitBtn">Submit Answer</button>
+  <div class="question-box" style="display:none">
+    <div id="questionText"></div>
+    <div class="choices" id="choices"></div>
+    <button id="submitAnswer">Submit</button>
   </div>
 
-  <div id="resultBox">
-    <h2>Results</h2>
-    <p id="scoreText"></p>
+  <div class="result-box" style="display:none">
+    <h2>Exam Completed</h2>
+    <p id="scoreDisplay"></p>
+    <div id="reviewAnswers"></div>
   </div>
 
   <script>
-    const startBtn = document.getElementById('startBtn');
-    const examSelector = document.getElementById('examSelector');
-    const questionText = document.getElementById('questionText');
-    const choicesDiv = document.getElementById('choices');
-    const submitBtn = document.getElementById('submitBtn');
-    const examBox = document.getElementById('examBox');
-    const resultBox = document.getElementById('resultBox');
-    const scoreText = document.getElementById('scoreText');
+    const compSelect = document.getElementById("compSelect");
+    const modeSelect = document.getElementById("modeSelect");
+    const countInput = document.getElementById("questionCount");
+    const customCountContainer = document.getElementById("customCountContainer");
+    const startBtn = document.getElementById("startExam");
+    const toggleDark = document.getElementById("toggleDark");
+    const questionBox = document.querySelector(".question-box");
+    const resultBox = document.querySelector(".result-box");
+    const questionText = document.getElementById("questionText");
+    const choicesDiv = document.getElementById("choices");
+    const submitBtn = document.getElementById("submitAnswer");
+    const scoreDisplay = document.getElementById("scoreDisplay");
+    const reviewAnswers = document.getElementById("reviewAnswers");
 
     let questions = [];
     let currentQuestion = 0;
+    let score = 0;
     let userAnswers = [];
 
-    const getRandomChoices = (correct, data) => {
-      let pool = data.map(q => q.answer).filter(a => a !== correct);
-      pool = [...new Set(pool)]; // unique
-      const shuffled = pool.sort(() => 0.5 - Math.random()).slice(0, 3);
-      return [...shuffled, correct].sort(() => 0.5 - Math.random());
+    modeSelect.addEventListener("change", () => {
+      customCountContainer.style.display = modeSelect.value === "custom" ? "inline-block" : "none";
+    });
+
+    toggleDark.onclick = () => {
+      document.body.classList.toggle("dark-mode");
     };
 
     startBtn.onclick = () => {
-      const file = examSelector.value;
-      fetch(file)
+      const comp = compSelect.value;
+      fetch(comp)
         .then(res => res.json())
         .then(data => {
-          if (file === 'c1.json') {
-            questions = data.sort(() => 0.5 - Math.random()).slice(0, 35);
-          } else if (file === 'c2.json') {
-            questions = data.sort(() => 0.5 - Math.random()).slice(0, 20);
+          let count = 0;
+          if (modeSelect.value === "tos") {
+            count = comp === "c1.json" ? 35 : 20;
+          } else {
+            const requested = parseInt(countInput.value);
+            count = Math.min(requested, data.length);
           }
-
+          questions = shuffleArray(data).slice(0, count);
+          questions = questions.map(q => ({
+            ...q,
+            allChoices: shuffleArray([q.answer, ...getRandomWrongAnswers(data, q.answer, 3)])
+          }));
           currentQuestion = 0;
+          score = 0;
           userAnswers = [];
-          document.querySelector('.controls').style.display = 'none';
-          examBox.style.display = 'block';
-          resultBox.style.display = 'none';
+          document.querySelector(".setup").style.display = "none";
+          questionBox.style.display = "block";
+          resultBox.style.display = "none";
           renderQuestion();
         });
     };
 
     function renderQuestion() {
       const q = questions[currentQuestion];
-      questionText.textContent = `(${currentQuestion + 1}/${questions.length}) ${q.question}`;
-      choicesDiv.innerHTML = '';
-
-      const allChoices = getRandomChoices(q.answer, questions);
-
-      allChoices.forEach(choice => {
-        const btn = document.createElement('button');
+      questionText.textContent = `Q${currentQuestion + 1}: ${q.question}`;
+      choicesDiv.innerHTML = "";
+      q.allChoices.forEach(choice => {
+        const btn = document.createElement("button");
         btn.textContent = choice;
-        btn.classList.add('choice-btn');
         btn.onclick = () => {
-          document.querySelectorAll('#choices button').forEach(b => b.disabled = true);
-          btn.style.backgroundColor = "#cce5ff";
+          document.querySelectorAll("#choices button").forEach(b => b.classList.remove("highlight"));
+          btn.classList.add("highlight");
           userAnswers[currentQuestion] = choice;
         };
         choicesDiv.appendChild(btn);
@@ -155,27 +178,50 @@
     }
 
     submitBtn.onclick = () => {
-      if (userAnswers[currentQuestion] === undefined) {
-        alert("Please select an answer before submitting.");
-        return;
-      }
-      currentQuestion++;
-      if (currentQuestion < questions.length) {
-        renderQuestion();
-      } else {
-        showResults();
-      }
+      const userAnswer = userAnswers[currentQuestion];
+      if (!userAnswer) return alert("Please select an answer.");
+
+      const correct = questions[currentQuestion].answer;
+      const buttons = document.querySelectorAll("#choices button");
+      buttons.forEach(btn => {
+        if (btn.textContent === correct) btn.classList.add("correct");
+        if (btn.textContent === userAnswer && userAnswer !== correct) btn.classList.add("incorrect");
+        btn.disabled = true;
+      });
+
+      if (userAnswer === correct) score++;
+
+      setTimeout(() => {
+        currentQuestion++;
+        if (currentQuestion < questions.length) {
+          renderQuestion();
+        } else {
+          endExam();
+        }
+      }, 1200);
     };
 
-    function showResults() {
-      examBox.style.display = 'none';
-      resultBox.style.display = 'block';
-      let correct = 0;
-      questions.forEach((q, i) => {
-        if (userAnswers[i] === q.answer) correct++;
-      });
-      const percent = ((correct / questions.length) * 100).toFixed(2);
-      scoreText.textContent = `You got ${correct} out of ${questions.length} correct. (${percent}%)`;
+    function endExam() {
+      questionBox.style.display = "none";
+      resultBox.style.display = "block";
+      const percent = ((score / questions.length) * 100).toFixed(2);
+      scoreDisplay.textContent = `Score: ${score}/${questions.length} (${percent}%)`;
+      reviewAnswers.innerHTML = questions.map((q, i) => `
+        <div>
+          <strong>Q${i+1}:</strong> ${q.question}<br>
+          <strong>Your Answer:</strong> ${userAnswers[i]}<br>
+          <strong>Correct Answer:</strong> ${q.answer}<hr>
+        </div>
+      `).join("");
+    }
+
+    function shuffleArray(arr) {
+      return arr.sort(() => Math.random() - 0.5);
+    }
+
+    function getRandomWrongAnswers(data, correct, count) {
+      const wrongs = data.map(q => q.answer).filter(a => a !== correct);
+      return shuffleArray(wrongs).slice(0, count);
     }
   </script>
 </body>
