@@ -7,191 +7,208 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: #f4f4f4;
-      padding: 2rem;
-      text-align: center;
+      margin: 2rem;
+      background: #f0f2f5;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     h1 {
       margin-bottom: 1rem;
     }
 
-    .container {
-      max-width: 600px;
-      margin: auto;
-      background: white;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    }
-
-    #question {
-      font-size: 1.2rem;
+    .controls {
       margin-bottom: 1rem;
     }
 
-    .choice {
-      display: block;
-      margin: 0.5rem 0;
-    }
-
-    button {
-      margin-top: 1rem;
-      padding: 0.6rem 1.2rem;
+    select, button {
+      padding: 0.5rem 1rem;
       font-size: 1rem;
       border: none;
       border-radius: 5px;
-      background: #007bff;
-      color: white;
       cursor: pointer;
     }
 
-    button:disabled {
-      background: #ccc;
+    select {
+      background: white;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background: #333;
+      color: white;
+    }
+
+    #questionBox {
+      max-width: 600px;
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-top: 1rem;
+      display: none;
+    }
+
+    #choices {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 2rem;
+      margin-top: 1rem;
+      width: 100%;
+    }
+
+    #choices button {
+      text-align: left;
+      width: 90%;
+      margin: 0.5rem 0;
+      padding: 0.6rem;
+      font-size: 1rem;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    #choices button:hover {
+      background-color: #f0f0f0;
     }
 
     #result {
       margin-top: 2rem;
       font-size: 1.1rem;
-    }
-
-    #start-section {
-      margin-top: 2rem;
-    }
-
-    #submitAnswer {
-      display: none;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-
   <h1>Exam Mode</h1>
-  <div class="container">
-    <div id="start-section">
-      <select id="examSelector">
-        <option value="c1.json">Competency 1 (35 questions)</option>
-        <option value="c2.json">Competency 2 (20 questions)</option>
-      </select>
-      <br><br>
-      <button id="startBtn">Start Exam</button>
-    </div>
 
-    <div id="quiz-section" style="display:none;">
-      <div id="question"></div>
-      <div id="choices"></div>
-      <button id="submitAnswer">Submit Answer</button>
-      <div id="feedback"></div>
-    </div>
-
-    <div id="result"></div>
+  <div class="controls">
+    <select id="fileSelector">
+      <option value="c1.json">Competency 1</option>
+      <option value="c2.json">Competency 2</option>
+    </select>
+    <button id="startBtn">Start Exam</button>
   </div>
 
+  <div id="questionBox">
+    <div id="questionText"></div>
+    <div id="choices"></div>
+    <button id="submitBtn">Submit</button>
+  </div>
+
+  <div id="result"></div>
+
   <script>
-    const examSelector = document.getElementById("examSelector");
-    const startBtn = document.getElementById("startBtn");
-    const startSection = document.getElementById("start-section");
-    const quizSection = document.getElementById("quiz-section");
-    const questionEl = document.getElementById("question");
-    const choicesEl = document.getElementById("choices");
-    const submitBtn = document.getElementById("submitAnswer");
-    const resultEl = document.getElementById("result");
-    const feedbackEl = document.getElementById("feedback");
+    const fileSelector = document.getElementById('fileSelector');
+    const startBtn = document.getElementById('startBtn');
+    const questionBox = document.getElementById('questionBox');
+    const questionText = document.getElementById('questionText');
+    const choicesContainer = document.getElementById('choices');
+    const submitBtn = document.getElementById('submitBtn');
+    const resultBox = document.getElementById('result');
 
     let allQuestions = [];
+    let examQuestions = [];
     let currentQuestion = 0;
     let score = 0;
-    let selectedAnswer = null;
-    let examLimit = 0;
+    let userAnswers = [];
 
-    const shuffleArray = arr => arr.sort(() => Math.random() - 0.5);
+    const shuffleArray = (array) => array.sort(() => Math.random() - 0.5);
 
-    startBtn.addEventListener("click", () => {
-      const selectedFile = examSelector.value;
-
-      fetch(selectedFile)
+    startBtn.addEventListener('click', () => {
+      const file = fileSelector.value;
+      fetch(file)
         .then(res => res.json())
         .then(data => {
-          // Determine how many questions based on competency
-          examLimit = selectedFile === "c1.json" ? 35 : 20;
-          allQuestions = shuffleArray(data).slice(0, examLimit);
+          allQuestions = data;
+          const count = file === "c1.json" ? 35 : 20;
+          examQuestions = shuffleArray([...allQuestions]).slice(0, count);
           currentQuestion = 0;
           score = 0;
-          selectedAnswer = null;
-
-          startSection.style.display = "none";
-          quizSection.style.display = "block";
-          resultEl.textContent = "";
+          userAnswers = [];
+          startBtn.style.display = 'none';
+          fileSelector.disabled = true;
+          resultBox.innerHTML = "";
+          questionBox.style.display = 'block';
           renderQuestion();
+        })
+        .catch(err => {
+          alert("Failed to load exam file.");
+          console.error(err);
         });
     });
 
     function renderQuestion() {
-      feedbackEl.textContent = "";
-      const q = allQuestions[currentQuestion];
-      const options = [q.answer];
-      while (options.length < 4) {
-        const random = allQuestions[Math.floor(Math.random() * allQuestions.length)].answer;
-        if (!options.includes(random)) {
-          options.push(random);
-        }
-      }
+      const q = examQuestions[currentQuestion];
+      questionText.textContent = `Q${currentQuestion + 1}: ${q.question}`;
+      choicesContainer.innerHTML = "";
 
-      shuffleArray(options);
-      selectedAnswer = null;
-      questionEl.textContent = `(${currentQuestion + 1}/${examLimit}) ${q.question}`;
+      const otherAnswers = allQuestions
+        .filter(item => item.answer !== q.answer)
+        .map(item => item.answer);
+      const wrongChoices = shuffleArray(otherAnswers).slice(0, 3);
 
-      choicesEl.innerHTML = options.map(opt => `
-        <label class="choice">
-          <input type="radio" name="choice" value="${opt}"> ${opt}
-        </label>
-      `).join("");
+      const allChoices = shuffleArray([q.answer, ...wrongChoices]);
 
-      submitBtn.style.display = "inline-block";
+      allChoices.forEach(choice => {
+        const btn = document.createElement('button');
+        btn.textContent = choice;
+        btn.onclick = () => {
+          document.querySelectorAll('#choices button').forEach(b => b.disabled = true);
+          btn.style.backgroundColor = "#cce5ff";
+          userAnswers[currentQuestion] = choice;
+        };
+        choicesContainer.appendChild(btn);
+      });
     }
 
-    submitBtn.addEventListener("click", () => {
-      const selected = document.querySelector('input[name="choice"]:checked');
-      if (!selected) {
-        alert("Please select an answer.");
+    submitBtn.addEventListener('click', () => {
+      if (!userAnswers[currentQuestion]) {
+        alert("Please select an answer first.");
         return;
       }
 
-      const userAnswer = selected.value;
-      const correctAnswer = allQuestions[currentQuestion].answer;
+      const isCorrect = userAnswers[currentQuestion] === examQuestions[currentQuestion].answer;
+      if (isCorrect) score++;
 
-      if (userAnswer === correctAnswer) {
-        score++;
-        feedbackEl.textContent = "✅ Correct!";
-        feedbackEl.style.color = "green";
+      currentQuestion++;
+
+      if (currentQuestion >= examQuestions.length) {
+        showResults();
       } else {
-        feedbackEl.textContent = `❌ Wrong! Correct answer: ${correctAnswer}`;
-        feedbackEl.style.color = "red";
+        renderQuestion();
       }
-
-      submitBtn.style.display = "none";
-
-      // Proceed to next question after delay
-      setTimeout(() => {
-        currentQuestion++;
-        if (currentQuestion < examLimit) {
-          renderQuestion();
-        } else {
-          showResult();
-        }
-      }, 1200);
     });
 
-    function showResult() {
-      quizSection.style.display = "none";
-      const percent = ((score / examLimit) * 100).toFixed(2);
-      resultEl.innerHTML = `
-        <h2>Exam Completed!</h2>
-        <p>Score: ${score} out of ${examLimit}</p>
-        <p>Percentage: ${percent}%</p>
-      `;
+    function showResults() {
+      questionBox.style.display = "none";
+      fileSelector.disabled = false;
+      startBtn.style.display = "inline-block";
+
+      let html = `<h2>Exam Complete</h2>`;
+      html += `<p>Score: ${score} / ${examQuestions.length}</p>`;
+      html += `<p>Percentage: ${(score / examQuestions.length * 100).toFixed(2)}%</p><hr/>`;
+
+      examQuestions.forEach((q, i) => {
+        const isCorrect = userAnswers[i] === q.answer;
+        html += `
+          <div style="text-align: left; margin-bottom: 1rem;">
+            <strong>Q${i + 1}:</strong> ${q.question}<br/>
+            <strong>Your Answer:</strong> ${userAnswers[i]}<br/>
+            <strong>Correct Answer:</strong> ${q.answer}<br/>
+            <span style="color: ${isCorrect ? 'green' : 'red'};">
+              ${isCorrect ? '✅ Correct' : '❌ Incorrect'}
+            </span>
+          </div>
+        `;
+      });
+
+      resultBox.innerHTML = html;
     }
   </script>
-
 </body>
 </html>
