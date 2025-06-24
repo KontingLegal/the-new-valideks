@@ -8,7 +8,7 @@
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 2rem;
-      background-color: #b0b0b0;
+      background-color: #f0f2f5;
       color: #333;
       display: flex;
       flex-direction: column;
@@ -62,65 +62,7 @@
       border-color: #444;
     }
 
-    #startBtn {
-  background-color: #007bff;  /* bright blue */
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-#startBtn:hover {
-  background-color: #0056b3;  /* darker blue on hover */
-}
-
-.dark #startBtn {
-  background-color: #3399ff;
-  color: white;
-}
-
-
     .hidden { display: none; }
-
-
-
-    #migiContainer {
-  position: absolute;
-  top: -200px;
-  left: -200px;
-  width: 120px;
-  height: 120px;
-  pointer-events: none;
-  z-index: 999;
-  transition: top 0.5s ease, left 0.5s ease;
-}
-
-#migiHand {
-  width: 100%;
-  height: auto;
-}
-
-.migi-eye {
-  position: absolute;
-  top: 35px;
-  left: 60px;
-  width: 10px;
-  height: 10px;
-  background: black;
-  border-radius: 50%;
-  animation: blink 4s infinite;
-}
-
-@keyframes blink {
-  0%, 90%, 100% { height: 10px; }
-  95% { height: 1px; }
-}
-
-
-    
   </style>
 </head>
 <body>
@@ -228,39 +170,24 @@
       choicesDiv.innerHTML = "";
 
       const allChoices = shuffleArray([q.answer, ...getRandomAnswers(q.answer, 3)]);
-allChoices.forEach(choice => {
-  const btn = document.createElement("button");
-  btn.textContent = choice;
-  btn.className = "choice-btn";
-
-  if (userAnswers[current] === choice) {
-    btn.classList.add("selected");
-  }
-
-  btn.onclick = () => {
-    userAnswers[current] = choice;
-    document.querySelectorAll(".choice-btn").forEach(b => b.classList.remove("selected"));
-    btn.classList.add("selected");
-
-    const rect = btn.getBoundingClientRect();
-    const migi = document.getElementById("migiContainer");
-
-    // Move Migi near the button
-    migi.style.left = `${rect.left + window.scrollX - 80}px`;
-    migi.style.top = `${rect.top + window.scrollY - 60}px`;
-  };
-
-  choicesDiv.appendChild(btn);
-});
-
+      allChoices.forEach(choice => {
+        const btn = document.createElement("button");
+        btn.textContent = choice;
+        btn.className = "choice-btn";
+        if (userAnswers[current] === choice) {
+          btn.classList.add("selected");
+        }
+        btn.onclick = () => {
+          userAnswers[current] = choice;
+          document.querySelectorAll(".choice-btn").forEach(b => b.classList.remove("selected"));
+          btn.classList.add("selected");
+        };
+        choicesDiv.appendChild(btn);
+      });
     }
 
     submitBtn.onclick = () => {
       if (!userAnswers[current]) return alert("Please select an answer.");
-      
-      document.getElementById("migiContainer").style.top = "-200px";
-document.getElementById("migiContainer").style.left = "-200px";
-
 
       current++;
       if (current >= questions.length) {
@@ -299,13 +226,5 @@ document.getElementById("migiContainer").style.left = "-200px";
       return shuffleArray(pool).slice(0, count);
     }
   </script>
-  <button onclick="window.location.href='index.html'">Back to Main Menu</button>
-
-<div id="migiContainer">
-  <img id="migiHand" src="migi_hand.png" alt="Migi Hand" />
-  <div class="migi-eye" id="eye"></div>
-</div>
-
-
 </body>
 </html>
