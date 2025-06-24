@@ -112,6 +112,109 @@ body {
     button:hover {
       background-color: #555;
     }
+
+    /* === BIRD ANIMATIONS === */
+.bird {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-image: url('bird.png'); /* 🐦 Replace with your bird image */
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  z-index: 1;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+/* MOVEMENT DIRECTION */
+.bird-left {
+  left: -60px;
+  animation-name: flyRight, flap;
+}
+
+.bird-right {
+  right: -60px;
+  animation-name: flyLeft, flap;
+}
+
+/* SPEED CLASSES */
+.bird.fast {
+  animation-duration: 10s, 1s;
+}
+.bird.medium {
+  animation-duration: 20s, 1.5s;
+}
+.bird.slow {
+  animation-duration: 35s, 2s;
+}
+
+/* FLY ACROSS SCREEN */
+@keyframes flyRight {
+  0% { left: -60px; transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { left: 110%; transform: translateY(0); }
+}
+
+@keyframes flyLeft {
+  0% { right: -60px; transform: translateY(0); }
+  50% { transform: translateY(10px); }
+  100% { right: 110%; transform: translateY(0); }
+}
+
+/* FLAPPING EFFECT */
+@keyframes flap {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(0.8); }
+}
+
+  /* === CLOUD ANIMATIONS === */
+.cloud {
+  position: absolute;
+  width: 120px;
+  height: 60px;
+  background: #fff;
+  border-radius: 60px;
+  box-shadow: 30px 0px 0px #fff, 60px 10px 0px #fff;
+  opacity: 0.7;
+  z-index: 0;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/* LEFT-MOVING CLOUDS */
+.cloud-left {
+  left: -200px;
+  animation-name: floatRight;
+}
+
+/* RIGHT-MOVING CLOUDS */
+.cloud-right {
+  right: -200px;
+  animation-name: floatLeft;
+}
+
+/* SPEED CLASSES */
+.cloud.fast {
+  animation-duration: 20s;
+}
+.cloud.slow {
+  animation-duration: 45s;
+}
+
+/* FLOAT ANIMATIONS */
+@keyframes floatRight {
+  0%   { left: -200px; }
+  100% { left: 110%; }
+}
+
+@keyframes floatLeft {
+  0%   { right: -200px; }
+  100% { right: 110%; }
+}
+
+    
   </style>
 </head>
 <body>
@@ -129,5 +232,18 @@ body {
     <button onclick="location.href='exam.html'">Exam Mode</button>
     <button onclick="location.href='unlock.html'">Unlock More Content</button>
   </div>
+  <!-- Immersive Clouds -->
+<div class="cloud cloud-left slow" style="top: 10%;"></div>
+<div class="cloud cloud-left fast" style="top: 25%;"></div>
+<div class="cloud cloud-left slow" style="top: 40%;"></div>
+
+<div class="cloud cloud-right slow" style="top: 15%;"></div>
+<div class="cloud cloud-right fast" style="top: 30%;"></div>
+<div class="cloud cloud-right slow" style="top: 45%;"></div>
+<!-- Immersive Birds -->
+<div class="bird bird-left fast" style="top: 20%;"></div>
+<div class="bird bird-right slow" style="top: 35%;"></div>
+<div class="bird bird-left medium" style="top: 50%;"></div>
+
 </body>
 </html>
