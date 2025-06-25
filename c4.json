@@ -8,11 +8,7 @@
         "answer": "Safety contour in the route planning tool."
     },
     {
-        "question": "What should be presented by the",
-        "answer": "Standard display"
-    },
-    {
-        "question": "ECDIS at anytime by a single operator action?",
+        "question": "What should be presented by the ECDIS at anytime by a single operator action?",
         "answer": "Standard display"
     },
     {
@@ -29,7 +25,7 @@
     },
     {
         "question": "What is the worldwide digital dataset that is designed to be displayed over ENCs in ECDIS and other chart display systems to provide additional information during passage planning",
-        "answer": "Admiralty Information"
+        "answer": "Admiralty Information Overlay"
     },
     {
         "question": "What is the subset of a master database held in digital form, it contains charts and useful information use for navigation most importantly on coastal navigation?",
@@ -40,11 +36,7 @@
         "answer": "A set of updated paper charts for those areas shall be made available onboard"
     },
     {
-        "question": "What is the required mode when",
-        "answer": "ECDIS mode"
-    },
-    {
-        "question": "ENC data is available?",
+        "question": "What is the required mode when ENC data is available?",
         "answer": "ECDIS mode"
     },
     {
@@ -64,27 +56,27 @@
         "answer": "Familiarization"
     },
     {
+        "question": "What is the process required in order to assure and demonstrate competency on board any specific ship's ECDIS installation prior to taking charge of a navigational watch?",
+        "answer": "Familiarization"
+    },
+    {
         "question": "What is the function of the point in the userATas chart?",
         "answer": "It is used to connect two user charts"
+    },
+    {
+        "question": "An ECDIS is required to display which information?",
+        "answer": "Hydrographic data"
     },
     {
         "question": "What is the ECDIS setting that indicates the non-navigable area and marks the boundary outside of which the vessel may safely navigate?",
         "answer": "Shallow contour."
     },
     {
-        "question": "What is the document given by the manufacturer to show that the",
-        "answer": "Declaration of"
+        "question": "What is the document given by the manufacturer to show that the ECDIS has been type-approved?",
+        "answer": "Declaration of Conformity"
     },
     {
-        "question": "ECDIS has been type-approved?",
-        "answer": "Conformity"
-    },
-    {
-        "question": "What is the digitized \"picture of a chart comprised of millions of",
-        "answer": "Raster chart data"
-    },
-    {
-        "question": "\"picture elements\" or \"pixels\"?",
+        "question": "What is the digitized \"picture of a chart comprised of millions of \"picture elements\" or \"pixels\"?",
         "answer": "Raster chart data"
     },
     {
@@ -93,15 +85,15 @@
     },
     {
         "question": "Which of the following is a mandatory equipment that must be connected to ECDIS?",
-        "answer": "Positional navigation"
+        "answer": "Positional navigation Sensors (e.g. GPS)"
     },
     {
         "question": "Which of the following function must an ECDIS be able to perform?",
-        "answer": "Can transform the"
+        "answer": "Can transform the \"graphical coordinates\" to \"display coordinates\"."
     },
     {
         "question": "Which of the following describes the minimum Performance Standards for ECDIS system, references to both hardware and software, ENC updates, user interface and the integration of external devices",
-        "answer": "IMO Resolution A."
+        "answer": "IMO Resolution A. 817(19)."
     },
     {
         "question": "Which of the following cases must an ECDIS givesalas an alarm?",
@@ -112,15 +104,7 @@
         "answer": "standard display information"
     },
     {
-        "question": "Which International",
-        "answer": "IEC Publication 61174"
-    },
-    {
-        "question": "Electrotechnical Commission",
-        "answer": "IEC Publication 61174"
-    },
-    {
-        "question": "(IEC) publication covers ECDIS operational and performance requirements, testing and test result?",
+        "question": "Which International Electrotechnical Commission (IEC) publication covers ECDIS operational and performance requirements, testing and test result?",
         "answer": "IEC Publication 61174"
     },
     {
@@ -128,11 +112,7 @@
         "answer": "S-57 standards"
     },
     {
-        "question": "Which IHO standard controls the graphical display of the ENC in",
-        "answer": "IHO S-52 Annex A"
-    },
-    {
-        "question": "ECDIS, from the symbols and line styles that must be used to depict features right through to the colors that govern the day, dusk and night modes?",
+        "question": "Which IHO standard controls the graphical display of the ENC in ECDIS, from the symbols and line styles that must be used to depict features right through to the colors that govern the day, dusk and night modes?",
         "answer": "IHO S-52 Annex A"
     },
     {
@@ -140,28 +120,24 @@
         "answer": "Ship's contour and ship maximum speed."
     },
     {
+        "question": "An ECDIS is required to display which information?",
+        "answer": "hydrographic data"
+    },
+    {
         "question": "Which data that is organized into many separate files and programs to produce certain symbols?",
         "answer": "Vector chart data"
     },
     {
-        "question": "Which among the types of chart is electronically computer generated",
-        "answer": "Vector chart"
-    },
-    {
-        "question": "(CHART) in which the objects can be clicked for more information and depths can also be monitored to obtain a warning with regards to grounding?",
+        "question": "Which among the types of chart is electronically computer generated (CHART) in which the objects can be clicked for more information and depths can also be monitored to obtain a warning with regards to grounding?",
         "answer": "Vector chart"
     },
     {
         "question": "When was the latest edition of the main IHO Transfer Standard for Presentation Library Edition 3,4 for ECDIS took effect?",
-        "answer": "Jan-08"
+        "answer": "January 2008"
     },
     {
-        "question": "When was the latest edition of the main IHO Transfer Standard for Digital HydrographiCatAs Data S-57",
-        "answer": "Nov-00"
-    },
-    {
-        "question": "Edition 3.1 for ECDIS took effect?",
-        "answer": "Nov-00"
+        "question": "When was the latest edition of the main IHO Transfer Standard for Digital HydrographiCatAs Data S-57 Edition 3.1 for ECDIS took effect?",
+        "answer": "November 2000"
     },
     {
         "question": "ECDIS must be able to perform all of the following EXCEPT.",
@@ -193,11 +169,11 @@
     },
     {
         "question": "What is the light rhythm (when fitted) of the SOUTH Cardinal marks used in IALA Region A and region B?",
-        "answer": "VQ(6) + Long flash every 10 seconds or"
+        "answer": "VQ(6) + Long flash every 10 seconds or Q(6) + Long flash every 15 seconds"
     },
     {
         "question": "our ship is on course 150° at a speed of 17 knots, if the apparent wind is from 040 ° of the starboard bow at a speed of 15 knots. What would be the direction of true wind and speed?",
-        "answer": "True wind from 270°"
+        "answer": "True wind from 270° and speed about 11 knots."
     },
     {
         "question": "What would result if the moon and sun align with the Earth?",
@@ -213,11 +189,11 @@
     },
     {
         "question": "How does the jet stream affect weathers conditions around the world?",
-        "answer": "The strong wind current of the jet"
+        "answer": "The strong wind current of the jet stream pushes weather systems around the world."
     },
     {
         "question": "Highlight the chart in the correction?",
-        "answer": "The Radar can display on the screen areas moderate or heavy rain continuously for at least 50 nautical miles"
+        "answer": "The Radar can display on the screen areas moderate or heavy rain continuously for at least 50 nautical miles in broad sector"
     },
     {
         "question": "What is the meaning of the coded form M02/M05 in the weather report for LOWL at 070650Z",
@@ -241,7 +217,7 @@
     },
     {
         "question": "Describe what is a COLD WALL?",
-        "answer": "It is the sudden line of demarcation"
+        "answer": "It is the sudden line of demarcation separating the Gulf Strean from the Labarador current."
     },
     {
         "question": "When using the depth finder in the open ocean, what phenomena is most likely provide a continuous trace that isn't from the actual bottom?",
@@ -252,16 +228,8 @@
         "answer": "If the interuption on the barometer is 5 mb or more below normal"
     },
     {
-        "question": "When a new chart is received onboard",
-        "answer": "Highlight the chart in the correction log;"
-    },
-    {
-        "question": ", how woulld you correct",
-        "answer": "Enter the chart folio and sequence number;"
-    },
-    {
-        "question": "a new chart?",
-        "answer": "Correct the chart for any pending corrections; Correct the Admiralty Chart catalogueif affected;"
+        "question": "When a new chart is received onboard , how woulld you correct a new chart?",
+        "answer": "Highlight the chart in the correction log; Enter the chart folio and sequence number; Correct the chart for any pending corrections; Correct the Admiralty Chart catalogueif affected; Correct the old edition of the chart."
     },
     {
         "question": "If you experience where there is no steering from remote control, what will be the MOST probable cause?",
@@ -292,16 +260,12 @@
         "answer": "Yes, by manually creating the object"
     },
     {
-        "question": "During your navigation and your",
-        "answer": "When the specified limit for deviation from the planned route is exceeded."
-    },
-    {
-        "question": "ECDIS gives an alarm, what is the possible cause of the alarm?",
+        "question": "During your navigation and your ECDIS gives an alarm, what is the possible cause of the alarm?",
         "answer": "When the specified limit for deviation from the planned route is exceeded."
     },
     {
         "question": "For an ECDIS to be considered in compliance with SOLAS regulations, which performance standards is it required to meet?",
-        "answer": "The standard outline in"
+        "answer": "The standard outline in IMO Resolution MSC (232)(82)."
     },
     {
         "question": "For the optimum situational awareness, what must be always recognized by navigators for objects presented when using ECDIS?",
@@ -320,11 +284,7 @@
         "answer": "Running fix"
     },
     {
-        "question": "For vessels fitted with only one",
-        "answer": "Paper charts"
-    },
-    {
-        "question": "ECDIS, what shall be used as the primary means of navigation?",
+        "question": "For vessels fitted with only one ECDIS, what shall be used as the primary means of navigation?",
         "answer": "Paper charts"
     },
     {
@@ -348,11 +308,7 @@
         "answer": "9"
     },
     {
-        "question": "Compliance with regulatory requirements generic training and familiarization ECDIS including the required competencies are increasingly being examined by these following external parties",
-        "answer": "Pilots"
-    },
-    {
-        "question": "EXCEPT:",
+        "question": "Compliance with regulatory requirements generic training and familiarization ECDIS including the required competencies are increasingly being examined by these following external parties EXCEPT:",
         "answer": "Pilots"
     },
     {
@@ -368,15 +324,7 @@
         "answer": "Bridge navigational watch alarm system"
     },
     {
-        "question": "As required by the IMO performance standards for",
-        "answer": "Displays two point targets on the same bearing, separated by 40m in range."
-    },
-    {
-        "question": "ECDIS, the following are the",
-        "answer": "Displays two point targets on the same bearing, separated by 40m in range."
-    },
-    {
-        "question": "\"single operation actions\"",
+        "question": "As required by the IMO performance standards for ECDIS, the following are the \"single operation actions\" EXCEPT:",
         "answer": "Displays two point targets on the same bearing, separated by 40m in range."
     },
     {
@@ -392,6 +340,10 @@
         "answer": "North up display"
     },
     {
+        "question": "ECDIS must be able to perform all of the following EXCEPT.",
+        "answer": "Determine magnetic compass deviation."
+    },
+    {
         "question": "ECDIS must give an alarm for which of the following cases?",
         "answer": "When the specified limit for deviation from the planned route is exceeded."
     },
@@ -400,15 +352,7 @@
         "answer": "Use the Load Update in the Chart Menu"
     },
     {
-        "question": "If the Electronic chart is part of an",
-        "answer": "Tidal Currents"
-    },
-    {
-        "question": "ECDIS, it must display the minimum data required by",
-        "answer": "Tidal Currents"
-    },
-    {
-        "question": "IMO/IHO to include all of the following EXCEPT which item?",
+        "question": "If the Electronic chart is part of an ECDIS, it must display the minimum data required by IMO/IHO to include all of the following EXCEPT which item?",
         "answer": "Tidal Currents"
     },
     {
@@ -424,19 +368,11 @@
         "answer": "NP 232"
     },
     {
-        "question": "How many seconds before the",
+        "question": "How many seconds before the ECDIS should not need to be re-initialized?",
         "answer": "45"
     },
     {
-        "question": "ECDIS should not need to be re-initialized?",
-        "answer": "45"
-    },
-    {
-        "question": "If the safety contour value is set to 6m, the ECDIS will take the next deeper contour on that ENC (for example 10 m), what would be the shade Of the chart areas below",
-        "answer": "Blue"
-    },
-    {
-        "question": "10m?",
+        "question": "If the safety contour value is set to 6m, the ECDIS will take the next deeper contour on that ENC (for example 10 m), what would be the shade Of the chart areas below 10m?",
         "answer": "Blue"
     },
     {
@@ -444,16 +380,20 @@
         "answer": "12 hours"
     },
     {
-        "question": "How do you get information on an",
-        "answer": "Center click on the object."
-    },
-    {
-        "question": "ENC object on the ECDIS?",
+        "question": "How do you get information on an ENC object on the ECDIS?",
         "answer": "Center click on the object."
     },
     {
         "question": "In passage planning with ECDIS, what is the stage where raw data are processed into useful information for navigational strategies is being performed?",
         "answer": "Planning"
+    },
+    {
+        "question": "How many Lines of Positions (LOPs) can you have in ECDIS?",
+        "answer": "4 LOPS"
+    },
+    {
+        "question": "In passage planning with ECDIS, what is the stage where collection and validation of all of relevant information are being done?",
+        "answer": "Appraisal"
     },
     {
         "question": "How many Lines of Positions (LOPs) can you have in ECDIS?",
@@ -472,6 +412,10 @@
         "answer": "A digitized picture of a chart in one format and one layer"
     },
     {
+        "question": "An ECDIS is required to display which information?",
+        "answer": "Ship hydrodynamic information"
+    },
+    {
         "question": "How can you reset the ECDIS trip counter?",
         "answer": "From the count tab in the sensor"
     },
@@ -481,7 +425,7 @@
     },
     {
         "question": "Chart information details to be used in ECDIS should be the latest edition of information originated by a government-authorized hydrographic office and conform to the standards of (the)",
-        "answer": "International"
+        "answer": "International Hydrographic Organization"
     },
     {
         "question": "How you organize the ECDIS system to continuously checks if the ship is within a specified time crossing a line in the chart you set in relation to the actual draft of the ship in a voyage planning?",
@@ -532,16 +476,12 @@
         "answer": "9"
     },
     {
-        "question": "When was the latest edition of the main IHO Transfer Standard for Digital Hydrographic Data S-57",
-        "answer": "Nov-00"
-    },
-    {
-        "question": "Edition 3.1 for Ecdis took effect?",
+        "question": "When was the latest edition of the main IHO Transfer Standard for Digital Hydrographic Data S-57 Edition 3.1 for Ecdis took effect?",
         "answer": "Nov-00"
     },
     {
         "question": "When was the latest edition of the main IHO Transfer Standard for Presentation Library Edition 3.4 for Ecdis took effect?",
-        "answer": "8-Jan"
+        "answer": "Jan-08"
     },
     {
         "question": "On the following, what example of a SENC information can you find available on a display base which is permanently shown on ECDIS display?",
@@ -556,11 +496,11 @@
         "answer": "If the ship is going to reach a critical point on the planned route."
     },
     {
-        "question": "In calm and clutter-free conditions, what seems likely is the minimum detection range for X-band radar if the target is a 2-meter tall small vessel of length 10 meters with no radar reflector",
+        "question": "In calm and clutter-free conditions, what seems likely is the minimum detection range for X-band radar if the target is a 2-meter tall small vessel of length 10 meters with no radar reflector ?",
         "answer": "3.4 nm"
     },
     {
-        "question": "?",
+        "question": "In calm and clutter-free conditions, what seems likely is the minimum detection range for X-band radar if the target is a 2-meter tall small vessel of length 10 meters with no radar reflector ?",
         "answer": "3.4 nm"
     },
     {
@@ -568,24 +508,40 @@
         "answer": "4 hours"
     },
     {
+        "question": "What is the recommended maximum size for ENC cells?",
+        "answer": "5 MB"
+    },
+    {
+        "question": "An ECDIS is required to display which information?",
+        "answer": "hydrographic data"
+    },
+    {
         "question": "An indirect radar echo is caused by a reflection of the main lobe of the radar beam of the observer's vessel. Which of the following is a characteristics of indirect echoes?",
         "answer": "Their bearing is almost constant, even when the true bearing of the contact changes appreciably."
     },
     {
-        "question": "ECDIS, the following are the \" single operation actions\" EXCEPT:",
+        "question": "As required by the IMO performance standards for ECDIS, the following are the \" single operation actions\" EXCEPT:",
         "answer": "Displays two points targets on the same bearing separated by 40m in range."
     },
     {
-        "question": "Compliance with regulatory requirements for generic training and familiarization in ECDIS",
+        "question": "Compliance with regulatory requirements for generic training and familiarization in ECDIS including the required competencies are increasingly being examined by these following external parties EXCEPT:",
         "answer": "Pilots"
     },
     {
-        "question": "including the required competencies are increasingly being examined by these following external parties EXCEPT:",
-        "answer": "Pilots"
+        "question": "Data are logged in the ECDIS, the following information may be logged EXCEPT:",
+        "answer": "Engine RPM"
+    },
+    {
+        "question": "Displaying SENC information conforms to which performance standard?",
+        "answer": "The selected safety contour is displayed with greater emphasis than other contour"
     },
     {
         "question": "The power supply of a meggerATas is obtained from?",
         "answer": "a magneto"
+    },
+    {
+        "question": "ECDIS must give an alarm for which of the following cases?",
+        "answer": "All of these choices"
     },
     {
         "question": "The diameter of a piston is usually less at the crown than at the skirt, in order to",
@@ -600,15 +556,15 @@
         "answer": "Check ECDIS accuracy as often as practical, using methods independents of ECDIS to determine vessel position."
     },
     {
+        "question": "Which data must ECDIS be able to record at one-minute intervals?",
+        "answer": "Course made good history"
+    },
+    {
         "question": "On the following, what would you select to find SENC information available to be displayed on demand during route monitoring and planning?",
         "answer": "Details of all isolated dangers"
     },
     {
-        "question": "On the following what example can you find in a SENC",
-        "answer": "Drying line"
-    },
-    {
-        "question": "information available for display during route planning on a standard ECDIS display?",
+        "question": "On the following what example can you find in a SENC information available for display during route planning on a standard ECDIS display?",
         "answer": "Drying line"
     },
     {
@@ -621,7 +577,7 @@
     },
     {
         "question": "In which document will you find the Performance Standard for ECDIS?",
-        "answer": "IMO Resolution"
+        "answer": "IMO Resolution A.817(19)"
     },
     {
         "question": "In the ECDIS operation, where do you change the target past position density?",
@@ -629,7 +585,7 @@
     },
     {
         "question": "The ECDIS will give off an alarm or indication about the following condition system EXCEPT:",
-        "answer": "Larger scale ENC"
+        "answer": "Larger scale ENC available"
     },
     {
         "question": "What type of level control system is fitted either on the top of the boiler drum or in a water chamber attached to a metal rod which activates magnetic switches for starting or stopping the pump or opening and closing of the feed valve?",
@@ -644,11 +600,11 @@
         "answer": "Monitoring mode"
     },
     {
-        "question": "In support of the relevant",
-        "answer": "NP 231"
+        "question": "During route planning and route monitoring, the following SENC information available for display should be subdivided into the following categories EXCEPT:",
+        "answer": "North UP display"
     },
     {
-        "question": "performance standards for ECDIS adopted by the IMO, which IHO standard gives guidelines for using AlO and ENCs during passage planning and monitoring including the use of T&Ps?",
+        "question": "In support of the relevant performance standards for ECDIS adopted by the IMO, which IHO standard gives guidelines for using AlO and ENCs during passage planning and monitoring including the use of T&Ps?",
         "answer": "NP 231"
     },
     {
@@ -664,64 +620,96 @@
         "answer": "Quality if Data"
     },
     {
+        "question": "Identify which of the following primary information should always appear on ECDIS during route monitoring mode?",
+        "answer": "Selected route"
+    },
+    {
         "question": "In which SOLAS regulation defines the nautical charts are issued officially by or on the authority of a Government, authorized Hydrographic Office or other relevant government institutions?",
-        "answer": "SOLAS Regulation"
+        "answer": "SOLAS Regulation V/2.2"
     },
     {
-        "question": "In which SOLAS regulation that",
-        "answer": "SOLAS Regulation"
+        "question": "In which SOLAS regulation that ECDIS units onboard ships must be type-approved",
+        "answer": "SOLAS Regulation V/18"
     },
     {
-        "question": "ECDIS units onboard ships must be type-approved",
-        "answer": "V/18"
+        "question": "The database information that should be shown when a chart is first displayed on ECDIS is the",
+        "answer": "standard display information"
     },
     {
-        "question": "To avoid over-reliance on the",
+        "question": "To avoid over-reliance on the ECDIS, what is the mandatory for ships officer to have better situational awareness should the system fail anytime during the voyage?",
         "answer": "To manually plot position of the vessel frequency"
     },
     {
-        "question": "ECDIS, what is the mandatory for ships officer to have better situational awareness should the system fail anytime during the voyage?",
-        "answer": "To manually plot position of the vessel frequency"
+        "question": "ECDIS with adequate back-up arrangements may be accepted as complying with the up-to-date charts required by of SOLAS.",
+        "answer": "regulations V/19 and V/27"
     },
     {
-        "question": "ECDIS with adequate back-up arrangements may be accepted as complying with the up-to-date charts required by",
-        "answer": "regulations V/19 and"
+        "question": "When using ECDIS what should a mariner in charge of a navigational watch should confirm?",
+        "answer": "Check ECDIS accuracy as often as practical, using methods independents of ECDIS to determine vessel position."
     },
     {
-        "question": "of",
-        "answer": "V/27"
+        "question": "To ensure accuracy, how can you monitor periodically the data input from the gyro compass, speed log, echo sounder and other equipment of ECDIS?",
+        "answer": "Using sensor monitor window"
     },
     {
         "question": "Can you create a Manual Update from an AlS Safety Message shown on the ECDIS?",
         "answer": "Yes, by manually creating the object"
     },
     {
+        "question": "Can you move your USER Chart from one ECDIS to another?",
+        "answer": "Yes, by creating a back up and restore dialogue"
+    },
+    {
+        "question": "During your navigation and your ECDIS gives an alarm, what is the possible cause of the alarm?",
+        "answer": "When the specified limit for deviation from the planned route is exceeded."
+    },
+    {
         "question": "ECDIS must give an alarm for which of the followingAs cases?",
         "answer": "When the specified limit for deviation from the planned route is exceeded"
     },
     {
-        "question": "What is the code for the",
-        "answer": "SOLAS Chapter V"
+        "question": "An ECDIS is required to display which information?",
+        "answer": "Soundings"
     },
     {
-        "question": "Regulation in regards to ECDIS?",
-        "answer": "Regulation 19"
+        "question": "What is the code for the Regulation in regards to ECDIS?",
+        "answer": "SOLAS Chapter V Regulation 19"
+    },
+    {
+        "question": "An ECDIS is required to display which information?",
+        "answer": "Ship hydrodynamic information"
     },
     {
         "question": "In which of the following cases does an ECDIS gives alarm?",
         "answer": "If the ship is going to reach a critical point on the planned route."
     },
     {
-        "question": "Which of the following is a SENC information available on a display base to be permanently shown on",
+        "question": "What is the recommended maximum size for ENC cells?",
+        "answer": "5 MB"
+    },
+    {
+        "question": "What is a raster-scan chart data?",
+        "answer": "A digitized picture of a chart in one format and one layer"
+    },
+    {
+        "question": "Which of the following is a SENC information available on a display base to be permanently shown on ECDIS display?",
         "answer": "Coast line"
     },
     {
-        "question": "ECDIS display?",
-        "answer": "Coast line"
+        "question": "An ECDIS is required to display which information?",
+        "answer": "Depth contours"
     },
     {
-        "question": "In terms of ECDIS voyage recording, what major types of data that must be recordedAlas at one-minute intervals during the previous 12 hours?",
-        "answer": "I and Ill only"
+        "question": "On the following what example can you find in a SENC information available for display during route planning on a standard ECDIS display?",
+        "answer": "Drying line"
+    },
+    {
+        "question": "Data are logged in the ECDIS, the following information may be logged EXCEPT:",
+        "answer": "Engine RPM"
+    },
+    {
+        "question": "An ECDIS is required to display which information? In terms of ECDIS voyage recording, what major types of data that must be recordedAlas at one-minute intervals during the previous 12 hours? I. Record of own ship's track Il. Record of own ship's time, position, heading, speed III. Record of official data used (e.g., ENC)",
+        "answer": "Hydrographic data I and Ill only"
     },
     {
         "question": "ECDIS must give an alarm for",
@@ -732,39 +720,51 @@
         "answer": "reach a critical point on the planned route"
     },
     {
+        "question": "In which of the following cases does an ECDIS gives alarm?",
+        "answer": "If the ship is going to reach a critical point on the planned route."
+    },
+    {
+        "question": "Among the listed case, which must an ECDIS give an alarm?",
+        "answer": "If the ship is going to reach a critical point on the planned route."
+    },
+    {
+        "question": "Which Admiralty publication may be consulted for further guidance to ECDIS implementation, policy, and procedures?",
+        "answer": "NP 232"
+    },
+    {
         "question": "*What is to be undertaken prior to authorizing the use of ECDIS in the RCDS mode for primary navigation?",
         "answer": "Risk assessment"
+    },
+    {
+        "question": "Compliance with regulatory requirements for generic training and familiarization in ECDIS including the required competencies are increasingly being examined by these following external parties EXCEPT:",
+        "answer": "Pilots"
+    },
+    {
+        "question": "Identify which of the following primary information should always appear on ECDIS during route monitoring mode?",
+        "answer": "Selected route"
     },
     {
         "question": "When an ECDIS is switched on following a switch off or power failure, it should",
         "answer": "return to the most recent manually selected settings for display"
     },
     {
+        "question": "How does a Global Positioning System receiver get a signal from the satellite?",
+        "answer": "Satellite signals are sent at different frequencies and coded."
+    },
+    {
         "question": "Which of the following is NOT an advantage of Raster chart?",
         "answer": "Zooming reveals details"
     },
     {
-        "question": "Why vessels may be required to use ECDIS in Raster Chart",
-        "answer": "Why should Navigating"
+        "question": "Why vessels may be required to use ECDIS in Raster Chart Display System (RCDS) mode using ARCS / Approved Raster Charts?",
+        "answer": "Why should Navigating Officer carry out checks while carrying out passage planning on ECDIS?"
     },
     {
-        "question": "Display System (RCDS) mode using ARCS / Approved Raster",
-        "answer": "Officer carry out checks while carrying out passage planning on ECDIS?"
-    },
-    {
-        "question": "ECDIS units incorporate Digital",
+        "question": "ECDIS units incorporate Digital Chart Data Formats, which include",
         "answer": "vector and raster"
     },
     {
-        "question": "Chart Data Formats, which include",
-        "answer": "vector and raster"
-    },
-    {
-        "question": "The database resulting from (1) the transformation of the electronic navigational chart",
-        "answer": "system electronic navigational chart"
-    },
-    {
-        "question": "(ENC) by ECDIS for appropriate use, (2) the updates to the ENC by appropriate means, and (3) the additional data added by the mariner, is called the",
+        "question": "The database resulting from (1) the transformation of the electronic navigational chart (ENC) by ECDIS for appropriate use, (2) the updates to the ENC by appropriate means, and (3) the additional data added by the mariner, is called the",
         "answer": "system electronic navigational chart"
     },
     {
@@ -785,7 +785,19 @@
     },
     {
         "question": "•Highlight the chart in the correctio",
-        "answer": "The Radar can display on the screen areas moderate or heavy rain continuously for at least 50 nautical miles"
+        "answer": "The Radar can display on the screen areas moderate or heavy rain continuously for at least 50 nautical miles in broad sector"
+    },
+    {
+        "question": "What does a navigator need in pilotage?",
+        "answer": "All the required euipment are up and running and clocks are synchronized."
+    },
+    {
+        "question": "•Highlight the chart in the correctio",
+        "answer": "The Radar can display on the screen areas moderate or heavy rain continuously for at least 50 nautical miles in broad sector"
+    },
+    {
+        "question": "What does a navigator need in pilotage?",
+        "answer": "All the required euipment are up and running and clocks are synchronized."
     },
     {
         "question": "Which unit of measurement will not display on an ECDIS?",
@@ -796,11 +808,7 @@
         "answer": "ENC"
     },
     {
-        "question": "Which of the following statement is/are true with regards to the",
-        "answer": "I and I only"
-    },
-    {
-        "question": "ECDIS in the Integrated Bridge System? I. This will not lower the overall worked load of the bridge officer. II. It increases the percentage of the time that bridge officers can devote to collision avoidance. Ill. The system is most the same in design to meet the requirement of the system of integration. IV. It became a mandatory that its installation and design criteria is laid out by classification societies.",
+        "question": "Which of the following statement is/are true with regards to the ECDIS in the Integrated Bridge System? I. This will not lower the overall worked load of the bridge officer. II. It increases the percentage of the time that bridge officers can devote to collision avoidance. Ill. The system is most the same in design to meet the requirement of the system of integration. IV. It became a mandatory that its installation and design criteria is laid out by classification societies.",
         "answer": "I and I only"
     },
     {
@@ -812,27 +820,27 @@
         "answer": "Classification Societies"
     },
     {
-        "question": "Which of the following is not an alarm required by the IMO",
+        "question": "Which data must ECDIS be able to record at one-minute intervals?",
+        "answer": "Course made good history"
+    },
+    {
+        "question": "Which of the following is not an alarm required by the IMO Performance Standards for ECDIS?",
         "answer": "Crossing a danger in route monitoring mode."
     },
     {
-        "question": "Performance Standards for ECDIS?",
-        "answer": "Crossing a danger in route monitoring mode."
+        "question": "What is your idea about of a cold front?",
+        "answer": "It is when a colder air is underrunning and displacing warmer air."
     },
     {
-        "question": "What is defined as the level Of",
+        "question": "You are on course 357° T and take a relative bearing of a lighthouse of 180°. What is the true bearing of the lighthouse?",
+        "answer": "177° T"
+    },
+    {
+        "question": "What is defined as the level Of SENC info shown when ECDIS first turned on, used for the route planning and can be modified by manner depending on needs?",
         "answer": "ENC display."
     },
     {
-        "question": "SENC info shown when ECDIS first turned on, used for the route planning and can be modified by manner depending on needs?",
-        "answer": "ENC display."
-    },
-    {
-        "question": "Which of the following is the product specification of the produced Electronic Navigational",
-        "answer": "IHO S-57"
-    },
-    {
-        "question": "Chart?",
+        "question": "Which of the following is the product specification of the produced Electronic Navigational Chart?",
         "answer": "IHO S-57"
     },
     {
@@ -848,11 +856,7 @@
         "answer": "It can only be updated by the service engineer of the manufacturer"
     },
     {
-        "question": "Why should Navigating Officer carry out checks while carrying out passageanas planning on",
-        "answer": "Not all sea areas are covered by ENC charts."
-    },
-    {
-        "question": "ECDIS?",
+        "question": "Why should Navigating Officer carry out checks while carrying out passageanas planning on ECDIS?",
         "answer": "Not all sea areas are covered by ENC charts."
     },
     {
@@ -881,7 +885,7 @@
     },
     {
         "question": "What regulation requires ECDIS to be able to update easily, reduce the workload of navigation, and continuously monitor and record the ship's position.",
-        "answer": "Resolution"
+        "answer": "Resolution MSC.530(106)"
     },
     {
         "question": "What precautions to be observed when ECDIS is in operation?",
@@ -896,7 +900,15 @@
         "answer": "Yes. It is independent on other function"
     },
     {
+        "question": "Can you move your user chart from one ECDIS to another?",
+        "answer": "Yes, by creating a back up and restore dialogue"
+    },
+    {
         "question": "ECDIS must give an alarm for which of the following As cases?",
+        "answer": "When the specified limit for deviation from the planned route is exceeded"
+    },
+    {
+        "question": "During your navigation and your ECDIS gives an alarm, what is the possible cause of the alarm?",
         "answer": "When the specified limit for deviation from the planned route is exceeded"
     },
     {
@@ -904,12 +916,20 @@
         "answer": "The ECDIS will normally convert the ENCs to SENCs automatically"
     },
     {
-        "question": "(ENC) by ECDIS for appropriate use, (2) the updates to the ENC by appropriate means, and (3) the additional data added by the mariner, is called the ..?",
+        "question": "The database resulting from (1) the transformation of the electronic navigational chart (ENC) by ECDIS for appropriate use, (2) the updates to the ENC by appropriate means, and (3) the additional data added by the mariner, is called the ..?",
         "answer": "System electronic navigational chart"
     },
     {
         "question": "In Ecdis operations, why should the values for the safety depth and safety contour must be understood and entered?",
         "answer": "To achieve a sensible and considered meaning and alarm settings"
+    },
+    {
+        "question": "ECDIS provides many benefits for route planning, a few of which of the following EXCEPT:",
+        "answer": "Continuous to be the primary method of collision avoidance for water support."
+    },
+    {
+        "question": "ECDIS provides many benefits for route planning, a few of which of the following EXCEPT:",
+        "answer": "Continuous to be the primary method of collision avoidance for water support."
     },
     {
         "question": "What is the database information that should be shown when a chart is first displayed on ECDIS?",
@@ -929,42 +949,82 @@
     },
     {
         "question": "As per SOLAS regulation what is the primary function requirements of ECDIS?",
-        "answer": "A navigational information system which with adequate back-up arrangements can be accepted as complying with the up-to-date chart required by regulation V/20 of the 1974 SOLAS"
+        "answer": "A navigational information system which with adequate back-up arrangements can be accepted as complying with the up-to-date chart required by regulation V/20 of the 1974 SOLAS Convention as amended by displaying selected information from a system electronic navigational chart"
+    },
+    {
+        "question": "ECDIS must give an alarm for which of the following cases?",
+        "answer": "All of these"
     },
     {
         "question": "The following are the defining characteristics of an ENC",
         "answer": "Created from a scan of hydrographic material"
     },
     {
-        "question": "In ECDIS operations, what occurs when a ship crosses the boundary of a prohibited area or",
+        "question": "ECDIS must be able to perform all of the following EXCEPT",
+        "answer": "determine magnetic compass deviation"
+    },
+    {
+        "question": "The level of database information which cannot be removed from the ECDIS display and consists of information which is required at all times in all geographic areas and under all circumstances is the",
+        "answer": "display base information"
+    },
+    {
+        "question": "In ECDIS operations, what occurs when a ship crosses the boundary of a prohibited area or geographical area which special condition exists?",
         "answer": "ECDIS will give off an alarm or indication."
     },
     {
-        "question": "geographical area which special condition exists?",
-        "answer": "ECDIS will give off an alarm or indication."
+        "question": "Among the listed case, which must an ECDIS give an alarm?",
+        "answer": "If the ship is going to reach a critical point on the planned route"
     },
     {
-        "question": "The regulatory requirements for generic training and familiarization in ECDIS are covered by theseArAs international instruments",
+        "question": "Among the listed case, which must an ECDIS give an alarm?",
+        "answer": "If the ship is going to reach a critical point on the planned route"
+    },
+    {
+        "question": "The regulatory requirements for generic training and familiarization in ECDIS are covered by theseArAs international instruments EXCEPT:",
         "answer": "IHO"
     },
     {
+        "question": "In Ecdis operations, why should the values for the safety depth and safety contour must be understood and entered?",
+        "answer": "To achieve a sensible and considered meaning and alarm settings"
+    },
+    {
+        "question": "ECDIS provides many benefits for route planning, a few of which of the following EXCEPT:",
+        "answer": "Continuous to be the primary method of collision avoidance for water support."
+    },
+    {
         "question": "As per ECDIS regulation what describes the ECDIS operational and performance requirements and provide methods for the required result?",
-        "answer": "International Electro"
+        "answer": "International Electro Technical Commission (IEC) Standard 61174"
     },
     {
         "question": "Identify which of the following primary information should always appear on ECDIS display during route monitoring mode?",
         "answer": "Selected route"
     },
     {
+        "question": "In the ECDIS operation, where do you change the target past position density?",
+        "answer": "In the Symbol Dispaly"
+    },
+    {
+        "question": "Identify which of the following primary information should always appear on ECDIS during route monitoring mode?",
+        "answer": "Selected route"
+    },
+    {
+        "question": "Displaying SENC information conforms to which performance standard?",
+        "answer": "The selected safety contour is displayed with greater emphasis than other contour"
+    },
+    {
+        "question": "Can you create a Manual Update from NAVTEX Message shown on the ECDIS?",
+        "answer": "Yes, by manually creating the object"
+    },
+    {
         "question": "Which of the following statements is TRUE regarding the Look-ahead sector alerts?",
         "answer": "The Look ahead sector alert is for crossing contours more shallow than the depth set in the safety contour settings."
     },
     {
-        "question": "What is defined as the level of",
-        "answer": "ENC display"
+        "question": "An ECDIS is required to display which information?",
+        "answer": "Soundings"
     },
     {
-        "question": "SENC info shown when ECDIS first turned on; used for route planning and can be modified by mariner depending on needs?",
+        "question": "What is defined as the level of SENC info shown when ECDIS first turned on; used for route planning and can be modified by mariner depending on needs?",
         "answer": "ENC display"
     },
     {
@@ -988,20 +1048,60 @@
         "answer": "Standard display information"
     },
     {
+        "question": "What is the code for the Regulation in regards to ECDIS?",
+        "answer": "SOLAS Chapter V Regulation 19"
+    },
+    {
+        "question": "An ECDIS is required to display which information?",
+        "answer": "Ship hydrodynamic information"
+    },
+    {
+        "question": "What should be carried out by the Navigating Officer to ensure that the vessel will not encounter navigational hazards on the planned route?",
+        "answer": "Route check"
+    },
+    {
         "question": "What is to be undertaken prior to authorizing the use of ECDIS in the RCDS mode for primary navigation?",
         "answer": "Risk assessment"
     },
     {
-        "question": "Which of the following is the primary way to adjust a planned route in the ECDIS Route",
+        "question": "Which Admiralty publication may be consulted for further guidance to ECDIS implementation, policy, and procedures?",
+        "answer": "NP 232"
+    },
+    {
+        "question": "What is meant when an ENC is outlined in Yellow in the Chart Catalogue?",
+        "answer": "License is valid-up-to-date status doubtful"
+    },
+    {
+        "question": "In the ECDIS operation, where do you change the target past position density?",
+        "answer": "In the Symbol Display"
+    },
+    {
+        "question": "Which of the following is the primary way to adjust a planned route in the ECDIS Route Planning Mode?",
         "answer": "alphanumerically and graphically"
     },
     {
-        "question": "Planning Mode?",
-        "answer": "alphanumerically and graphically"
+        "question": "What precautions to be observed when ECDIS is in operation?",
+        "answer": "Check from time to time by other available means if it is operating correctly."
+    },
+    {
+        "question": "Where ENCs are not available at all or are not on appropriate scale for the planning and display of the ship's voyage plan, what should be carried by ship's required to fit ECDIS and ships choosing to use ECDIS?",
+        "answer": "Raster Navigational Charts (RNC and or any needed paper charts should be carried."
+    },
+    {
+        "question": "An ECDIS is required to display which information?",
+        "answer": "Hydrographic data, RADAR targets, ARPA vectors"
+    },
+    {
+        "question": "An ECDIS is required to display which information?",
+        "answer": "Hydrographic data"
     },
     {
         "question": "The GPS provides 95 percent accuracy within a range of:",
         "answer": "100 meters"
+    },
+    {
+        "question": "An ECDIS is required to display which information?",
+        "answer": "Depth contours"
     },
     {
         "question": "Which of the following listed references systems affect the information on ECDIS?",
@@ -1012,23 +1112,35 @@
         "answer": "AlS provides near realtime information regarding another vessel's speed over ground and heading regardless of visibility."
     },
     {
-        "question": "What is the function of the ECDIS that allows access to attribute information that is included in the",
+        "question": "Which of the following statements is TRUE regarding automatic identification systems (AIS)?",
+        "answer": "AIS can be used to make passing arrangements via ship-to-ship text messaging but a vessel operator is not relieved from the requirement to sound whistle signals or make arrangements via bridge-to-bridge radiotelephone."
+    },
+    {
+        "question": "What is the function of the ECDIS that allows access to attribute information that is included in the ENC data but not automatically displayed?",
         "answer": "Chart alert"
     },
     {
-        "question": "ENC data but not automatically displayed?",
-        "answer": "Chart alert"
+        "question": "In Ecdis operations, why should the values for the safety depth and safety contour must be understood and entered?",
+        "answer": "To achieve a sensible and considered meaning and alarm settings"
+    },
+    {
+        "question": "ECDIS provides many benefits for route planning, a few of which of the following EXCEPT:",
+        "answer": "Continuous to be the primary method of collision avoidance for water support."
     },
     {
         "question": "Which information must automatic identification systems (AlS) automatically provide to appropriately equipped shore stations, vessels and aircraft?",
         "answer": "Vessel's course"
     },
     {
-        "question": "ECDIS, from the symbols and line styles that must be used to depict features right through to the colours that govern the day, dusk and night modes?",
+        "question": "Which IHO standard controls the graphical display of the ENC in ECDIS, from the symbols and line styles that must be used to depict features right through to the colours that govern the day, dusk and night modes?",
         "answer": "IHO S-52 Annex A"
     },
     {
         "question": "Electronic Navigational Chart are produced under what product specification?",
         "answer": "IHO S-57"
+    },
+    {
+        "question": "Which special publication covers the IHO data protection scheme for ECDIS?",
+        "answer": "IHO S-63"
     }
 ]

@@ -1,1 +1,878 @@
-[]
+[
+    {
+        "question": "A line of position derived by radar range from an identified point on a coast will be a(n)",
+        "answer": "arc"
+    },
+    {
+        "question": "Ships of 100,000 GT or more constructed on or after Sept. 1, 1984 shall be fitted with a",
+        "answer": "Rate of turn indicator"
+    },
+    {
+        "question": "Regarding performance standards for navigational radar, what are the requirements for a scanner?",
+        "answer": "It should rotate at a constant RPM of not less than 12 in relative wind speed up to 100 knots"
+    },
+    {
+        "question": "One can check the functioning of the SART by.",
+        "answer": "activating the SART and checking the effect on the radar screen"
+    },
+    {
+        "question": "You are approaching a light fitted with a RACON. The light may be identified on the radar by",
+        "answer": "a coded signal appearing on the same bearing at a greater range than the light"
+    },
+    {
+        "question": "On radar operation what is the term for the number of pulses sent out by the scanner in one second?",
+        "answer": "pulse repetition frequency"
+    },
+    {
+        "question": "Is there any preference given to ARPA equipped ships under COLREGS?",
+        "answer": "Yes"
+    },
+    {
+        "question": "In radar principles, when would second trace echoes are more likely to occur?",
+        "answer": "A high P.R.F is used."
+    },
+    {
+        "question": "Coral atolls, or a chain of islands at right angles to the radar beam, may show as a long line rather than as individual targets due to",
+        "answer": "the effects of beam width"
+    },
+    {
+        "question": "In ARPA, which of the following is TRUE?",
+        "answer": "successive bearings of a pip in radar does not necessarily give the course and speed of that pip"
+    },
+    {
+        "question": "How are side echoes appear on the radar screen?",
+        "answer": "A symmetrical arc of echoes."
+    },
+    {
+        "question": "Coral atolls, or a chain of islands at right angles to the radar beam, may show as a long line rather than as individual targets due to",
+        "answer": "the effects of beam width"
+    },
+    {
+        "question": "When using a radar in a unstabilized mode, fixes are determined most easily from",
+        "answer": "ranges"
+    },
+    {
+        "question": "At what band does a ship's radar commonly operate",
+        "answer": "X-band"
+    },
+    {
+        "question": "As per Solas V regulations safety of navigation a ships of 10,000 gross tons and above shall be fitted, with radar capable of operating in the:",
+        "answer": "9 GHz frequency band"
+    },
+    {
+        "question": "An X band RADAR operates in which frequency band?",
+        "answer": "8 - 12 GHz"
+    },
+    {
+        "question": "The radar control that reduces weak echoes out to a limited distance from the ship is the",
+        "answer": "sensitivity time control ( sea-clutter control)"
+    },
+    {
+        "question": "An indirect radar echo is caused by a reflection of the main lobe of the radar beam of the observer's vessel. Which of the following is NOT a characteristic of indirect echoes?",
+        "answer": "They always appear on a bearing of 90° from the true bearing of the contact."
+    },
+    {
+        "question": "A radar based constant up-date of cross track tendency.",
+        "answer": "Parallel Indexing"
+    },
+    {
+        "question": "A major component of a radar system which amplifies the weak echoes received thus retaining its distinctive shapes",
+        "answer": "indicator"
+    },
+    {
+        "question": "This radar unit performs a dual function both in transmission and reception.",
+        "answer": "scanner"
+    },
+    {
+        "question": "As per Solas V regulations safety of navigation a ships of 10,000 gross tons and above shall be fitted, with radar capable of operating in the:",
+        "answer": "9 GHz frequency band"
+    },
+    {
+        "question": "In calm and clutter free conditions, what is the minimum detection range for X-band radar if the target is a 5-meter tall SOLAS ship (less than 5,000 gross tonnage)?",
+        "answer": "8 nm"
+    },
+    {
+        "question": "Which of the following is the approximate time a radar pulse travel out to and the echo return from a target at 24 miles?",
+        "answer": "400 microsec"
+    },
+    {
+        "question": "What is the minimum display area diameter in the performanceAmAS requirements for all ships/crafts greater than 10,000 gross tonnage?",
+        "answer": "340 x 340 mm"
+    },
+    {
+        "question": "What is the common radar frequency ranges of bands used in coastal radar systems?",
+        "answer": "3-30 MHz"
+    },
+    {
+        "question": "In calm and clutter-free conditions, what is the minimum detection range for S-band radar if the target is a 4-meter tall small vessel with radar reflector meeting IMO Performance Standards?",
+        "answer": "3.7 nm"
+    },
+    {
+        "question": "In what time frame must an ARPA produce a true motion with 95% accuracy and true course and speed?",
+        "answer": "3 minutes"
+    },
+    {
+        "question": "What is the approximate wave length of an X-band radar operating on a frequency of approximately 9500MGHz?",
+        "answer": "3 cm"
+    },
+    {
+        "question": "When may the automatic identification system (AIS) be switched off?",
+        "answer": "At the Master's professional judgement"
+    },
+    {
+        "question": "You are approaching a sea buoy which emits a racon signal. This signal is triggered by which type of radar?",
+        "answer": "3 cm"
+    },
+    {
+        "question": "An S-Band radar operates in which frequency band?",
+        "answer": "2 - 4 GHz"
+    },
+    {
+        "question": "What is the minimum display area diameter in the performance requirements for all ships/crafts less than 500 gross tonnage?",
+        "answer": "180mm"
+    },
+    {
+        "question": "You are underway at 5 knots and see on your radar a contact 10 miles directly astern of you. 12 minutes later, the contact is 8 miles directly astern of you. What is the estimated speed of the contact?",
+        "answer": "15 knots"
+    },
+    {
+        "question": "In calm and clutter free conditions, what is the minimumAtas detection range for X-band radar if the target is a 10-meter tall SOLAS ship (more than 5,000 gross tonnage)?",
+        "answer": "11 nm"
+    },
+    {
+        "question": "In what time frame must an ARPA produce a relative motion with 95% accuracy and CPA/TCPA?",
+        "answer": "1 minute"
+    },
+    {
+        "question": "The ship's speed indication on the ARPA display can be set manually but does not change with changes in the vessel's speed. What other indication would point to a related equipment failure?",
+        "answer": "\"LOG OUT\" is displayed on the ARPA indicator"
+    },
+    {
+        "question": "An X band RADAR operates in which frequency band?",
+        "answer": "8 - 12 GHz"
+    },
+    {
+        "question": "On a relative motion radar, the closest point of approach (CPA) of a contact is determined:",
+        "answer": "after the contact has been marked at least twice"
+    },
+    {
+        "question": "You radar has a beam width of 2. The gyro bearing of the right tangent of an island is 316. The gyro error is 1E. Which true bearing should be plotted on the chart?",
+        "answer": "316"
+    },
+    {
+        "question": "What is the minimum acquired radar target capacity in the performance requirements for all ships/crafts of less than 500 gross tonnage?",
+        "answer": "20"
+    },
+    {
+        "question": "The intensity of the election beam in the C.R.T. is controlled by:",
+        "answer": "varying the potential on the grid"
+    },
+    {
+        "question": "What does the description \"Racon\" beside an illustration on a chart would mean?",
+        "answer": "Radar Conspicuous beacon"
+    },
+    {
+        "question": "Regarding performance standards for navigational radar, what are the requirements for a scanner?",
+        "answer": "Plus or minus 1 degree"
+    },
+    {
+        "question": "A radar based constant up-date of cross track tendency.",
+        "answer": "Parallel Indexing"
+    },
+    {
+        "question": "What should be the typical radar range As discrimination?",
+        "answer": "Not less than 50 metres"
+    },
+    {
+        "question": "When using the radar in heavy rain what appropriate action should you take?",
+        "answer": "Navigate as though the effective range of the radar had been reduced"
+    },
+    {
+        "question": "You are on watch and there is another ship overtaking you close to starboard, and you have three radar targets bearing 90 degrees relative at ranges 0.5 miles, 1.0 miles and 1.5 miles. In this case what are unwanted echoes?",
+        "answer": "Multiple echo"
+    },
+    {
+        "question": "What is one cause of a radar bearing error?",
+        "answer": "Misalignment of the center of the trace on the display"
+    },
+    {
+        "question": "Which part of the ship must the radar transceiver be kept from at a safe distance?",
+        "answer": "Magnetic compass"
+    },
+    {
+        "question": "What is TRUE of the history display of a target's past position on an ARPA?",
+        "answer": "In the true presentation, it provides a quick visual check to determine if a vessel has changed coutrse"
+    },
+    {
+        "question": "Navigation at coastal waters, radar is generally used to supplement",
+        "answer": "Visual fixing"
+    },
+    {
+        "question": "What does a low HDOP (Horizontal Dilution of Precision) number such as 2 indicates?",
+        "answer": "Good fix"
+    },
+    {
+        "question": "What is the most accurate determination that a radar can make?",
+        "answer": "Distance to a target"
+    },
+    {
+        "question": "What is the name of the movable guide line used to measure direction on a radar?",
+        "answer": "Cursor"
+    },
+    {
+        "question": "Performance standards should apply to all shipborne radar installations, used in any configuration, mandated by the 1974 SOLAS Convention, as amended by the following EXCEPT:",
+        "answer": "Back up arrangements"
+    },
+    {
+        "question": "What ideas justify cause the SART to begin a transmission?",
+        "answer": "After being activated, the SART responds to Radar interrogation."
+    },
+    {
+        "question": "What is the difference between a 10-cm radar compared to a 3-cm radar?",
+        "answer": "A wider horizontal beam width"
+    },
+    {
+        "question": "What will cause the ARPA to emit a visual alarm, audible alarm, or both?",
+        "answer": "A tracked target entering your preset CPA-TCPA limits"
+    },
+    {
+        "question": "What will cause the ARPA to emit a visual alarm, audible alarm or both?",
+        "answer": "a target being initially selected within a guard zone"
+    },
+    {
+        "question": "Which of the following statements concerning operational requirements for the radar system is TRUE?",
+        "answer": "A minimum of four independent parallel index lines, with a means to truncate and switch off individual lines, should be provided."
+    },
+    {
+        "question": "What statement is TRUE when operating in fog and other vessels are detected by radar?",
+        "answer": "You should maneuver in accordance with the steering and sailing rules"
+    },
+    {
+        "question": "Which is the name of movable, radial guide line used to measure direction in the radar?",
+        "answer": "VRM"
+    },
+    {
+        "question": "At what band does a ship's radar commonly operate",
+        "answer": "X-band"
+    },
+    {
+        "question": "How long will it take for the radar to be fully operational from the STANDBY position?",
+        "answer": "Within 5 seconds"
+    },
+    {
+        "question": "How long will it take for the Radar to be fully operational (RUN STATUS) aftertas switching ON from cold?",
+        "answer": "Within 4 minutes"
+    },
+    {
+        "question": "The scattering and absorption of the energy in the radar beam as it passes through the atmosphere is called:",
+        "answer": "attenuation"
+    },
+    {
+        "question": "In what time frame an ARPA should present a steady state tracking the motion of a target with the following accuracy values (95% probability values)?",
+        "answer": "Within 3 minutes"
+    },
+    {
+        "question": "When is the transmitted signal of the SART will be most conspicuous on the radar screen?",
+        "answer": "When the receiver is not fined tuned"
+    },
+    {
+        "question": "Which is the name of movable, radial guide line used to measure direction in the radar?",
+        "answer": "VRM"
+    },
+    {
+        "question": "When using ARPA fitted radars in heavy rain, the following actions should be taken EXCEPT:",
+        "answer": "Use the 3 cm radar instead of the 10 cm radar"
+    },
+    {
+        "question": "This is defined as the radar control that reduces weak echoes to a limited distance from the ship:",
+        "answer": "sensitivity time control (sea-clutter control)"
+    },
+    {
+        "question": "What should you do in order to ensure that a RACON signals displayed on the radar?",
+        "answer": "Turn off the interference controls on the radar"
+    },
+    {
+        "question": "Your radar displayed your ship off center. As you proceed on your course, your ships marker moves on the PPI scope while echoes from land masses remain stationary. What do you call this kind of display?",
+        "answer": "True motion"
+    },
+    {
+        "question": "What facts show that an operator should carry out an operational check when a radar set is installed?",
+        "answer": "To determine the limits of shadow sector"
+    },
+    {
+        "question": "Why should you carry out an operational checkaas when a radar set is installed?",
+        "answer": "To check the accuracy of the heading marker"
+    },
+    {
+        "question": "Which of the following is correct concerning RAMARK?",
+        "answer": "RAMARK is a radar beacon which transmits either continuously or at intervals"
+    },
+    {
+        "question": "An indirect radar echo is caused by a reflection of the main lobe of the radar beams off the observer's vessel. Which of the following is NOT a characteristic of indirect echoes?",
+        "answer": "They always appear on a bearing of 90 degrees from the true bearing of the contact"
+    },
+    {
+        "question": "A listing of radar aid to navigation.",
+        "answer": "The radar system should be capable of displaying two targets on the same bearing, separated by 40 m in range, as two distinct objects"
+    },
+    {
+        "question": "Coral atolls, or a chain of islands at right angles to the radar beam, may show as a long line rather than as individual targets due to",
+        "answer": "the effects of beam width"
+    },
+    {
+        "question": "What should be recorded in the radar log?",
+        "answer": "The details of repairs and services carried out."
+    },
+    {
+        "question": "Which of the following is NOT recommendable to obtain vessel's position as radar target?",
+        "answer": "Floating aids"
+    },
+    {
+        "question": "Pertaining to ARPA, what does the \"lost target\" warning denote?",
+        "answer": "Target can no longer be plotted"
+    },
+    {
+        "question": "With regards to ARPA, what does the lost target warning tell?",
+        "answer": "target can no longer be plotted"
+    },
+    {
+        "question": "With regards to ARPA, what does the \"lost target\" warning tell?",
+        "answer": "Target can no longer be plotted"
+    },
+    {
+        "question": "What ca you expect from the ARPA target trackings System in auto acquisition mode?",
+        "answer": "Small and weak targets may not be acquired"
+    },
+    {
+        "question": "The description \"Racon\" beside an illustration on a chart would mean a:",
+        "answer": "radar transponder beacon"
+    },
+    {
+        "question": "Which of the following radar displays is not stabilized?",
+        "answer": "Ship's head-up, Relative motion"
+    },
+    {
+        "question": "From which of the following does an ARPA builds up the track history of a target?",
+        "answer": "Series of its range and bearings"
+    },
+    {
+        "question": "What is the radar control that reduces weak echoes out to a limited distances from the ship?",
+        "answer": "Sensitivity time control sea clutter control)"
+    },
+    {
+        "question": "In marine navigation, radar signal is:",
+        "answer": "pulse modulated"
+    },
+    {
+        "question": "What is the radar front panel control that reduces weak echoes out to a limited distance from the ship?",
+        "answer": "Sensitivity time control (sea-clutter control)"
+    },
+    {
+        "question": "The unit which sends returning target echoes to the receiver is the:",
+        "answer": "scanner unit"
+    },
+    {
+        "question": "What radar unit has dual functions in reception and transmission?",
+        "answer": "scanner"
+    },
+    {
+        "question": "This type of radar enhance to maximum visibility in marginal weather condition.",
+        "answer": "S-band"
+    },
+    {
+        "question": "When radar display is set so that your vessel appears at the centrAtlas of the screen and the heading is set to always point to zero degrees, The observed bearings can be defined by which of the following?",
+        "answer": "Relative"
+    },
+    {
+        "question": "What purpose is the function \"Brilliance/ Intensity/Brightness\" on the radar?",
+        "answer": "Regulations of the light on PPI"
+    },
+    {
+        "question": "What purpose is the function \"Brilliance/ Intensity/Brightness\" on the radar?",
+        "answer": "Regulations of the light on PPI"
+    },
+    {
+        "question": "Spoking would be indicated on the radar receiver by:",
+        "answer": "random, pie-shaped wedges on the PPI"
+    },
+    {
+        "question": "What should you do in order to ensure that the Racon signal is visible on your 3 cm radar?",
+        "answer": "Rain clutter control should be off, when necessary may be on low."
+    },
+    {
+        "question": "What does RADAR stand for?",
+        "answer": "Radio detection and ranging"
+    },
+    {
+        "question": "The description \"Racon\" beside an illustration on a chart would mean a",
+        "answer": "radar transponder beacon"
+    },
+    {
+        "question": "Which orientation on a radar display will fix on the screen an unchanging reference?",
+        "answer": "Stabilized North-Upward"
+    },
+    {
+        "question": "How much time frame should an ARPA present a steady state in tracking the motion of a target with a 95% probability accuracy value?",
+        "answer": "Within 3 minute"
+    },
+    {
+        "question": "An indirect radar echo is caused by a reflection of the main lobe of the radar beam of the observer's vessel. Which of the following is a characteristic of indirect echoes?",
+        "answer": "Their bearing is almost constant, even when the true bearing of the contact changes appreciably."
+    },
+    {
+        "question": "Ground stabilization of the ARPA is achieved through the following EXCEPT:",
+        "answer": "Range resolution"
+    },
+    {
+        "question": "A radar contact will remain stationary on a relative motion radar display only when it is",
+        "answer": "on the same course and speed as your vessel"
+    },
+    {
+        "question": "The characteristics on which bearing resolution depends is",
+        "answer": "horizontal beam width"
+    },
+    {
+        "question": "Radar makes the most accurate determination of the",
+        "answer": "distance to a target"
+    },
+    {
+        "question": "How should the signal from a Search and Rescue RADAR transponder appear on a RADAR display?",
+        "answer": "A series of 12 equally spaced dots"
+    },
+    {
+        "question": "How often does ARPA extracts range and bearing information?",
+        "answer": "Every scan"
+    },
+    {
+        "question": "How are sea clutter echoes appear on a radar screen?",
+        "answer": "A mass of small echoes around the screen center."
+    },
+    {
+        "question": "Ground stabilizing of the ARPA display using auto drift (echo reference) can be problematic due to the following EXCEPT:",
+        "answer": "Bearing resolution"
+    },
+    {
+        "question": "Gibraltar port Control or Lloyd signal station is controlled by United Kingdom. They normally monitor the vessel thru radar surveillance. What particular questions they do not require?",
+        "answer": "Name of Owners/Operators"
+    },
+    {
+        "question": "An identification of ships coastal areas and other targets good range and range resolution are important because they",
+        "answer": "help indicate maximum detail"
+    },
+    {
+        "question": "A Doppler speed log indicates speed over ground",
+        "answer": "in the bottom return mode"
+    },
+    {
+        "question": "A Doppler speed log indicates speed throughaLas the water",
+        "answer": "in the volume reverberation mode"
+    },
+    {
+        "question": "A line of position derived by radar range from an identified point on a coast will be a(n)",
+        "answer": "arc"
+    },
+    {
+        "question": "A marine radar system for surface navigation must be fitted on all ocean or coastwise vessels of over",
+        "answer": "1,600 GT"
+    },
+    {
+        "question": "A navigator fixing a vessel s position As by radar",
+        "answer": "can use radar information from one object to fix the position"
+    },
+    {
+        "question": "A radar range to a small charted object such as a light will provide a line of position in which form?",
+        "answer": "Arc"
+    },
+    {
+        "question": "After changing range scales on which the ARPA facilities are available, or resetting the display, in what period of time should full plotting information be displayed?",
+        "answer": "A period time not exceeding four scans"
+    },
+    {
+        "question": "An estimated point in which of the distance between two objects of which at least one is in motion will reach a minimum value?",
+        "answer": "Closest Point of Approach"
+    },
+    {
+        "question": "What is the name of the electronic device that automatically reacts to the emission radar?",
+        "answer": "SART"
+    },
+    {
+        "question": "The minimum sleeping AlS target capacity for ship 500 GRT and above is",
+        "answer": "150 targets"
+    },
+    {
+        "question": "How can risk of collision can best be assessed if your vessel is underway in restricted visibility?",
+        "answer": "Watching the targets radar bearing and range"
+    },
+    {
+        "question": "Navigation at coastal waters radar is generally used to supplement the",
+        "answer": "Visual fixing"
+    },
+    {
+        "question": "By radar alone, you detect a vessel ahead on a collision course, about 3 miles distant. Your radar plot shows this to be a meeting situation. Which action should you take?",
+        "answer": "Turn to starboard"
+    },
+    {
+        "question": "In modern fathometers the sonic or ultrasonic sound waves are produced electrically by means of a",
+        "answer": "transducer"
+    },
+    {
+        "question": "During navigation while ARPA running, you have the option to have two guard zones at the same time. What is the purpose of the inner guard zone?",
+        "answer": "To give warning on small targets that are not initially detected by the outer guard zone."
+    },
+    {
+        "question": "An indirect radar echo is caused by a reflection of the main lobe of the radar beam off the observers vessel. Which of the followingALAs iS NOT a characteristic of indirect echoes?",
+        "answer": "They always appear on a bearing of 90 deg from the true bearing of the contact."
+    },
+    {
+        "question": "An indirect radar echo is caused by a reflection of the main lobe of the radar beam of the observer's vessel. Which of the following is a characteristic of indirect echoes?",
+        "answer": "Their bearing is almost constant, even when the true bearing of the contact changes appreciably."
+    },
+    {
+        "question": "An indirect radar echo is caused by a reflection of the main lobe of the radar beam of the observer's vessel. Which of the following is NOT a characteristic of indirect echoes?",
+        "answer": "They always appear on a bearing of 90° from the true bearing of the contact."
+    },
+    {
+        "question": "How are side echoes appear on the radar screen?",
+        "answer": "A symmetrical arc of echoes."
+    },
+    {
+        "question": "An S-Band radar operates in which frequency band?",
+        "answer": "2-4 GHz"
+    },
+    {
+        "question": "How is a true motion shown in a radar display?",
+        "answer": "A target's actual movement."
+    },
+    {
+        "question": "According to Rule 19 of the COLEGs, what must be your action if you detect another vessel by radar alone?",
+        "answer": "Determine if risk of collision exists"
+    },
+    {
+        "question": "How does height above sea level influence the radar range of detection of a target?",
+        "answer": "Higher objects are detected further away than the lower object"
+    },
+    {
+        "question": "How does a RADAR distinguish separate targets on the same bearing but having small difference in range?",
+        "answer": "Radar range resolution ability"
+    },
+    {
+        "question": "A radar display which is oriented so that north is always at the top of the screen is called a(n)",
+        "answer": "stabilized display"
+    },
+    {
+        "question": "If a layer of cold moist air over rides a shallow layer of warm dry air which of the following may occur?",
+        "answer": "Sub-refraction"
+    },
+    {
+        "question": "An upper layer of warm dry air over a surface layer of a cold moist air causes which of the following?",
+        "answer": "super-refraction"
+    },
+    {
+        "question": "An increase in temperature with an increase would tendATAs to cause",
+        "answer": "super-refraction"
+    },
+    {
+        "question": "What is the meaning of XXT at the bottom of the display in ARPA",
+        "answer": "Trial mode"
+    },
+    {
+        "question": "To avoid over-reliance on the ECDIS, what is the mandatory for ships officer to have better situational awareness should the system fail anytime during the voyage?",
+        "answer": "To manually plot position of the vessel frequency"
+    },
+    {
+        "question": "After sailing for several minutes (making 10 knots through the water) and in constant monitoring of your radar screen you noticed that a contact has remained in the same position relative to yours; what could be the possible conclusion of the scenario?",
+        "answer": "the contact is on the same course and speed as your vessel"
+    },
+    {
+        "question": "By what reason that edges of land should be avoided if possible when position fixing by radar.",
+        "answer": "Their poor definition."
+    },
+    {
+        "question": "Coral atolls or a chain of islands at right angles to the radar beam may show as a long line rather than as individual targets due to",
+        "answer": "the effects of beam width"
+    },
+    {
+        "question": "How can rescue personnel detect that a SART is transmitting in the immediate vicinity?",
+        "answer": "The SART s blips on the PPI will become arcs and eventually become concentric circles."
+    },
+    {
+        "question": "Which statements support Precipitation Rain Clutter?",
+        "answer": "Is the general term used to describe collectively various states in which water can manifest itself in the atmosphere, of which rain, snow and hail are examples."
+    },
+    {
+        "question": "In calm and clutter-free conditions, what seems likely is the minimum detection range for X-band radar if the target is a 2-meter tall small vessel of length 10 meters with no radar reflector ?",
+        "answer": "3.4 nm"
+    },
+    {
+        "question": "The radar SART should be so designed as to be able to operate under ambient temperatures of",
+        "answer": "-20C to +55C"
+    },
+    {
+        "question": "A radar display in which North is always at the top of the screen is a(n)",
+        "answer": "stabilized display"
+    },
+    {
+        "question": "How long must an ARPA produce a relative motion display with 95% accurate CPA/TCPA?",
+        "answer": "Within 1 minute"
+    },
+    {
+        "question": "After 3 minutes of tracking, ARPA should provide CPA to what accuracy?",
+        "answer": "Within 0.3 miles"
+    },
+    {
+        "question": "From where are the radar target ranges obtained?",
+        "answer": "The range marker"
+    },
+    {
+        "question": "From where are the radar target ranges obtained?",
+        "answer": "The range marker"
+    },
+    {
+        "question": "According to the requirement of the Rules, which factor to be taken into account when determining safe speed?",
+        "answer": "The location of vessels detected by radar"
+    },
+    {
+        "question": "A Doppler log in the volume reverberation mode indicates",
+        "answer": "speed through the water"
+    },
+    {
+        "question": "A Doppler log in the bottom return mode indicate the",
+        "answer": "speed over the ground"
+    },
+    {
+        "question": "How would you categorize the characteristics of the SART transmitted signal?",
+        "answer": "It starts with a sweep of 0.4 microsec across the entire 3-cm radar band, followed by a returning sweep of 7.6 microsec. Back to the beginning for a total of 12 sweeps"
+    },
+    {
+        "question": "Which orientation on a radar display will fix on the screen an unchanging reference?",
+        "answer": "Stabilized North-Upward"
+    },
+    {
+        "question": "An X band RADAR operates in which frequency band?",
+        "answer": "8 - 12 GHz"
+    },
+    {
+        "question": "How many Radar Transponders (SART) are required to be carried onboard a ship for use in survival crafts?",
+        "answer": "2 on new-builds only. Old ships have to comply by August'95"
+    },
+    {
+        "question": "A radar based constant up-date of cross track tendency",
+        "answer": "Parallel Indexing"
+    },
+    {
+        "question": "Given the alteration of your own ship's course or speed required, from where can the desired Closest Point of Approach (CPA) be obtained?",
+        "answer": "Radar plot"
+    },
+    {
+        "question": "In confined waters WHICH of the following equipment becomes more reliable in obtaining vessels position?",
+        "answer": "Radar X band and visual method"
+    },
+    {
+        "question": "What is the meaning of XXT at the bottom of the display in ARPA",
+        "answer": "Trial mode"
+    },
+    {
+        "question": "To avoid over-reliance on the ECDIS, what is the mandatory for ships officer to have better situational awareness should the system fail anytime during the voyage?",
+        "answer": "To manually plot position of the vessel frequency"
+    },
+    {
+        "question": "A wide vertical scanner beam is important in heavy weather to",
+        "answer": "reduce loss of beam targets"
+    },
+    {
+        "question": "According to Rule 19 of the COLREGs, what must be your action if you get into a close quarters situation with a vessel forward of the beam in restricted visibility?",
+        "answer": "Reverse your engine until all way is lost"
+    },
+    {
+        "question": "Echoes in radar from two or more targets close to each other at the same range may emerge to form a single echo. The ability of a radar to separate this is called",
+        "answer": "resolution in bearing"
+    },
+    {
+        "question": "Echoes in radar from two or more targets close to each other at the same range may emerge to form a single echo. The ability of a radar to separate this is called",
+        "answer": "resolution in bearing"
+    },
+    {
+        "question": "Which of the following is connected with the symbol of your own ship, under route planning with ECDIS?",
+        "answer": "Speed made good"
+    },
+    {
+        "question": "Which statements support Precipitation Rain Clutter?",
+        "answer": "Is the general term used to describe collectively various states in which water can manifest itself in the atmosphere, of which rain, snow and hail are examples."
+    },
+    {
+        "question": "In calm and clutter-free conditions, what seems likely is the minimum detection range for X-band radar if the target is a 2-meter tall small vessel of length 10 meters with no radar reflector ?",
+        "answer": "3.4 nm"
+    },
+    {
+        "question": "From which of the following does an ARPA builds up the track history of a target?",
+        "answer": "Series of its range and bearing"
+    },
+    {
+        "question": "If you turn on the fast time constant differentiator control of a radar it will:",
+        "answer": "reduce clutter for the entire PPI by shortening the echoes"
+    },
+    {
+        "question": "The ability of a radar to distinguish separate targets on the same bearing but having small differenceSAAs in range is called which of the following?",
+        "answer": "Range resolution"
+    },
+    {
+        "question": "In calm and clutter-free conditions, on the operational requirement for the radar system likely is the minimum detection range for S-band radar if the target is a 3.5 meter tall navigation buoy with corner reflector?",
+        "answer": "11 nm"
+    },
+    {
+        "question": "Which part of the ship must the radar transceiver be kept from at a safe distance?",
+        "answer": "Magnetic compass"
+    },
+    {
+        "question": "What is the common radar frequency ranges of bands used in coastal radar systems?",
+        "answer": "3-30 MHz"
+    },
+    {
+        "question": "Which is the name of movable, radial guide line used to measure direction in the radar?",
+        "answer": "VRM"
+    },
+    {
+        "question": "A line of position derived by radar range from an identified point on a coast will be a(n)",
+        "answer": "arc"
+    },
+    {
+        "question": "Is there any preference given to ARPA equipped ships under COLREGS?",
+        "answer": "Yes"
+    },
+    {
+        "question": "At what band does a ship's radar commonly operate",
+        "answer": "X-band"
+    },
+    {
+        "question": "An indirect radar echo is caused by a reflection of the main lobe of the radar beam of the observer's vessel. Which of the following is NOT a characteristic of indirect echoes?",
+        "answer": "They always appear on a bearing of 90° from the true bearing of the contact."
+    },
+    {
+        "question": "Coral atolls, or a chain of islands at right angles to the radar beam, may show as a long line rather than as individual targets due to _____",
+        "answer": "the effects of beam width"
+    },
+    {
+        "question": "Regarding performance standards for navigational radar, what are the requirements for a scanner?",
+        "answer": "plus or minus 1 degree"
+    },
+    {
+        "question": "Coral atolls, or a chain of islands at right angles to the radar beam, may show as a long line rather than as individual targets due to _____.",
+        "answer": "the effects of beam width"
+    },
+    {
+        "question": "In ARPA, which of the following is TRUE?",
+        "answer": "successive bearings of a pip in radar does not necessarily give the course and speed of that pip"
+    },
+    {
+        "question": "When using the ARPA in heavy rain, which action should you take?",
+        "answer": "Navigate as though the effective range of radar has been reduced"
+    },
+    {
+        "question": "When using the ARPA in heavy rain, which action should you take?",
+        "answer": "Increase the FTC setting to reduce close-in spurious signal"
+    },
+    {
+        "question": "What do you call a passage of an electromagnetic wave through an obstruction between two places",
+        "answer": "Diffraction"
+    },
+    {
+        "question": "The radar control that reduces weak echoes out to a limited distance from the ship is the",
+        "answer": "sensitivity time control (sea-clutter control)"
+    },
+    {
+        "question": "An X band RADAR operates in which frequency band?",
+        "answer": "8 - 12 GHz"
+    },
+    {
+        "question": "In radar principles, when would second trace echoes are more likely to occur?",
+        "answer": "A high P.R.F is used."
+    },
+    {
+        "question": "How are side echoes appear on the radar screen?",
+        "answer": "A symmetrical arc of echoes."
+    },
+    {
+        "question": "Regarding performance standards for navigational radar, what are the requirements for a scanner?",
+        "answer": "It should rotate at a constant RPM of not less than 12 in relative wind speed up to 100 knots"
+    },
+    {
+        "question": "As per Solas V regulations safety of navigation a ship of 10,000 gross tonSALas and above shall be fitted, with radar capable of operating in the:",
+        "answer": "9 GHz frequency band"
+    },
+    {
+        "question": "Which ARPA function should always have a provision to allow for manual acquisition and cancellation in compliance with performance standards?",
+        "answer": "Target acquisition"
+    },
+    {
+        "question": "Which is MOST correct statement containing the parameters which control the size of the radar target echo?",
+        "answer": "Transmitted power, antenna effective area, transmit and receive losses, RADAR cross section of the target, range to target"
+    },
+    {
+        "question": "What would be the shape of a radar target which it is likely to give the poorest reflection?",
+        "answer": "Conical"
+    },
+    {
+        "question": "The description \"Racon\" beside an illustration on a chart would mean a",
+        "answer": "radar transponder beacon"
+    },
+    {
+        "question": "With regards to ARPA, what does the \"lost target\" warning denotes?",
+        "answer": "Target can no longer be plotted"
+    },
+    {
+        "question": "A major component of a radar system which amplifies the weak echoes received thus retaining its distinctive shapes",
+        "answer": "indicator"
+    },
+    {
+        "question": "A radar based constant up-date of cross track tendency.",
+        "answer": "Parallel Indexing"
+    },
+    {
+        "question": "On radar operation what is the term for the number of pulses sent out by the scanner in one second?",
+        "answer": "pulse repetition frequency"
+    },
+    {
+        "question": "One can check the functioning of the SART by _____",
+        "answer": "activating the SART and checking the effect on the radar screen"
+    },
+    {
+        "question": "How would you show your understanding of a 10cm radar?",
+        "answer": "S band radar"
+    },
+    {
+        "question": "What will happen to the power of radar beam distance from the scanner increases?",
+        "answer": "decrease rapidly"
+    },
+    {
+        "question": "Ships of 100,000 GT or more constructed on or after Sept. 1, 1984 shall be fitted with a",
+        "answer": "Rate of turn indicator"
+    },
+    {
+        "question": "When using a radar in a unstabilized mode, fixes are determined most easily from",
+        "answer": "ranges"
+    },
+    {
+        "question": "You are approaching a light fitted with a RACON. The light may be identified on the radar by",
+        "answer": "a coded signal appearing on the same bearing at a greater range than the light"
+    },
+    {
+        "question": "What is the primary advantage of an X-band radar compared to an S-Band radar?",
+        "answer": "Better target resolution due to shorter wavelength"
+    },
+    {
+        "question": "How is true motion shown in radar display?",
+        "answer": "a targets actual movement"
+    },
+    {
+        "question": "What would be affected if you are going to adjust the radar tuning in control?",
+        "answer": "The transmitted frequency"
+    },
+    {
+        "question": "What does RADAR stand for?",
+        "answer": "Radio detection and ranging"
+    },
+    {
+        "question": "You are underway at 5 knots and see on your radar a contact 10 miles directly astern of you. 12 minutes later, the contact is 8 miles directly astern of you. What is the estimated speed of the contact?",
+        "answer": "15 knots"
+    }
+]
