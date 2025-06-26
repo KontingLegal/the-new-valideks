@@ -266,6 +266,13 @@ body.dark .progress-bar {
     <div class="book-page answer-page" id="book-answer">Loading...</div>
   </div>
 
+  <!-- Book View Navigation -->
+<div class="nav-buttons" id="book-nav" style="display: none;">
+  <button onclick="prevCard()">Previous</button>
+  <button onclick="nextCard()">Next</button>
+</div>
+
+
   <div class="progress-container">
   <div class="progress-bar" id="progress-bar"></div>
 </div>
@@ -394,16 +401,20 @@ window.addEventListener('load', () => {
       localStorage.setItem("darkMode", document.body.classList.contains('dark'));
     }
 
-    function setMode(mode) {
-      currentMode = mode;
-      if (mode === 'flashcard') {
-        flashcard.style.display = 'block';
-        book.style.display = 'none';
-      } else {
-        flashcard.style.display = 'none';
-        book.style.display = 'flex';
-      }
-    }
+function setMode(mode) {
+  currentMode = mode;
+
+  if (mode === 'flashcard') {
+    flashcard.style.display = 'block';
+    book.style.display = 'none';
+    document.getElementById('book-nav').style.display = 'none';
+  } else {
+    flashcard.style.display = 'none';
+    book.style.display = 'flex';
+    document.getElementById('book-nav').style.display = 'flex';
+  }
+}
+
 
     window.addEventListener('load', () => {
       const dark = localStorage.getItem("darkMode") === "true";
@@ -423,6 +434,22 @@ window.addEventListener('load', () => {
       setTimeout(() => img.remove(), 10000);
     }
     setInterval(createFallingObject, 800);
+    function prevCard() {
+  if (currentIndex > 0) {
+    currentIndex--;
+    flashcard.classList.remove('flipped');
+    renderCard();
+  }
+}
+
+function nextCard() {
+  if (currentIndex < cards.length - 1) {
+    currentIndex++;
+    flashcard.classList.remove('flipped');
+    renderCard();
+  }
+}
+
   </script>
 </body>
 </html>
