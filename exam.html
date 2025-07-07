@@ -173,6 +173,60 @@
 .dark .close-btn {
   color: #fff;
 }
+.dark-toggle-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.speech-bubble {
+  position: absolute;
+  top: -70px;
+  left: 0;
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 220px;
+  font-size: 0.9rem;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  z-index: 100;
+}
+
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 20px;
+  border-width: 10px 10px 0 10px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+}
+
+.dark .speech-bubble {
+  background: #222;
+  color: #fff;
+  border-color: #eee;
+}
+
+.dark .speech-bubble::after {
+  border-color: #222 transparent transparent transparent;
+}
+
+.close-btn {
+  float: right;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 8px;
+  color: #333;
+}
+
+.dark .close-btn {
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
 
     
   </style>
@@ -183,13 +237,16 @@
   <div class="content">
     <h1>Exam Mode</h1>
 
-    <label>
-      <input type="checkbox" id="darkModeToggle"> Dark Mode
-    </label>
-    <div id="darkModeBubble" class="speech-bubble hidden">
-  <span class="close-btn" onclick="hideDarkModeBubble()">✖</span>
-  Try it on the new Dark Mode!
+    <div class="dark-toggle-wrapper">
+  <label>
+    <input type="checkbox" id="darkModeToggle"> Dark Mode
+  </label>
+  <div id="darkModeBubble" class="speech-bubble hidden">
+    <span class="close-btn" onclick="hideDarkModeBubble()">✖</span>
+    Try it on the new Dark Mode!
+  </div>
 </div>
+
 
 
 
