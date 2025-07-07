@@ -208,8 +208,19 @@
           let count = allData.length;
 
           if (examMode.value === "marina") {
-            count = fileSelect.value === "c1.json" ? 35 : 20;
-          } else {
+  switch (fileSelect.value) {
+    case "c1.json": count = 35; break;
+    case "c3.json": count = 15; break;
+    case "c4.json": count = 10; break;
+    case "c5.json": count = 10; break;
+    case "c7.json": count = 20; break;
+    case "c9.json": count = 15; break;
+    case "c10.json": count = 15; break;
+    case "c11.json": count = 15; break;
+    default: count = 20; // fallback for c2, or others
+  }
+}
+ else {
             count = Math.min(parseInt(questionCountInput.value), allData.length);
           }
 
