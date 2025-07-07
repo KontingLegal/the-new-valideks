@@ -232,10 +232,68 @@ body.dark .progress-bar {
   .back-btn {
     margin-top: 2rem;
   }
+
+    .speech-bubble {
+  position: absolute;
+  top: -80px; /* appear above the button */
+  left: 0;
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 200px;
+  font-size: 0.9rem;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  z-index: 100;
+}
+
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 20px;
+  border-width: 10px 10px 0 10px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+}
+
+.dark .speech-bubble {
+  background: #222;
+  color: #fff;
+  border-color: #eee;
+}
+
+.dark .speech-bubble::after {
+  border-color: #222 transparent transparent transparent;
+}
+
+.close-btn {
+  float: right;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 8px;
+  color: #333;
+}
+
+.dark .close-btn {
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
   </style>
 </head>
 <body>
+  <div class="dark-mode-wrapper" style="position: relative; display: inline-block;">
   <button class="dark-toggle" onclick="toggleDarkMode()">🌓</button>
+  <div id="darkModeBubble" class="speech-bubble hidden">
+    <span class="close-btn" onclick="hideDarkModeBubble()">✖</span>
+    Try it on the new Dark Mode!
+  </div>
+</div>
+
   <h1>Flashcards</h1>
 
   <div class="controls">
@@ -454,6 +512,29 @@ function nextCard() {
     renderCard();
   }
 }
+
+    const darkModeBubble = document.getElementById("darkModeBubble");
+let bubbleTimeout = null;
+
+function showDarkModeBubble() {
+  darkModeBubble.classList.remove("hidden");
+
+  bubbleTimeout = setTimeout(() => {
+    hideDarkModeBubble();
+  }, 4000); // auto-hide after 4 sec
+}
+
+function hideDarkModeBubble() {
+  darkModeBubble.classList.add("hidden");
+  clearTimeout(bubbleTimeout);
+}
+
+// Occasionally show every 20 sec (30% chance)
+setInterval(() => {
+  if (Math.random() < 0.3) {
+    showDarkModeBubble();
+  }
+}, 20000);
 
   </script>
 </body>
