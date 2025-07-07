@@ -127,6 +127,54 @@
   border-color: #444;
 }
 
+    .speech-bubble {
+  position: absolute;
+  top: 80px;
+  left: 50px;
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+  max-width: 220px;
+  font-size: 0.9rem;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  z-index: 50;
+}
+
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  border-width: 0 10px 10px 10px;
+  border-style: solid;
+  border-color: transparent transparent #fff transparent;
+  display: block;
+}
+
+.dark .speech-bubble {
+  background: #222;
+  border-color: #eee;
+  color: #fff;
+}
+
+.dark .speech-bubble::after {
+  border-color: transparent transparent #222 transparent;
+}
+
+.close-btn {
+  float: right;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 8px;
+  color: #333;
+}
+
+.dark .close-btn {
+  color: #fff;
+}
+
+    
   </style>
 </head>
 <body>
@@ -138,6 +186,12 @@
     <label>
       <input type="checkbox" id="darkModeToggle"> Dark Mode
     </label>
+    <div id="darkModeBubble" class="speech-bubble hidden">
+  <span class="close-btn" onclick="hideDarkModeBubble()">✖</span>
+  Try it on the new Dark Mode!
+</div>
+
+
 
     <div>
       <label for="fileSelect">Select Competency:</label>
@@ -334,6 +388,32 @@
     }
 
     setInterval(createCharacter, 500);
+
+
+    const darkModeBubble = document.getElementById("darkModeBubble");
+let bubbleTimeout = null;
+
+function showDarkModeBubble() {
+  darkModeBubble.classList.remove("hidden");
+
+  // Auto-hide after 4 seconds unless manually closed
+  bubbleTimeout = setTimeout(() => {
+    darkModeBubble.classList.add("hidden");
+  }, 4000);
+}
+
+function hideDarkModeBubble() {
+  darkModeBubble.classList.add("hidden");
+  clearTimeout(bubbleTimeout); // prevent auto-hide if user closes it
+}
+
+// Occasionally show it every 20–40 seconds
+setInterval(() => {
+  if (Math.random() < 0.3) {
+    showDarkModeBubble();
+  }
+}, 20000);
+
   </script>
 </body>
 </html>
