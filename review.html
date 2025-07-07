@@ -32,7 +32,7 @@
       margin-bottom: 1rem;
     }
 
-    a.button, button.action {
+    a.button {
       text-decoration: none;
       background: #333;
       color: white;
@@ -41,7 +41,7 @@
       margin: 0.5rem;
     }
 
-    a.button:hover, button.action:hover {
+    a.button:hover {
       background: #444;
     }
 
@@ -63,15 +63,14 @@
       border: 1px solid #ccc;
     }
 
+    button {
+      background: #333;
+      color: white;
+    }
+
     button:disabled {
       background: #aaa;
       cursor: not-allowed;
-    }
-
-    .card-container {
-      max-height: 400px;
-      overflow-y: auto;
-      margin-top: 1rem;
     }
 
     .card {
@@ -80,7 +79,7 @@
       height: 200px;
       perspective: 1000px;
       cursor: pointer;
-      margin: 1rem auto;
+      margin-top: 1rem;
     }
 
     .card-inner {
@@ -134,25 +133,6 @@
       background-color: #334d33;
       color: #eee;
     }
-
-    table {
-      margin-top: 2rem;
-      border-collapse: collapse;
-      width: 90%;
-    }
-
-    table, th, td {
-      border: 1px solid #aaa;
-    }
-
-    th, td {
-      padding: 0.5rem;
-      text-align: left;
-    }
-
-    mark {
-      background-color: yellow;
-    }
   </style>
 </head>
 <body>
@@ -167,20 +147,16 @@
       <button id="prev">Previous</button>
       <button id="next">Next</button>
     </div>
-    <button class="action" onclick="showTable()">Show Q&A Table</button>
   </div>
 
-  <div class="card-container">
-    <div class="card" id="flashcard">
-      <div class="card-inner" id="card-inner">
-        <div class="card-front" id="card-front">Loading...</div>
-        <div class="card-back" id="card-back">Loading...</div>
-      </div>
+  <div class="card" id="flashcard">
+    <div class="card-inner" id="card-inner">
+      <div class="card-front" id="card-front">Loading...</div>
+      <div class="card-back" id="card-back">Loading...</div>
     </div>
   </div>
 
   <div class="card-counter" id="counter">Card 0 of 0</div>
-  <div id="qaTable"></div>
 
   <script>
     const jsonFiles = [
@@ -203,7 +179,6 @@
     const nextBtn = document.getElementById('next');
     const counter = document.getElementById('counter');
     const fileSelector = document.getElementById('fileSelector');
-    const qaTable = document.getElementById('qaTable');
 
     let cards = [];
     let currentIndex = 0;
@@ -241,27 +216,6 @@
       prevBtn.disabled = currentIndex === 0;
       nextBtn.disabled = currentIndex === cards.length - 1;
       localStorage.setItem("flashcardIndex", currentIndex);
-    }
-
-    function showTable() {
-      if (!cards.length) return;
-      const keywords = ["what", "how", "when", "why", "define", "explain", "describe"];
-      const highlight = (text) => {
-        let t = text;
-        keywords.forEach(k => {
-          const re = new RegExp(`\\b(${k})\\b`, 'gi');
-          t = t.replace(re, '<mark>$1</mark>');
-        });
-        return t;
-      };
-      const tableHTML = `
-        <table>
-          <thead><tr><th>Question</th><th>Answer</th></tr></thead>
-          <tbody>
-            ${cards.map(c => `<tr><td>${highlight(c.question)}</td><td>${highlight(c.answer)}</td></tr>`).join('')}
-          </tbody>
-        </table>`;
-      qaTable.innerHTML = tableHTML;
     }
 
     prevBtn.addEventListener('click', () => {
