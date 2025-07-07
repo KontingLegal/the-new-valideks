@@ -2,80 +2,211 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <title>Flashcard Main Menu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Flashcards Viewer</title>
   <style>
-    /* existing styles unchanged */
-    /* ... (same CSS as before) ... */
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 2rem;
+      background: #f0f2f5;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    body.dark {
+      background: #121212;
+      color: #eee;
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    .controls {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    a.button, button.action {
+      text-decoration: none;
+      background: #333;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      margin: 0.5rem;
+    }
+
+    a.button:hover, button.action:hover {
+      background: #444;
+    }
+
+    .nav-buttons {
+      display: flex;
+      gap: 1rem;
+    }
+
+    select, button {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    select {
+      background: white;
+      border: 1px solid #ccc;
+    }
+
+    button:disabled {
+      background: #aaa;
+      cursor: not-allowed;
+    }
+
+    .card-container {
+      max-height: 400px;
+      overflow-y: auto;
+      margin-top: 1rem;
+    }
+
+    .card {
+      background: white;
+      width: 300px;
+      height: 200px;
+      perspective: 1000px;
+      cursor: pointer;
+      margin: 1rem auto;
+    }
+
+    .card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+
+    .flipped .card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .card-front, .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .card-front {
+      background-color: #fefefe;
+    }
+
+    .card-back {
+      background-color: #d4f0d2;
+      transform: rotateY(180deg);
+    }
+
+    .card-counter {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .dark .card-front {
+      background-color: #2a2a2a;
+      color: #eee;
+    }
+
+    .dark .card-back {
+      background-color: #334d33;
+      color: #eee;
+    }
+
+    table {
+      margin-top: 2rem;
+      border-collapse: collapse;
+      width: 90%;
+    }
+
+    table, th, td {
+      border: 1px solid #aaa;
+    }
+
+    th, td {
+      padding: 0.5rem;
+      text-align: left;
+    }
+
+    mark {
+      background-color: yellow;
+    }
   </style>
 </head>
 <body>
-  <div class="dark-toggle-wrapper">
-    <button class="dark-toggle" onclick="toggleDarkMode()">🌓</button>
-    <div id="darkModeBubble" class="speech-bubble hidden">
-      <span class="close-btn" onclick="hideDarkModeBubble()">✖</span>
-      Try it on the new Dark Mode!
-    </div>
-  </div>
+  <button onclick="toggleDarkMode()">🌓 Toggle Dark Mode</button>
+  <h1>Flashcards Main Menu</h1>
+  <a href="index.html" class="button">Back to Main Menu</a>
 
   <h1>Flashcards</h1>
-
   <div class="controls">
     <select id="fileSelector"></select>
     <div class="nav-buttons">
       <button id="prev">Previous</button>
       <button id="next">Next</button>
     </div>
-    <div class="mode-buttons">
-      <button onclick="setMode('flashcard')">Flashcard View</button>
-      <button onclick="setMode('book')">Book View</button>
+    <button class="action" onclick="showTable()">Show Q&A Table</button>
+  </div>
+
+  <div class="card-container">
+    <div class="card" id="flashcard">
+      <div class="card-inner" id="card-inner">
+        <div class="card-front" id="card-front">Loading...</div>
+        <div class="card-back" id="card-back">Loading...</div>
+      </div>
     </div>
-  </div>
-
-  <div class="card" id="flashcard">
-    <div class="card-inner" id="card-inner">
-      <div class="card-front" id="card-front">Loading...</div>
-      <div class="card-back" id="card-back">Loading...</div>
-    </div>
-  </div>
-
-  <div class="book" id="book" style="display: none;">
-    <div class="book-page question-page" id="book-question">Loading...</div>
-    <div class="book-page answer-page" id="book-answer">Loading...</div>
-  </div>
-
-  <div class="progress-container">
-    <div class="progress-bar" id="progress-bar"></div>
   </div>
 
   <div class="card-counter" id="counter">Card 0 of 0</div>
+  <div id="qaTable"></div>
 
   <script>
-    const flashcard = document.getElementById('flashcard');
-    const inner = document.getElementById('card-inner');
-    const front = document.getElementById('card-front');
-    const back = document.getElementById('card-back');
-    const book = document.getElementById('book');
-    const bookQ = document.getElementById('book-question');
-    const bookA = document.getElementById('book-answer');
-    const prevBtn = document.getElementById('prev');
-    const nextBtn = document.getElementById('next');
-    const counter = document.getElementById('counter');
-    const fileSelector = document.getElementById('fileSelector');
-    const darkModeBubble = document.getElementById("darkModeBubble");
-    let bubbleTimeout = null;
-
     const jsonFiles = [
       { file: "c1.json", label: "Competency 1" },
       { file: "c2.json", label: "Competency 2" },
       { file: "c3.json", label: "Competency 3" },
       { file: "c4.json", label: "Competency 4" },
-      { file: "c5.json", label: "Competency 5" }
+      { file: "c5.json", label: "Competency 5" },
+      { file: "c7.json", label: "Competency 7" },
+      { file: "c9.json", label: "Competency 9" },
+      { file: "c10.json", label: "Competency 10" },
+      { file: "c11.json", label: "Competency 11" }
     ];
+
+    const flashcard = document.getElementById('flashcard');
+    const inner = document.getElementById('card-inner');
+    const front = document.getElementById('card-front');
+    const back = document.getElementById('card-back');
+    const prevBtn = document.getElementById('prev');
+    const nextBtn = document.getElementById('next');
+    const counter = document.getElementById('counter');
+    const fileSelector = document.getElementById('fileSelector');
+    const qaTable = document.getElementById('qaTable');
 
     let cards = [];
     let currentIndex = 0;
-    let currentMode = 'flashcard';
 
     jsonFiles.forEach(entry => {
       const option = document.createElement('option');
@@ -84,18 +215,20 @@
       fileSelector.appendChild(option);
     });
 
-    fileSelector.addEventListener('change', (e) => {
-      loadJSON(e.target.value);
-    });
-
     function loadJSON(file) {
       fetch(file)
         .then(res => res.json())
         .then(data => {
           cards = data;
-          currentIndex = parseInt(localStorage.getItem("flashcardIndex") || "0");
+          const savedFile = localStorage.getItem("flashcardFile");
+          const savedIndex = parseInt(localStorage.getItem("flashcardIndex") || "0");
+          currentIndex = (file === savedFile && savedIndex < cards.length) ? savedIndex : 0;
+          flashcard.classList.remove('flipped');
           renderCard();
           localStorage.setItem("flashcardFile", file);
+        })
+        .catch(err => {
+          console.error("Error loading file:", file, err);
         });
     }
 
@@ -104,14 +237,31 @@
       const current = cards[currentIndex];
       front.textContent = current.question;
       back.textContent = current.answer;
-      bookQ.textContent = current.question;
-      bookA.textContent = current.answer;
       counter.textContent = `Card ${currentIndex + 1} of ${cards.length}`;
       prevBtn.disabled = currentIndex === 0;
       nextBtn.disabled = currentIndex === cards.length - 1;
-      const progress = ((currentIndex + 1) / cards.length) * 100;
-      document.getElementById('progress-bar').style.width = progress + '%';
       localStorage.setItem("flashcardIndex", currentIndex);
+    }
+
+    function showTable() {
+      if (!cards.length) return;
+      const keywords = ["what", "how", "when", "why", "define", "explain", "describe"];
+      const highlight = (text) => {
+        let t = text;
+        keywords.forEach(k => {
+          const re = new RegExp(`\\b(${k})\\b`, 'gi');
+          t = t.replace(re, '<mark>$1</mark>');
+        });
+        return t;
+      };
+      const tableHTML = `
+        <table>
+          <thead><tr><th>Question</th><th>Answer</th></tr></thead>
+          <tbody>
+            ${cards.map(c => `<tr><td>${highlight(c.question)}</td><td>${highlight(c.answer)}</td></tr>`).join('')}
+          </tbody>
+        </table>`;
+      qaTable.innerHTML = tableHTML;
     }
 
     prevBtn.addEventListener('click', () => {
@@ -131,9 +281,11 @@
     });
 
     flashcard.addEventListener('click', () => {
-      if (currentMode === 'flashcard') {
-        flashcard.classList.toggle('flipped');
-      }
+      flashcard.classList.toggle('flipped');
+    });
+
+    fileSelector.addEventListener('change', (e) => {
+      loadJSON(e.target.value);
     });
 
     function toggleDarkMode() {
@@ -141,44 +293,14 @@
       localStorage.setItem("darkMode", document.body.classList.contains("dark"));
     }
 
-    function setMode(mode) {
-      currentMode = mode;
-      flashcard.style.display = mode === 'flashcard' ? 'block' : 'none';
-      book.style.display = mode === 'book' ? 'flex' : 'none';
+    const savedFile = localStorage.getItem("flashcardFile");
+    const startFile = jsonFiles.find(j => j.file === savedFile)?.file || jsonFiles[0].file;
+    fileSelector.value = startFile;
+    loadJSON(startFile);
+
+    if (localStorage.getItem("darkMode") === "true") {
+      document.body.classList.add("dark");
     }
-
-    function showDarkModeBubble() {
-      const messages = [
-        "Try it on the new Dark Mode!",
-        "Join the dark side 🌒",
-        "Your eyes will thank you.",
-        "🌓 Tap to toggle darkness!"
-      ];
-      const msg = messages[Math.floor(Math.random() * messages.length)];
-      darkModeBubble.innerHTML = `<span class="close-btn" onclick="hideDarkModeBubble()">✖</span> ${msg}`;
-      darkModeBubble.classList.remove("hidden");
-      clearTimeout(bubbleTimeout);
-      bubbleTimeout = setTimeout(hideDarkModeBubble, 4000);
-    }
-
-    function hideDarkModeBubble() {
-      darkModeBubble.classList.add("hidden");
-      clearTimeout(bubbleTimeout);
-    }
-
-    setInterval(() => {
-      if (Math.random() < 0.3) {
-        showDarkModeBubble();
-      }
-    }, 20000);
-
-    window.addEventListener('load', () => {
-      const saved = localStorage.getItem("darkMode") === "true";
-      if (saved) document.body.classList.add("dark");
-      const savedFile = localStorage.getItem("flashcardFile") || jsonFiles[0].file;
-      fileSelector.value = savedFile;
-      loadJSON(savedFile);
-    });
   </script>
 </body>
 </html>
