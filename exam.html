@@ -6,112 +6,120 @@
   <title>Exam Mode</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background-color: #b0b0b0;
-      color: #333;
-      overflow: hidden;
-      position: relative;
-    }
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #b0b0b0;
+  color: #333;
+  position: relative;
+  overflow-x: hidden;
+}
 
-    body.dark {
-      background-color: #121212;
-      color: #eee;
-    }
+body.dark {
+  background-color: #121212;
+  color: #eee;
+}
 
-    .background {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      z-index: 1;
-      pointer-events: none;
-    }
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+  pointer-events: none;
+}
 
-    .character {
-      position: absolute;
-      color: rgba(255, 255, 255, 0.1);
-      font-size: 24px;
-      animation: fall 5s linear infinite;
-      pointer-events: none;
-    }
+.character {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.1);
+  font-size: 24px;
+  animation: fall 5s linear infinite;
+  pointer-events: none;
+}
 
-    @keyframes fall {
-      0% { transform: translateY(0); }
-      100% { transform: translateY(100vh); }
-    }
+@keyframes fall {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(100vh); }
+}
 
-    .content {
-      position: relative;
-      z-index: 10;
-      padding: 2rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+.content {
+  position: relative;
+  z-index: 10;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
 
-    button, select, input[type="number"] {
-      padding: 0.5rem 1rem;
-      font-size: 1rem;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      margin: 0.5rem;
-    }
+button, select, input[type="number"] {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0.5rem;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+}
 
-    .choice-btn {
-      display: block;
-      width: 100%;
-      text-align: left;
-      margin: 0.5rem 0;
-      background-color: #ffffff;
-      color: #000;
-      border: 1px solid #ccc;
-    }
+.choice-btn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin: 0.5rem 0;
+  background-color: #ffffff;
+  color: #000;
+  border: 1px solid #ccc;
+}
 
-    .dark .choice-btn {
-      background-color: #333;
-      color: #fff;
-      border: 1px solid #888;
-    }
+.dark .choice-btn {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #888;
+}
 
-    .choice-btn.selected {
-      background-color: #d0ebff !important;
-    }
+.choice-btn.selected {
+  background-color: #d0ebff !important;
+}
 
-    .question-box {
-      max-width: 600px;
-      padding: 1rem;
-      border: 1px solid #ccc;
-      background-color: #fff;
-      border-radius: 8px;
-    }
+.question-box {
+  width: 100%;
+  max-width: 600px;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
 
-    .dark .question-box {
-      background-color: #1e1e1e;
-      border-color: #444;
-    }
+.dark .question-box {
+  background-color: #1e1e1e;
+  border-color: #444;
+}
 
-    #startBtn {
-      background-color: #007bff;
-      color: white;
-      transition: background-color 0.3s;
-    }
+#startBtn {
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s;
+}
 
-    #startBtn:hover {
-      background-color: #0056b3;
-    }
+#startBtn:hover {
+  background-color: #0056b3;
+}
 
-    .dark #startBtn {
-      background-color: #3399ff;
-    }
+.dark #startBtn {
+  background-color: #3399ff;
+}
 
-    .hidden {
-      display: none;
-    }
-    #review-container {
+.hidden {
+  display: none;
+}
+
+#review-container {
   max-height: 300px;
   overflow-y: auto;
   padding: 1rem;
@@ -120,6 +128,7 @@
   margin-top: 1rem;
   width: 100%;
   border-radius: 8px;
+  box-sizing: border-box;
 }
 
 .dark #review-container {
@@ -127,14 +136,14 @@
   border-color: #444;
 }
 
-    .speech-bubble {
+.speech-bubble {
   position: absolute;
   top: 80px;
   left: 50px;
   background: #fff;
   border: 2px solid #000;
   border-radius: 10px;
-  padding: 10px 10px 10px 10px;
+  padding: 10px;
   max-width: 220px;
   font-size: 0.9rem;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
@@ -149,7 +158,6 @@
   border-width: 0 10px 10px 10px;
   border-style: solid;
   border-color: transparent transparent #fff transparent;
-  display: block;
 }
 
 .dark .speech-bubble {
@@ -173,59 +181,34 @@
 .dark .close-btn {
   color: #fff;
 }
-.dark-toggle-wrapper {
-  position: relative;
-  display: inline-block;
-}
 
-.speech-bubble {
-  position: absolute;
-  top: -70px;
-  left: 0;
-  background: #fff;
-  border: 2px solid #000;
-  border-radius: 10px;
-  padding: 10px;
-  max-width: 220px;
-  font-size: 0.9rem;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-  z-index: 100;
-}
+/* ✅ Responsive adjustments */
+@media (max-width: 600px) {
+  .content {
+    padding: 1rem;
+  }
 
-.speech-bubble::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 20px;
-  border-width: 10px 10px 0 10px;
-  border-style: solid;
-  border-color: #fff transparent transparent transparent;
-}
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
 
-.dark .speech-bubble {
-  background: #222;
-  color: #fff;
-  border-color: #eee;
-}
+  .question-box {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
 
-.dark .speech-bubble::after {
-  border-color: #222 transparent transparent transparent;
-}
+  .speech-bubble {
+    font-size: 0.8rem;
+    max-width: 180px;
+    left: 20px;
+    top: 60px;
+  }
 
-.close-btn {
-  float: right;
-  cursor: pointer;
-  font-weight: bold;
-  margin-left: 8px;
-  color: #333;
-}
-
-.dark .close-btn {
-  color: #fff;
-}
-
-.hidden {
-  display: none;
+  button, select, input[type="number"] {
+    font-size: 1rem;
+    width: 100%;
+  }
 }
 
     
