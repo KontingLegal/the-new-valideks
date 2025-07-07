@@ -6,278 +6,238 @@
   <title>Exam Mode</title>
   <style>
     body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  background-color: #b0b0b0;
-  color: #333;
-  position: relative;
-  overflow-x: hidden;
-}
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #b0b0b0;
+      color: #333;
+      overflow-x: hidden;
+    }
 
-body.dark {
-  background-color: #121212;
-  color: #eee;
-}
+    body.dark {
+      background-color: #121212;
+      color: #eee;
+    }
 
-.background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: 1;
-  pointer-events: none;
-}
+    .layout-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1rem;
+      flex-wrap: wrap;
+    }
 
-.character {
-  position: absolute;
-  color: rgba(255, 255, 255, 0.1);
-  font-size: 24px;
-  animation: fall 5s linear infinite;
-  pointer-events: none;
-}
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 150px;
+    }
 
-@keyframes fall {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(100vh); }
-}
+    .ad-box {
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 0.8rem;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
 
-.content {
-  position: relative;
-  z-index: 10;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-  box-sizing: border-box;
-}
+    .ad-box .close-btn {
+      position: absolute;
+      top: 4px;
+      right: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      color: #999;
+    }
 
-button, select, input[type="number"] {
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 0.5rem;
-  width: 100%;
-  max-width: 300px;
-  box-sizing: border-box;
-}
+    .dark .ad-box {
+      background: #1e1e1e;
+      color: #eee;
+      border-color: #444;
+    }
 
-.choice-btn {
-  display: block;
-  width: 100%;
-  text-align: left;
-  margin: 0.5rem 0;
-  background-color: #ffffff;
-  color: #000;
-  border: 1px solid #ccc;
-}
+    .dark .ad-box .close-btn {
+      color: #ccc;
+    }
 
-.dark .choice-btn {
-  background-color: #333;
-  color: #fff;
-  border: 1px solid #888;
-}
+    .content {
+      position: relative;
+      z-index: 10;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      box-sizing: border-box;
+      max-width: 600px;
+      flex-grow: 1;
+    }
 
-.choice-btn.selected {
-  background-color: #d0ebff !important;
-}
+    button, select, input[type="number"] {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 0.5rem;
+      width: 100%;
+      max-width: 300px;
+      box-sizing: border-box;
+    }
 
-.question-box {
-  width: 100%;
-  max-width: 600px;
-  padding: 1rem;
-  border: 1px solid #ccc;
-  background-color: #fff;
-  border-radius: 8px;
-  box-sizing: border-box;
-}
+    .choice-btn {
+      display: block;
+      width: 100%;
+      text-align: left;
+      margin: 0.5rem 0;
+      background-color: #ffffff;
+      color: #000;
+      border: 1px solid #ccc;
+    }
 
-.dark .question-box {
-  background-color: #1e1e1e;
-  border-color: #444;
-}
+    .dark .choice-btn {
+      background-color: #333;
+      color: #fff;
+      border: 1px solid #888;
+    }
 
-#startBtn {
-  background-color: #007bff;
-  color: white;
-  transition: background-color 0.3s;
-}
+    .choice-btn.selected {
+      background-color: #d0ebff !important;
+    }
 
-#startBtn:hover {
-  background-color: #0056b3;
-}
+    .question-box {
+      width: 100%;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
 
-.dark #startBtn {
-  background-color: #3399ff;
-}
+    .dark .question-box {
+      background-color: #1e1e1e;
+      border-color: #444;
+    }
 
-.hidden {
-  display: none;
-}
+    #startBtn {
+      background-color: #007bff;
+      color: white;
+    }
 
-#review-container {
-  max-height: 300px;
-  overflow-y: auto;
-  padding: 1rem;
-  border: 1px solid #ccc;
-  background-color: #f8f8f8;
-  margin-top: 1rem;
-  width: 100%;
-  border-radius: 8px;
-  box-sizing: border-box;
-}
+    #startBtn:hover {
+      background-color: #0056b3;
+    }
 
-.dark #review-container {
-  background-color: #1e1e1e;
-  border-color: #444;
-}
+    .dark #startBtn {
+      background-color: #3399ff;
+    }
 
-.speech-bubble {
-  position: absolute;
-  top: 80px;
-  left: 50px;
-  background: #fff;
-  border: 2px solid #000;
-  border-radius: 10px;
-  padding: 10px;
-  max-width: 220px;
-  font-size: 0.9rem;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-  z-index: 50;
-}
+    .hidden {
+      display: none;
+    }
 
-.speech-bubble::after {
-  content: '';
-  position: absolute;
-  top: -10px;
-  left: 20px;
-  border-width: 0 10px 10px 10px;
-  border-style: solid;
-  border-color: transparent transparent #fff transparent;
-}
+    #review-container {
+      max-height: 300px;
+      overflow-y: auto;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      background-color: #f8f8f8;
+      margin-top: 1rem;
+      width: 100%;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
 
-.dark .speech-bubble {
-  background: #222;
-  border-color: #eee;
-  color: #fff;
-}
+    .dark #review-container {
+      background-color: #1e1e1e;
+      border-color: #444;
+    }
 
-.dark .speech-bubble::after {
-  border-color: transparent transparent #222 transparent;
-}
+    @media (max-width: 768px) {
+      .layout-wrapper {
+        flex-direction: column;
+        align-items: center;
+      }
 
-.close-btn {
-  float: right;
-  cursor: pointer;
-  font-weight: bold;
-  margin-left: 8px;
-  color: #333;
-}
+      .sidebar {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+      }
 
-.dark .close-btn {
-  color: #fff;
-}
-
-/* ✅ Responsive adjustments */
-@media (max-width: 600px) {
-  .content {
-    padding: 1rem;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-
-  .question-box {
-    padding: 1rem;
-    font-size: 0.95rem;
-  }
-
-  .speech-bubble {
-    font-size: 0.8rem;
-    max-width: 180px;
-    left: 20px;
-    top: 60px;
-  }
-
-  button, select, input[type="number"] {
-    font-size: 1rem;
-    width: 100%;
-  }
-}
-
-    
+      .ad-box {
+        flex: 1;
+      }
+    }
   </style>
 </head>
 <body>
-  <div class="background"></div>
-
-  <div class="content">
-    <h1>Exam Mode</h1>
-
-    <div class="dark-toggle-wrapper">
-  <label>
-    <input type="checkbox" id="darkModeToggle"> Dark Mode
-  </label>
-  <div id="darkModeBubble" class="speech-bubble hidden">
-    <span class="close-btn" onclick="hideDarkModeBubble()">✖</span>
-    Try it on the new Dark Mode!
-  </div>
-</div>
-
-
-
-
-    <div>
-      <label for="fileSelect">Select Competency:</label>
-      <select id="fileSelect">
-        <option value="c1.json">Competency 1</option>
-        <option value="c2.json">Competency 2</option>
-        <option value="c3.json">Competency 3</option>
-        <option value="c4.json">Competency 4</option>
-        <option value="c5.json">Competency 5</option>
-        <option value="c7.json">Competency 7</option>
-        <option value="c9.json">Competency 9</option>
-        <option value="c10.json">Competency 10</option>
-        <option value="c11.json">Competency 11</option>
-      </select>
-    </div>
-
-    <div>
-      <label for="examMode">Mode:</label>
-      <select id="examMode">
-        <option value="marina">MARINA TOS</option>
-        <option value="custom">Custom</option>
-      </select>
-      <input type="number" id="questionCount" placeholder="Number of Questions" min="1" class="hidden" />
-    </div>
-
-    <button id="startBtn">Start Exam</button>
-
-    <div id="examArea" class="hidden">
-      <div class="question-box">
-        <div id="questionText">Question goes here...</div>
-        <div id="choices"></div>
-        <div id="progress">Question 1 of 1</div>
-        <button id="submitBtn">Submit</button>
+  <div class="layout-wrapper">
+    <div class="sidebar left-ads">
+      <div class="ad-box" id="redditAd">
+        <span class="close-btn" onclick="document.getElementById('redditAd').style.display='none'">&times;</span>
+        <strong>Trending on Reddit</strong>
+        <div id="redditNews">Loading...</div>
       </div>
+      <div class="ad-box">Left Ad 2</div>
     </div>
 
-    <div id="result" class="hidden">
-      <h2>Exam Completed</h2>
-      <p id="score"></p>
-      <div id="review-container">
-  <div id="review"></div>
-</div>
+    <div class="content">
+      <h1>Exam Mode</h1>
+      <label><input type="checkbox" id="darkModeToggle"> Dark Mode</label>
+      <div>
+        <label for="fileSelect">Select Competency:</label>
+        <select id="fileSelect">
+          <option value="c1.json">Competency 1</option>
+          <option value="c2.json">Competency 2</option>
+          <option value="c3.json">Competency 3</option>
+          <option value="c4.json">Competency 4</option>
+          <option value="c5.json">Competency 5</option>
+          <option value="c7.json">Competency 7</option>
+          <option value="c9.json">Competency 9</option>
+          <option value="c10.json">Competency 10</option>
+          <option value="c11.json">Competency 11</option>
+        </select>
+      </div>
 
+      <div>
+        <label for="examMode">Mode:</label>
+        <select id="examMode">
+          <option value="marina">MARINA TOS</option>
+          <option value="custom">Custom</option>
+        </select>
+        <input type="number" id="questionCount" placeholder="Number of Questions" min="1" class="hidden" />
+      </div>
+
+      <button id="startBtn">Start Exam</button>
+
+      <div id="examArea" class="hidden">
+        <div class="question-box">
+          <div id="questionText">Question goes here...</div>
+          <div id="choices"></div>
+          <div id="progress">Question 1 of 1</div>
+          <button id="submitBtn">Submit</button>
+        </div>
+      </div>
+
+      <div id="result" class="hidden">
+        <h2>Exam Completed</h2>
+        <p id="score"></p>
+        <div id="review-container">
+          <div id="review"></div>
+        </div>
+      </div>
+
+      <button onclick="window.location.href='index.html'">Back to Main Menu</button>
     </div>
 
-    <button onclick="window.location.href='index.html'">Back to Main Menu</button>
+    <div class="sidebar right-ads">
+      <div class="ad-box">Right Ad 1</div>
+      <div class="ad-box">Right Ad 2</div>
+    </div>
   </div>
 
   <script>
@@ -308,10 +268,7 @@ button, select, input[type="number"] {
       questionCountInput.classList.toggle("hidden", examMode.value !== "custom");
     });
 
-    let allData = [];
-    let questions = [];
-    let current = 0;
-    let userAnswers = [];
+    let allData = [], questions = [], current = 0, userAnswers = [];
 
     startBtn.addEventListener("click", () => {
       fetch(fileSelect.value)
@@ -319,24 +276,21 @@ button, select, input[type="number"] {
         .then(data => {
           allData = data;
           let count = allData.length;
-
           if (examMode.value === "marina") {
-  switch (fileSelect.value) {
-    case "c1.json": count = 35; break;
-    case "c3.json": count = 15; break;
-    case "c4.json": count = 10; break;
-    case "c5.json": count = 10; break;
-    case "c7.json": count = 20; break;
-    case "c9.json": count = 15; break;
-    case "c10.json": count = 15; break;
-    case "c11.json": count = 15; break;
-    default: count = 20; // fallback for c2, or others
-  }
-}
- else {
+            switch (fileSelect.value) {
+              case "c1.json": count = 35; break;
+              case "c3.json": count = 15; break;
+              case "c4.json": count = 10; break;
+              case "c5.json": count = 10; break;
+              case "c7.json": count = 20; break;
+              case "c9.json": count = 15; break;
+              case "c10.json": count = 15; break;
+              case "c11.json": count = 15; break;
+              default: count = 20;
+            }
+          } else {
             count = Math.min(parseInt(questionCountInput.value), allData.length);
           }
-
           questions = shuffleArray([...allData]).slice(0, count);
           current = 0;
           userAnswers = new Array(count);
@@ -353,15 +307,12 @@ button, select, input[type="number"] {
       questionText.textContent = q.question;
       progress.textContent = `Question ${current + 1} of ${questions.length}`;
       choicesDiv.innerHTML = "";
-
       const allChoices = shuffleArray([q.answer, ...getRandomAnswers(q.answer, 3)]);
       allChoices.forEach(choice => {
         const btn = document.createElement("button");
         btn.textContent = choice;
         btn.className = "choice-btn";
-        if (userAnswers[current] === choice) {
-          btn.classList.add("selected");
-        }
+        if (userAnswers[current] === choice) btn.classList.add("selected");
         btn.onclick = () => {
           userAnswers[current] = choice;
           document.querySelectorAll(".choice-btn").forEach(b => b.classList.remove("selected"));
@@ -373,13 +324,9 @@ button, select, input[type="number"] {
 
     submitBtn.onclick = () => {
       if (!userAnswers[current]) return alert("Please select an answer.");
-
       current++;
-      if (current >= questions.length) {
-        showResults();
-      } else {
-        renderQuestion();
-      }
+      if (current >= questions.length) showResults();
+      else renderQuestion();
     };
 
     function showResults() {
@@ -387,17 +334,13 @@ button, select, input[type="number"] {
       result.classList.remove("hidden");
       let correct = 0;
       review.innerHTML = "";
-
       questions.forEach((q, i) => {
         const div = document.createElement("div");
         const isCorrect = userAnswers[i] === q.answer;
         if (isCorrect) correct++;
-        div.innerHTML = `<strong>Q${i + 1}:</strong> ${q.question}<br>
-                         <strong>Your Answer:</strong> ${userAnswers[i]}<br>
-                         <strong>Correct:</strong> ${q.answer}<hr>`;
+        div.innerHTML = `<strong>Q${i + 1}:</strong> ${q.question}<br><strong>Your Answer:</strong> ${userAnswers[i]}<br><strong>Correct:</strong> ${q.answer}<hr>`;
         review.appendChild(div);
       });
-
       const percentage = ((correct / questions.length) * 100).toFixed(2);
       scoreText.textContent = `Score: ${correct}/${questions.length} (${percentage}%)`;
     }
@@ -411,49 +354,22 @@ button, select, input[type="number"] {
       return shuffleArray(pool).slice(0, count);
     }
 
-    // Falling characters animation
-    function createCharacter() {
-      const characters = ['@', '#', '$', '%', '&', '*', '!', '?'];
-      const char = characters[Math.floor(Math.random() * characters.length)];
-      const characterElement = document.createElement('div');
-      characterElement.textContent = char;
-      characterElement.classList.add('character');
-      characterElement.style.left = Math.random() * 100 + 'vw';
-      characterElement.style.top = '-30px';
-      document.querySelector('.background').appendChild(characterElement);
-
-      setTimeout(() => {
-        characterElement.remove();
-      }, 5000);
+    async function fetchRedditNews() {
+      const subreddits = ["news", "worldnews", "technology"];
+      const randomSub = subreddits[Math.floor(Math.random() * subreddits.length)];
+      try {
+        const res = await fetch(`https://www.reddit.com/r/${randomSub}/hot.json?limit=10`);
+        const data = await res.json();
+        const posts = data.data.children.filter(p => !p.data.stickied && !p.data.over_18);
+        const post = posts[Math.floor(Math.random() * posts.length)].data;
+        document.getElementById("redditNews").innerHTML = `<a href="https://reddit.com${post.permalink}" target="_blank">${post.title}</a><br><small>from r/${randomSub}</small>`;
+      } catch (e) {
+        document.getElementById("redditNews").innerText = "Could not load news.";
+        console.error(e);
+      }
     }
 
-    setInterval(createCharacter, 500);
-
-
-    const darkModeBubble = document.getElementById("darkModeBubble");
-let bubbleTimeout = null;
-
-function showDarkModeBubble() {
-  darkModeBubble.classList.remove("hidden");
-
-  // Auto-hide after 4 seconds unless manually closed
-  bubbleTimeout = setTimeout(() => {
-    darkModeBubble.classList.add("hidden");
-  }, 4000);
-}
-
-function hideDarkModeBubble() {
-  darkModeBubble.classList.add("hidden");
-  clearTimeout(bubbleTimeout); // prevent auto-hide if user closes it
-}
-
-// Occasionally show it every 20–40 seconds
-setInterval(() => {
-  if (Math.random() < 0.3) {
-    showDarkModeBubble();
-  }
-}, 20000);
-
+    fetchRedditNews();
   </script>
 </body>
 </html>
